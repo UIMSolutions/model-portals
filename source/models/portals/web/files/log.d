@@ -47,8 +47,8 @@ class DPTLWebFileLog : DOOPEntity {
 auto PTLWebFileLog() { return new DPTLWebFileLog; } 
 auto PTLWebFileLog(Json json) { return new DPTLWebFileLog(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebFileLog);
   
   auto entity = PTLWebFileLog;

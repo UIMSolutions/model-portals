@@ -67,8 +67,8 @@ class DPTLIdea : DOOPEntity {
 auto PTLIdea() { return new DPTLIdea; } 
 auto PTLIdea(Json json) { return new DPTLIdea(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLIdea);
   
   auto entity = PTLIdea;

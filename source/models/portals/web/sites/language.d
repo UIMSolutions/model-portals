@@ -58,8 +58,8 @@ import uim.entities;
 auto PTLWebSiteLanguage() { return new DPTLWebSiteLanguage; } 
 auto PTLWebSiteLanguage(Json json) { return new DPTLWebSiteLanguage(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebSiteLanguage);
   
   auto entity = PTLWebSiteLanguage;

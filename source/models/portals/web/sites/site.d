@@ -60,8 +60,8 @@ import uim.entities;
 auto PTLWebSite() { return new DPTLWebSite; } 
 auto PTLWebSite(Json json) { return new DPTLWebSite(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebSite);
   
   auto entity = PTLWebSite;

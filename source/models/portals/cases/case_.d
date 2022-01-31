@@ -131,8 +131,8 @@ class DPTLCase : DOOPEntity {
 auto PTLCase() { return new DPTLCase; } 
 auto PTLCase(Json json) { return new DPTLCase(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLCase);
   
   auto entity = PTLCase;

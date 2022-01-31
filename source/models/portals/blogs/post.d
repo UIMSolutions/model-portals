@@ -5,8 +5,14 @@ import uim.entities;
 
 // A post belonging to a portal blog.
 class DPTLBlogPost : DOOPEntity {
-  this() { super();
-    this.attributes([
+  mixin(OOPEntityThis!("PTLBlogPost"));
+
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("portal_BlogPost")    
+      .attributes([
       "createdOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
       "modifiedOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
       "overriddenCreatedOn": OOPAttributeTimestamp.descriptions(["en":"Date and time that the record was migrated."]),
@@ -39,24 +45,11 @@ class DPTLBlogPost : DOOPEntity {
       "summary": OOPAttributeString.descriptions(["en":"A descriptive summary of the Blog Post."]),
     ]);
   }
-
-  override string entityClass() { return "aplBlogPost"; }
-  override string entityClasses() { return "aplBlogPosts"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto PTLBlogPost() { return new DPTLBlogPost; } 
-auto PTLBlogPost(Json json) { return new DPTLBlogPost(json); } 
+mixin(OOPEntityCalls!("PTLBlogPost"));
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLBlogPost);
   
   auto entity = PTLBlogPost;

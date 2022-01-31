@@ -4,9 +4,15 @@ module models.portals.ads.placement;
 import uim.entities;
 
 // 
-  class DPTLAdPlacement : DOOPEntity {
-  this() { super();
-    this.attributes([
+class DPTLAdPlacement : DOOPEntity {
+  mixin(OOPEntityThis!("PTLAdPlacement"));
+
+  override void initialize() {
+    super.initialize;
+
+    this
+      .registerPath("portal_AdPlacement")    
+      .attributes([
       "createdOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
       "modifiedOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
       "overriddenCreatedOn": OOPAttributeTimestamp.descriptions(["en":"Date and time that the record was migrated."]),
@@ -27,18 +33,6 @@ import uim.entities;
       "webTemplateId": OOPAttributeUUID.descriptions(["en":"Unique identifier for Web Template associated with AdPlacement."]),
     ]);
   }
-
-  override string entityClass() { return "aplAdPlacement"; }
-  override string entityClasses() { return "aplAdPlacements"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
  
   auto webSite() {  
     if ("webSiteId" in this.attributes) 
@@ -46,7 +40,7 @@ import uim.entities;
         return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
-    version(uim_entities) {
+    version(test_model_portals) {
       // TODO
     }}
 
@@ -56,16 +50,15 @@ import uim.entities;
         return collection.tenant[PTLWebTemplate.entityClasses].findOne(["id": this.attributes["webTemplateId"].toString]);
     return null; }
   unittest {
-    version(uim_entities) {
+    version(test_model_portals) {
       // TODO
     }}
 
 }
-auto PTLAdPlacement() { return new DPTLAdPlacement; } 
-auto PTLAdPlacement(Json json) { return new DPTLAdPlacement(json); } 
+mixin(OOPEntityCalls!("PTLAdPlacement"));
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLAdPlacement);
   
   auto entity = PTLAdPlacement;

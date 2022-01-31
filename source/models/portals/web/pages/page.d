@@ -85,7 +85,7 @@ class DPTLWebPage : DOOPEntity {
       return collection.tenant[PTLWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
     return null; }
   unittest {
-    version(uim_entities) {
+    version(test_model_portals) {
       // TODO 
     }}
   
@@ -94,15 +94,15 @@ class DPTLWebPage : DOOPEntity {
       return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
-    version(uim_entities) {
+    version(test_model_portals) {
       // TODO 
     }}
 }
 auto PTLWebPage() { return new DPTLWebPage; } 
 auto PTLWebPage(Json json) { return new DPTLWebPage(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebPage);
   
   auto entity = PTLWebPage;

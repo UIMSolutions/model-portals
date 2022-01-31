@@ -46,8 +46,8 @@ class DPTLForumThreadType : DOOPEntity {
 auto PTLForumThreadType() { return new DPTLForumThreadType; } 
 auto PTLForumThreadType(Json json) { return new DPTLForumThreadType(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLForumThreadType);
   
   auto entity = PTLForumThreadType;

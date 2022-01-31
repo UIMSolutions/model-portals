@@ -48,8 +48,8 @@ class DPTLWebPageLog : DOOPEntity {
 auto PTLWebPageLog() { return new DPTLWebPageLog; } 
 auto PTLWebPageLog(Json json) { return new DPTLWebPageLog(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebPageLog);
   
   auto entity = PTLWebPageLog;

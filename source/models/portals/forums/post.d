@@ -49,8 +49,8 @@ class DPTLForumPost : DOOPEntity {
 auto PTLForumPost() { return new DPTLForumPost; } 
 auto PTLForumPost(Json json) { return new DPTLForumPost(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLForumPost);
   
   auto entity = PTLForumPost;

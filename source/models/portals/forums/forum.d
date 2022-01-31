@@ -54,8 +54,8 @@ class DPTLForum : DOOPEntity {
 auto PTLForum() { return new DPTLForum; } 
 auto PTLForum(Json json) { return new DPTLForum(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLForum);
   
   auto entity = PTLForum;

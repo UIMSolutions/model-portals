@@ -44,8 +44,8 @@ class DPTLCaseDeflection : DOOPEntity {
 auto PTLCaseDeflection() { return new DPTLCaseDeflection; } 
 auto PTLCaseDeflection(Json json) { return new DPTLCaseDeflection(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLCaseDeflection);
   
   auto entity = PTLCaseDeflection;

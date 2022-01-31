@@ -80,8 +80,8 @@ class DPTLWebFile : DOOPEntity {
 auto PTLWebFile() { return new DPTLWebFile; } 
 auto PTLWebFile(Json json) { return new DPTLWebFile(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebFile);
   
   auto entity = PTLWebFile;

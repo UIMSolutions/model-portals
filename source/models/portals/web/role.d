@@ -48,7 +48,7 @@ import uim.entities;
         return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
-    version(uim_entities) {
+    version(test_model_portals) {
       // TODO
     }}
 
@@ -56,8 +56,8 @@ import uim.entities;
 auto PTLWebRole() { return new DPTLWebRole; } 
 auto PTLWebRole(Json json) { return new DPTLWebRole(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebRole);
   
   auto entity = PTLWebRole;

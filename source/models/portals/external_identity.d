@@ -43,8 +43,8 @@ class DPTLExternalIdentity : DOOPEntity {
 auto PTLExternalIdentity() { return new DPTLExternalIdentity; } 
 auto PTLExternalIdentity(Json json) { return new DPTLExternalIdentity(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLExternalIdentity);
   
   auto entity = PTLExternalIdentity;

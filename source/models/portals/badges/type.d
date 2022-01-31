@@ -30,11 +30,10 @@ class DPTLBadgeType : DOOPEntity {
       ]);
   }
 }
-auto PTLBadgeType() { return new DPTLBadgeType; } 
-auto PTLBadgeType(Json json) { return new DPTLBadgeType(json); } 
+mixin(OOPEntityCalls!("PTLBadgeType"));
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLBadgeType);
   
   auto entity = PTLBadgeType;

@@ -55,8 +55,8 @@ class DPTLIdeaForum : DOOPEntity {
 auto PTLIdeaForum() { return new DPTLIdeaForum; } 
 auto PTLIdeaForum(Json json) { return new DPTLIdeaForum(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLIdeaForum);
   
   auto entity = PTLIdeaForum;

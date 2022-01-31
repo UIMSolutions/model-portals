@@ -43,8 +43,8 @@ class DPTLWebTemplate : DOOPEntity {
 auto PTLWebTemplate() { return new DPTLWebTemplate; } 
 auto PTLWebTemplate(Json json) { return new DPTLWebTemplate(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLWebTemplate);
   
   auto entity = PTLWebTemplate;

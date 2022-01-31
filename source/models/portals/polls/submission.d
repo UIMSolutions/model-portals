@@ -48,8 +48,8 @@ class DPTLPollSubmission : DOOPEntity {
 auto PTLPollSubmission() { return new DPTLPollSubmission; } 
 auto PTLPollSubmission(Json json) { return new DPTLPollSubmission(json); } 
 
-unittest {
-  version(uim_entities) {
+version(test_model_portals) {
+  unittest {
     assert(PTLPollSubmission);
   
   auto entity = PTLPollSubmission;
