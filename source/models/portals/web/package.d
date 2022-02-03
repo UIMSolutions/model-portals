@@ -1,7 +1,7 @@
 module models.portals.web;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 public import models.portals.web.files;
 public import models.portals.web.pages;

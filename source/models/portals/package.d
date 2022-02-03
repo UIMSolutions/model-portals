@@ -1,7 +1,7 @@
 module models.portals;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 public import models.portals.ads;
 public import models.portals.badges;

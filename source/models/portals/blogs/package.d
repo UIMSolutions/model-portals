@@ -1,7 +1,7 @@
 module models.portals.blogs;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 public import models.portals.blogs.blog;
 

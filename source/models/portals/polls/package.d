@@ -1,7 +1,7 @@
 module models.portals.polls;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 public import models.portals.polls.poll;
 

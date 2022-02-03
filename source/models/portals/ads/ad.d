@@ -1,7 +1,7 @@
 module models.portals.ads.ad;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 // Ad that is attached to one or more objects, including other notes.
 class DPTLAd : DOOPEntity {
@@ -11,7 +11,7 @@ class DPTLAd : DOOPEntity {
     super.initialize;
 
     this
-      .registerPath("portal_ad")
+      .registerPath("portal_ads")
       .attributes([
         "createdOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),

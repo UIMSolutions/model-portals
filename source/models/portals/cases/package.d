@@ -1,7 +1,7 @@
 module models.portals.cases;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 public import models.portals.cases.case_;
 

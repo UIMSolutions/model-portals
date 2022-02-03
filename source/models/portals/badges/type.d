@@ -1,7 +1,7 @@
 module models.portals.badges.type;
 
 @safe:
-import uim.entities;
+import models.portals;
 
 // 
 class DPTLBadgeType : DOOPEntity {
@@ -11,7 +11,7 @@ class DPTLBadgeType : DOOPEntity {
     super.initialize;
 
     this
-      .registerPath("portal_badgeType")
+      .registerPath("portal_badgetypes")
       .attributes([
         "createdOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who updated the record on behalf of another user."]),
