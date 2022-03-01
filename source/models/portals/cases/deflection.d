@@ -11,7 +11,6 @@ class DPTLCaseDeflection : DOOPEntity {
     super.initialize;
 
     this
-      .registerPath("portal_casedeflections")    
       .attributes([
         "createdOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPAttributeLink("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
@@ -32,7 +31,8 @@ class DPTLCaseDeflection : DOOPEntity {
         "caseTitle": OOPAttributeString.descriptions(["en":"Title entered when the ticket was created."]),
         "contact": OOPAttributeString.descriptions(["en":"Contact who found the answer when the ticket was created."]),
         "knowledgeArticle": OOPAttributeString.descriptions(["en":"Knowledge Articles"]),
-      ]);
+      ])
+      .registerPath("portal_casedeflections");    
   }
 }
 mixin(OOPEntityCalls!("PTLCaseDeflection"));
