@@ -1,15 +1,18 @@
 module models.portals;
 
 @safe:
-import models.portals;
+// DLang libraries (Phobos)
+public import std.stdio;
+public import std.string;
+public import std.uuid;
 
-public import models.portals.ads;
-public import models.portals.badges;
-public import models.portals.blogs;
-public import models.portals.cases;
-public import models.portals.forums;
-public import models.portals.ideas;
-public import models.portals.polls;
-public import models.portals.web;
+// External libraries
+public import vibe.d;
 
-public import models.portals.external_identity;
+// UIM libraries
+public import uim.core;
+public import uim.oop;
+public import uim.entities;
+
+public import models.portals.classes;
+public import models.portals.entities;
