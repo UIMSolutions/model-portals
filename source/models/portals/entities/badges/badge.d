@@ -11,7 +11,7 @@ class DPTLBadge : DOOPEntity {
     super.initialize;
 
     this
-      .attributes([
+      .addAttributes([
         "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who updated the record on behalf of another user."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
