@@ -1,9 +1,38 @@
 {
-	"authors": [
-		"oz"
+	"authors": ["UI Manufaktur UG"],
+	"copyright": "Copyright © 2017 - 2022, UI Manufaktur UG",
+	"description": "Model for CMS applications",
+	"license": "MIT",
+	"name": "model-portals",
+	"dependencies": {
+		"colored": "~>0.0.23",
+		"vibe-d": "~>0.9.4"
+	},
+	"sourcePaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-models",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entities",
+		"../../LIBS/uim-entitybase",
+		"./"
 	],
-	"copyright": "Copyright © 2022, oz",
-	"description": "A minimal D application.",
-	"license": "proprietary",
-	"name": "model-portals"
+	"importPaths": [
+		"../../LIBS/uim-core",
+		"../../LIBS/uim-oop",
+		"../../LIBS/uim-models",
+		"../../LIBS/uim-jsonbase",
+		"../../LIBS/uim-entities",
+		"../../LIBS/uim-entitybase",
+		"./"
+	],
+	"configurations": [
+		{
+			"name": "default"
+		},
+		{
+			"name": "test",
+			"versions": ["test_model_portals"]
+		}
+	]
 }
