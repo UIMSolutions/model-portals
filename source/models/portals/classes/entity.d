@@ -43,10 +43,10 @@ class DPTLEntity : DOOPEntity {
         "webPageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Page associated with Ad."]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Ad."]),
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Ad."]),
-      ])
+      ]);
   }
 }
-mixin(OOPEntityCalls!("PTLAd"));
+mixin(OOPEntityCalls!("PTLEntity"));
 
 version(test_model_portals) {
   unittest {
