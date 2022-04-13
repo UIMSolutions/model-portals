@@ -4,8 +4,8 @@ module models.portals.entities.web.pages.log;
 import models.portals;
 
 // A record of a user viewing a Web Page
-class DPTLWebPageLog : DOOPEntity {
-  mixin(OOPEntityThis!("PTLWebPageLog"));
+class DPortalWebPageLog : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebPageLog"));
 
   override void initialize() {
     super.initialize;
@@ -36,13 +36,13 @@ class DPTLWebPageLog : DOOPEntity {
       .registerPath("portal_webpagelogs");
   }
 }
-mixin(OOPEntityCalls!("PTLWebPageLog"));
+mixin(OOPEntityCalls!("PortalWebPageLog"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLWebPageLog);
+    assert(PortalWebPageLog);
   
-  auto entity = PTLWebPageLog;
+  auto entity = PortalWebPageLog;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

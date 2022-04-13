@@ -4,8 +4,8 @@ module models.portals.entities.cases.deflection;
 import models.portals;
 
 // Captures the number of Found My Answer clicks in the portal.
-class DPTLCaseDeflection : DOOPEntity {
-  mixin(OOPEntityThis!("PTLCaseDeflection"));
+class DPortalCaseDeflection : DOOPEntity {
+  mixin(OOPEntityThis!("PortalCaseDeflection"));
 
   override void initialize() {
     super.initialize;
@@ -35,13 +35,13 @@ class DPTLCaseDeflection : DOOPEntity {
       .registerPath("portal_casedeflections");    
   }
 }
-mixin(OOPEntityCalls!("PTLCaseDeflection"));
+mixin(OOPEntityCalls!("PortalCaseDeflection"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLCaseDeflection);
+    assert(PortalCaseDeflection);
   
-  auto entity = PTLCaseDeflection;
+  auto entity = PortalCaseDeflection;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

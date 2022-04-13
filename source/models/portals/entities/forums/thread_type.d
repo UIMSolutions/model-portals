@@ -4,8 +4,8 @@ module models.portals.entities.forums.thread_type;
 import models.portals;
 
 // 
-class DPTLForumThreadType : DOOPEntity {
-  mixin(OOPEntityThis!("PTLForumThreadType"));
+class DPortalForumThreadType : DOOPEntity {
+  mixin(OOPEntityThis!("PortalForumThreadType"));
 
   override void initialize() {
     super.initialize;
@@ -37,13 +37,13 @@ class DPTLForumThreadType : DOOPEntity {
       .registerPath("portal_forumthreadtypes"); 
   }
 }
-mixin(OOPEntityCalls!("PTLForumThreadType"));
+mixin(OOPEntityCalls!("PortalForumThreadType"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLForumThreadType);
+    assert(PortalForumThreadType);
   
-  auto entity = PTLForumThreadType;
+  auto entity = PortalForumThreadType;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

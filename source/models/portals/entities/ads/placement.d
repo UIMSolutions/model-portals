@@ -4,8 +4,8 @@ module models.portals.entities.ads.placement;
 import models.portals;
 
 // 
-class DPTLAdPlacement : DOOPEntity {
-  mixin(OOPEntityThis!("PTLAdPlacement"));
+class DPortalAdPlacement : DOOPEntity {
+  mixin(OOPEntityThis!("PortalAdPlacement"));
 
   override void initialize() {
     super.initialize;
@@ -37,7 +37,7 @@ class DPTLAdPlacement : DOOPEntity {
 /*   auto webSite() {  
     if ("webSiteId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -47,7 +47,7 @@ class DPTLAdPlacement : DOOPEntity {
   auto webTemplate() {  
     if ("webTemplateId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PTLWebTemplate.entityClasses].findOne(["id": this.attributes["webTemplateId"].toString]);
+        return collection.tenant[PortalWebTemplate.entityClasses].findOne(["id": this.attributes["webTemplateId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -55,13 +55,13 @@ class DPTLAdPlacement : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PTLAdPlacement"));
+mixin(OOPEntityCalls!("PortalAdPlacement"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLAdPlacement);
+    assert(PortalAdPlacement);
   
-  auto entity = PTLAdPlacement;
+  auto entity = PortalAdPlacement;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

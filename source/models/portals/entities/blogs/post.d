@@ -4,8 +4,8 @@ module models.portals.entities.blogs.post;
 import models.portals;
 
 // A post belonging to a portal blog.
-class DPTLBlogPost : DOOPEntity {
-  mixin(OOPEntityThis!("PTLBlogPost"));
+class DPortalBlogPost : DOOPEntity {
+  mixin(OOPEntityThis!("PortalBlogPost"));
 
   override void initialize() {
     super.initialize;
@@ -46,13 +46,13 @@ class DPTLBlogPost : DOOPEntity {
       .registerPath("portal_blogposts");    
   }
 }
-mixin(OOPEntityCalls!("PTLBlogPost"));
+mixin(OOPEntityCalls!("PortalBlogPost"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLBlogPost);
+    assert(PortalBlogPost);
   
-  auto entity = PTLBlogPost;
+  auto entity = PortalBlogPost;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

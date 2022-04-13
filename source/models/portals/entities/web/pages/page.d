@@ -4,8 +4,8 @@ module models.portals.entities.web.pages.page;
 import models.portals;
 
 // WebPage 
-class DPTLWebPage : DOOPEntity {
-  mixin(OOPEntityThis!("PTLWebPage"));
+class DPortalWebPage : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebPage"));
 
   override void initialize() {
     super.initialize;
@@ -75,7 +75,7 @@ class DPTLWebPage : DOOPEntity {
   }
 /*   auto webPage() {  
     if (collection && collection.tenant) 
-      return collection.tenant[PTLWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
+      return collection.tenant[PortalWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -84,20 +84,20 @@ class DPTLWebPage : DOOPEntity {
   
   auto webSite() {  
     if (collection && collection.tenant) 
-      return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+      return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
       // TODO 
     }} */
 }
-mixin(OOPEntityCalls!("PTLWebPage"));
+mixin(OOPEntityCalls!("PortalWebPage"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLWebPage);
+    assert(PortalWebPage);
   
-  auto entity = PTLWebPage;
+  auto entity = PortalWebPage;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

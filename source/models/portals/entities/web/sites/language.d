@@ -4,8 +4,8 @@ module models.portals.entities.web.sites.language;
 import models.portals;
 
 // Languages supported and publishing status for the portal
-class DPTLWebSiteLanguage : DOOPEntity {
-  mixin(OOPEntityThis!("PTLWebSiteLanguage"));
+class DPortalWebSiteLanguage : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebSiteLanguage"));
 
   override void initialize() {
     super.initialize;
@@ -38,24 +38,24 @@ class DPTLWebSiteLanguage : DOOPEntity {
 /*   auto webSiteLanguage() {  
     if ("webSiteLanguageId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PTLWebSiteLanguage.entityClasses].findOne(["id": this.attributes["webSiteLanguageId"].toString]);
+        return collection.tenant[PortalWebSiteLanguage.entityClasses].findOne(["id": this.attributes["webSiteLanguageId"].toString]);
     return null;
   }
   
   auto webSite() {  
     if ("webSiteId" in this.attributes) 
         if (collection && collection.tenant) 
-          return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+          return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PTLWebSiteLanguage"));
+mixin(OOPEntityCalls!("PortalWebSiteLanguage"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLWebSiteLanguage);
+    assert(PortalWebSiteLanguage);
   
-  auto entity = PTLWebSiteLanguage;
+  auto entity = PortalWebSiteLanguage;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

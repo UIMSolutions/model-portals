@@ -4,8 +4,8 @@ module models.portals.entities.web.sites.site;
 import models.portals;
 
 // Web Portal
-class DPTLWebSite : DOOPEntity {
-  mixin(OOPEntityThis!("PTLWebSite"));
+class DPortalWebSite : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebSite"));
 
   override void initialize() {
     super.initialize;
@@ -48,16 +48,16 @@ class DPTLWebSite : DOOPEntity {
   auto webSite() {  
     if ("webSiteId" in this.attributes)
       if (collection && collection.tenant)
-        return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; } */
 }
-mixin(OOPEntityCalls!("PTLWebSite"));
+mixin(OOPEntityCalls!("PortalWebSite"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLWebSite);
+    assert(PortalWebSite);
   
-  auto entity = PTLWebSite;
+  auto entity = PortalWebSite;
   
 /*   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);

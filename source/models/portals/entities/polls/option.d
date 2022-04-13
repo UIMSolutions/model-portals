@@ -4,8 +4,8 @@ module models.portals.entities.polls.option;
 import models.portals;
 
 // 
-class DPTLPollOption : DOOPEntity {
-  mixin(OOPEntityThis!("PTLPollOption"));
+class DPortalPollOption : DOOPEntity {
+  mixin(OOPEntityThis!("PortalPollOption"));
 
   override void initialize() {
     super.initialize;
@@ -36,13 +36,13 @@ class DPTLPollOption : DOOPEntity {
       .registerPath("portal_polloptions");   
   }
 }
-mixin(OOPEntityCalls!("PTLPollOption"));
+mixin(OOPEntityCalls!("PortalPollOption"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLPollOption);
+    assert(PortalPollOption);
   
-  auto entity = PTLPollOption;
+  auto entity = PortalPollOption;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

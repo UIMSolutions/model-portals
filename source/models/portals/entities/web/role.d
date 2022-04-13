@@ -4,8 +4,8 @@ module models.portals.entities.web.role;
 import models.portals;
 
 // Sets the user's role for the Portal.
-class DPTLWebRole : DOOPEntity {
-  mixin(OOPEntityThis!("PTLWebRole"));
+class DPortalWebRole : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebRole"));
 
   override void initialize() {
     super.initialize;
@@ -38,7 +38,7 @@ class DPTLWebRole : DOOPEntity {
 /*   auto webSite() {  
     if ("webSiteId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -46,13 +46,13 @@ class DPTLWebRole : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PTLWebRole"));
+mixin(OOPEntityCalls!("PortalWebRole"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLWebRole);
+    assert(PortalWebRole);
   
-  auto entity = PTLWebRole;
+  auto entity = PortalWebRole;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

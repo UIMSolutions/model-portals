@@ -4,8 +4,8 @@ module models.portals.entities.polls.placement;
 import models.portals;
 
 // The root entity for portal Ideas.
-class DPTLPollPlacement : DOOPEntity {
-  mixin(OOPEntityThis!("PTLPollPlacement"));
+class DPortalPollPlacement : DOOPEntity {
+  mixin(OOPEntityThis!("PortalPollPlacement"));
 
   override void initialize() {
     super.initialize;
@@ -34,13 +34,13 @@ class DPTLPollPlacement : DOOPEntity {
       .registerPath("portal_pollplacements");
   }
 }
-mixin(OOPEntityCalls!("PTLPollPlacement"));
+mixin(OOPEntityCalls!("PortalPollPlacement"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLPollPlacement);
+    assert(PortalPollPlacement);
   
-  auto entity = PTLPollPlacement;
+  auto entity = PortalPollPlacement;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

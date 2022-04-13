@@ -4,8 +4,8 @@ module models.portals.entities.blogs.blog;
 import models.portals;
 
 // The root entity for a portal blog.
-class DPTLBlog : DOOPEntity {
-  mixin(OOPEntityThis!("PTLBlog"));
+class DPortalBlog : DOOPEntity {
+  mixin(OOPEntityThis!("PortalBlog"));
 
   override void initialize() {
     super.initialize;
@@ -46,7 +46,7 @@ class DPTLBlog : DOOPEntity {
 /*   auto webSite() {  
     if ("webSiteId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PTLWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -54,13 +54,13 @@ class DPTLBlog : DOOPEntity {
     }}
  */
 }
-mixin(OOPEntityCalls!("PTLBlog"));
+mixin(OOPEntityCalls!("PortalBlog"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLBlog);
+    assert(PortalBlog);
   
-  auto entity = PTLBlog;
+  auto entity = PortalBlog;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,8 +4,8 @@ module models.portals.entities.ads.ad;
 import models.portals;
 
 // Ad that is attached to one or more objects, including other notes.
-class DPTLAd : DOOPEntity {
-  mixin(OOPEntityThis!("PTLAd"));
+class DPortalAd : DOOPEntity {
+  mixin(OOPEntityThis!("PortalAd"));
 
   override void initialize() {
     super.initialize;
@@ -52,7 +52,7 @@ class DPTLAd : DOOPEntity {
   /* auto webFile() {  
     if ("webFileId" in this.attributes) {
       if (collection && collection.tenant) {
-        return collection.tenant[PTLWebFile.entityClasses].findOne(["id": this.attributes["webFileId"].toString]);
+        return collection.tenant[PortalWebFile.entityClasses].findOne(["id": this.attributes["webFileId"].toString]);
       }}
     return null; }  
   unittest {
@@ -64,7 +64,7 @@ class DPTLAd : DOOPEntity {
     if ("webPageId" in this.attributes) {
       if (collection && collection.tenant) {
         auto tenant = collection.tenant;  
-        return collection.tenant[PTLWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
+        return collection.tenant[PortalWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
       }}
     return null; }
   unittest {
@@ -76,19 +76,19 @@ class DPTLAd : DOOPEntity {
     if ("webSiteId" in this.attributes) {
       auto id = this.attributes["webSiteId"].toString;
       if (collection && collection.tenant) {
-        return collection.tenant[PTLWebSite.entityClasses].findOne(["id":id]);
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id":id]);
       }
     }
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PTLAd"));
+mixin(OOPEntityCalls!("PortalAd"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLAd);
+    assert(PortalAd);
   
-  auto entity = PTLAd;
+  auto entity = PortalAd;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
