@@ -4,8 +4,8 @@ module models.portals.entities.ads.placement;
 import models.portals;
 
 // 
-class DPortalAdPlacement : DOOPEntity {
-  mixin(OOPEntityThis!("PortalAdPlacement"));
+class DPortalAdPlacementEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalAdPlacementEntity"));
 
   override void initialize() {
     super.initialize;
@@ -55,13 +55,13 @@ class DPortalAdPlacement : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PortalAdPlacement"));
+mixin(OOPEntityCalls!("PortalAdPlacementEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalAdPlacement);
+    assert(PortalAdPlacementEntity);
   
-  auto entity = PortalAdPlacement;
+  auto entity = PortalAdPlacementEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

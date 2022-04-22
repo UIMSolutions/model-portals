@@ -4,8 +4,8 @@ module models.portals.entities.badges.badge;
 import models.portals;
 
 // 
-class DPortalBadge : DOOPEntity {
-  mixin(OOPEntityThis!("PortalBadge"));
+class DPortalBadgeEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalBadgeEntity"));
 
   override void initialize() {
     super.initialize;
@@ -30,13 +30,13 @@ class DPortalBadge : DOOPEntity {
       .registerPath("portal_badges");
   }
 }
-mixin(OOPEntityCalls!("PortalBadge"));
+mixin(OOPEntityCalls!("PortalBadgeEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalBadge);
+    assert(PortalBadgeEntity);
   
-  auto entity = PortalBadge;
+  auto entity = PortalBadgeEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,8 +4,8 @@ module models.portals.entities.forums.forum;
 import models.portals;
 
 // 
-class DPortalForum : DOOPEntity {
-  mixin(OOPEntityThis!("PortalForum"));
+class DPortalForumEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalForumEntity"));
 
   override void initialize() {
     super.initialize;
@@ -45,13 +45,13 @@ class DPortalForum : DOOPEntity {
       .registerPath("portal_forums");    
   }
 }
-mixin(OOPEntityCalls!("PortalForum"));
+mixin(OOPEntityCalls!("PortalForumEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalForum);
+    assert(PortalForumEntity);
   
-  auto entity = PortalForum;
+  auto entity = PortalForumEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

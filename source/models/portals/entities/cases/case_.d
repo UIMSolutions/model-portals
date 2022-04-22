@@ -4,8 +4,8 @@ module models.portals.entities.cases.case_;
 import models.portals;
 
 // Service request case associated with a contract.
-class DPortalCase : DOOPEntity {
-  mixin(OOPEntityThis!("PortalCase"));
+class DPortalCaseEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalCaseEntity"));
 
   override void initialize() {
     super.initialize;
@@ -118,13 +118,13 @@ class DPortalCase : DOOPEntity {
       .registerPath("portal_cases");    
   }
 }
-mixin(OOPEntityCalls!("PortalCase"));
+mixin(OOPEntityCalls!("PortalCaseEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalCase);
+    assert(PortalCaseEntity);
   
-  auto entity = PortalCase;
+  auto entity = PortalCaseEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,8 +4,8 @@ module models.portals.entities.ideas.idea;
 import models.portals;
 
 // An idea belonging to a portal Idea Forum.
-class DPortalIdea : DOOPEntity {
-  mixin(OOPEntityThis!("PortalIdea"));
+class DPortalIdeaEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalIdeaEntity"));
 
   override void initialize() {
     super.initialize;
@@ -58,13 +58,13 @@ class DPortalIdea : DOOPEntity {
       .registerPath("portal_ideas");   
   }
 }
-mixin(OOPEntityCalls!("PortalIdea"));
+mixin(OOPEntityCalls!("PortalIdeaEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalIdea);
+    assert(PortalIdeaEntity);
   
-  auto entity = PortalIdea;
+  auto entity = PortalIdeaEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

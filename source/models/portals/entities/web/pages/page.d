@@ -4,8 +4,8 @@ module models.portals.entities.web.pages.page;
 import models.portals;
 
 // WebPage 
-class DPortalWebPage : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebPage"));
+class DPortalWebPageEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebPageEntity"));
 
   override void initialize() {
     super.initialize;
@@ -75,7 +75,7 @@ class DPortalWebPage : DOOPEntity {
   }
 /*   auto webPage() {  
     if (collection && collection.tenant) 
-      return collection.tenant[PortalWebPage.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
+      return collection.tenant[PortalWebPageEntity.entityClasses].findOne(["id": this.attributes["webPageId"].toString]);
     return null; }
   unittest {
     version(test_model_portals) {
@@ -91,13 +91,13 @@ class DPortalWebPage : DOOPEntity {
       // TODO 
     }} */
 }
-mixin(OOPEntityCalls!("PortalWebPage"));
+mixin(OOPEntityCalls!("PortalWebPageEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalWebPage);
+    assert(PortalWebPageEntity);
   
-  auto entity = PortalWebPage;
+  auto entity = PortalWebPageEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

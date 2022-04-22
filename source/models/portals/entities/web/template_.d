@@ -4,8 +4,8 @@ module models.portals.entities.web.template_;
 import models.portals;
 
 // 
-class DPortalWebTemplate : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebTemplate"));
+class DPortalWebTemplateEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebTemplateEntity"));
 
   override void initialize() {
     super.initialize;
@@ -30,13 +30,13 @@ class DPortalWebTemplate : DOOPEntity {
       .registerPath("portal_webtemplates");   
   }
 }
-mixin(OOPEntityCalls!("PortalWebTemplate"));
+mixin(OOPEntityCalls!("PortalWebTemplateEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalWebTemplate);
+    assert(PortalWebTemplateEntity);
   
-  auto entity = PortalWebTemplate;
+  auto entity = PortalWebTemplateEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

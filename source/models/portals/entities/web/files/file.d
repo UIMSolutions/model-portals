@@ -4,8 +4,8 @@ module models.portals.entities.web.files.file;
 import models.portals;
 
 // Storage of files used in the web Portals.
-class DPortalWebFile : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebFile"));
+class DPortalWebFileEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebFileEntity"));
 
   override void initialize() {
     super.initialize;
@@ -71,13 +71,13 @@ class DPortalWebFile : DOOPEntity {
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PortalWebFile"));
+mixin(OOPEntityCalls!("PortalWebFileEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalWebFile);
+    assert(PortalWebFileEntity);
   
-  auto entity = PortalWebFile;
+  auto entity = PortalWebFileEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

@@ -4,8 +4,8 @@ module models.portals.entities.ads.ad;
 import models.portals;
 
 // Ad that is attached to one or more objects, including other notes.
-class DPortalAd : DOOPEntity {
-  mixin(OOPEntityThis!("PortalAd"));
+class DPortalAdEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalAdEntity"));
 
   override void initialize() {
     super.initialize;
@@ -82,13 +82,13 @@ class DPortalAd : DOOPEntity {
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PortalAd"));
+mixin(OOPEntityCalls!("PortalAdEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalAd);
+    assert(PortalAdEntity);
   
-  auto entity = PortalAd;
+  auto entity = PortalAdEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

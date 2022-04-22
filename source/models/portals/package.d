@@ -16,3 +16,36 @@ public import uim.entities;
 
 public import models.portals.classes;
 public import models.portals.entities;
+
+static this() {
+  EntityRegistry
+    .register(
+      PortalAccountEntity,
+      PortalAdEntity,
+      PortalAdPlacementEntity,
+      PortalBadgeEntity,
+      PortalBadgeType,
+      PortalBlogEntity,
+      PortalBlogPostEntity,
+      PortalCaseEntity,
+      PortalCaseDeflectionEntity,
+      PortalForumEntity,
+      PortalForumPostEntity,
+      PortalForumThreadTypeEntity,
+      PortalForumThreadEntity,
+      PortalIdeaForumEntity,
+      PortalIdeaEntity,
+      PortalPollOptionEntity,
+      PortalPollEntity,
+      PortalPollSubmissionEntity,
+      PortalWebFileEntity,
+      PortalWebFileLogEntity,
+      PortalWebPageLogEntity,
+      PortalWebPageEntity,
+      PortalWebSiteLanguageEntity,
+      PortalWebSiteEntity,
+      PortalWebRoleEntity,
+      PortalWebTemplateEntity,
+      PortalExternalIdentityEntity
+    );
+}

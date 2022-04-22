@@ -4,8 +4,8 @@ module models.portals.entities.web.sites.language;
 import models.portals;
 
 // Languages supported and publishing status for the portal
-class DPortalWebSiteLanguage : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebSiteLanguage"));
+class DPortalWebSiteLanguageEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebSiteLanguageEntity"));
 
   override void initialize() {
     super.initialize;
@@ -38,7 +38,7 @@ class DPortalWebSiteLanguage : DOOPEntity {
 /*   auto webSiteLanguage() {  
     if ("webSiteLanguageId" in this.attributes) 
       if (collection && collection.tenant) 
-        return collection.tenant[PortalWebSiteLanguage.entityClasses].findOne(["id": this.attributes["webSiteLanguageId"].toString]);
+        return collection.tenant[PortalWebSiteLanguageEntity.entityClasses].findOne(["id": this.attributes["webSiteLanguageId"].toString]);
     return null;
   }
   
@@ -49,13 +49,13 @@ class DPortalWebSiteLanguage : DOOPEntity {
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PortalWebSiteLanguage"));
+mixin(OOPEntityCalls!("PortalWebSiteLanguageEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalWebSiteLanguage);
+    assert(PortalWebSiteLanguageEntity);
   
-  auto entity = PortalWebSiteLanguage;
+  auto entity = PortalWebSiteLanguageEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

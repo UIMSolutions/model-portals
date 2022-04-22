@@ -1,11 +1,11 @@
-module models.portals.entities.polls.option;
+module models.portals.entities.account;
 
 @safe:
 import models.portals;
 
 // 
-class DPortalPollOptionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalPollOptionEntity"));
+class DPortalAccountEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalAccountEntity"));
 
   override void initialize() {
     super.initialize;
@@ -23,32 +23,32 @@ class DPortalPollOptionEntity : DOOPEntity {
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
-        "pollOptionId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Poll Option"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the poll option's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "answer": OOPStringAttribute.descriptions(["en":""]),
-        "displayOrder": OOPStringAttribute.descriptions(["en":""]),
-        "pollId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Poll associated with PollOption."]),
-        "votes": OOPStringAttribute.descriptions(["en":""]),
+        "accountCategoryCode": OOPStringAttribute.descriptions(["en":"Select a category to indicate whether the customer account is standard or preferred."]),
+        "accountCategoryCode_display": OOPStringAttribute.descriptions(["en":""]),
+        // Missing
       ])
-      .registerPath("portal_polloptions");   
+      .registerPath("portal_accounts");    
   }
-}
-mixin(OOPEntityCalls!("PortalPollOptionEntity"));
-
-version(test_model_portals) {
+ 
+/*   auto webSite() {  
+    if ("webSiteId" in this.attributes) 
+      if (collection && collection.tenant) 
+        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
+    return null; }
   unittest {
-    assert(PortalPollOptionEntity);
-  
-  auto entity = PortalPollOptionEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
+    version(test_model_portals) {
+      // TODO
+    }}
 
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
+  auto webTemplate() {  
+    if ("webTemplateId" in this.attributes) 
+      if (collection && collection.tenant) 
+        return collection.tenant[PortalWebTemplate.entityClasses].findOne(["id": this.attributes["webTemplateId"].toString]);
+    return null; }
+  unittest {
+    version(test_model_portals) {
+      // TODO
+    }} */
 
-  repository.cleanupConnections; */
-  }
 }
+mixin(OOPEntityCalls!("PortalAccountEntity"));

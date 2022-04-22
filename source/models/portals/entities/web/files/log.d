@@ -4,8 +4,8 @@ module models.portals.entities.web.files.log;
 import models.portals;
 
 // A record of the download of a web file
-class DPortalWebFileLog : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebFileLog"));
+class DPortalWebFileLogEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalWebFileLogEntity"));
 
   override void initialize() {
     super.initialize;
@@ -35,13 +35,13 @@ class DPortalWebFileLog : DOOPEntity {
       .registerPath("portal_webfilelogs");
   }
 }
-mixin(OOPEntityCalls!("PortalWebFileLog"));
+mixin(OOPEntityCalls!("PortalWebFileLogEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PortalWebFileLog);
+    assert(PortalWebFileLogEntity);
   
-  auto entity = PortalWebFileLog;
+  auto entity = PortalWebFileLogEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

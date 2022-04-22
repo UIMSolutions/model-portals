@@ -4,8 +4,8 @@ module models.portals.entities.external_identity;
 import models.portals;
 
 // ExternalIdentity that is attached to one or more objects, including other notes.
-class DPTLExternalIdentity : DOOPEntity {
-  mixin(OOPEntityThis!("PTLExternalIdentity"));
+class DPortalExternalIdentityEntity : DOOPEntity {
+  mixin(OOPEntityThis!("PortalExternalIdentityEntity"));
 
   override void initialize() {
     super.initialize;
@@ -30,13 +30,13 @@ class DPTLExternalIdentity : DOOPEntity {
       .registerPath("portal_externalidentities");   
   }
 }
-mixin(OOPEntityCalls!("PTLExternalIdentity"));
+mixin(OOPEntityCalls!("PortalExternalIdentityEntity"));
 
 version(test_model_portals) {
   unittest {
-    assert(PTLExternalIdentity);
+    assert(PortalExternalIdentityEntity);
   
-  auto entity = PTLExternalIdentity;
+  auto entity = PortalExternalIdentityEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
