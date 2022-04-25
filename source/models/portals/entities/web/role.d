@@ -5,7 +5,7 @@ import models.portals;
 
 // Sets the user's role for the Portal.
 class DPortalWebRoleEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebRoleEntity"));
+  mixin(EntityThis!("PortalWebRoleEntity"));
 
   override void initialize() {
     super.initialize;
@@ -46,7 +46,7 @@ class DPortalWebRoleEntity : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PortalWebRoleEntity"));
+mixin(EntityCalls!("PortalWebRoleEntity"));
 
 version(test_model_portals) {
   unittest {

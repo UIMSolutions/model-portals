@@ -5,7 +5,7 @@ import models.portals;
 
 // WebPage 
 class DPortalWebPageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebPageEntity"));
+  mixin(EntityThis!("PortalWebPageEntity"));
 
   override void initialize() {
     super.initialize;
@@ -91,7 +91,7 @@ class DPortalWebPageEntity : DOOPEntity {
       // TODO 
     }} */
 }
-mixin(OOPEntityCalls!("PortalWebPageEntity"));
+mixin(EntityCalls!("PortalWebPageEntity"));
 
 version(test_model_portals) {
   unittest {

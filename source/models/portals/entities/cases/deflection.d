@@ -5,7 +5,7 @@ import models.portals;
 
 // Captures the number of Found My Answer clicks in the portal.
 class DPortalCaseDeflectionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalCaseDeflectionEntity"));
+  mixin(EntityThis!("PortalCaseDeflectionEntity"));
 
   override void initialize() {
     super.initialize;
@@ -35,7 +35,7 @@ class DPortalCaseDeflectionEntity : DOOPEntity {
       .registerPath("portal_casedeflections");    
   }
 }
-mixin(OOPEntityCalls!("PortalCaseDeflectionEntity"));
+mixin(EntityCalls!("PortalCaseDeflectionEntity"));
 
 version(test_model_portals) {
   unittest {

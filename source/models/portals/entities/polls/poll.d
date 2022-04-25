@@ -5,7 +5,7 @@ import models.portals;
 
 // The root entity for portal Ideas.
 class DPortalPollEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalPollEntity"));
+  mixin(EntityThis!("PortalPollEntity"));
 
   override void initialize() {
     super.initialize;
@@ -40,7 +40,7 @@ class DPortalPollEntity : DOOPEntity {
       .registerPath("portal_polls");   
   }
 }
-mixin(OOPEntityCalls!("PortalPollEntity"));
+mixin(EntityCalls!("PortalPollEntity"));
 
 version(test_model_portals) {
   unittest {

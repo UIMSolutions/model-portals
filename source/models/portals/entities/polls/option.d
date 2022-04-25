@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalPollOptionEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalPollOptionEntity"));
+  mixin(EntityThis!("PortalPollOptionEntity"));
 
   override void initialize() {
     super.initialize;
@@ -36,7 +36,7 @@ class DPortalPollOptionEntity : DOOPEntity {
       .registerPath("portal_polloptions");   
   }
 }
-mixin(OOPEntityCalls!("PortalPollOptionEntity"));
+mixin(EntityCalls!("PortalPollOptionEntity"));
 
 version(test_model_portals) {
   unittest {

@@ -5,7 +5,7 @@ import models.portals;
 
 // ExternalIdentity that is attached to one or more objects, including other notes.
 class DPortalExternalIdentityEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalExternalIdentityEntity"));
+  mixin(EntityThis!("PortalExternalIdentityEntity"));
 
   override void initialize() {
     super.initialize;
@@ -30,7 +30,7 @@ class DPortalExternalIdentityEntity : DOOPEntity {
       .registerPath("portal_externalidentities");   
   }
 }
-mixin(OOPEntityCalls!("PortalExternalIdentityEntity"));
+mixin(EntityCalls!("PortalExternalIdentityEntity"));
 
 version(test_model_portals) {
   unittest {

@@ -5,7 +5,7 @@ import models.portals;
 
 // Web Portal
 class DPortalWebSiteEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebSiteEntity"));
+  mixin(EntityThis!("PortalWebSiteEntity"));
 
   override void initialize() {
     super.initialize;
@@ -51,7 +51,7 @@ class DPortalWebSiteEntity : DOOPEntity {
         return collection.tenant[PortalWebSiteEntity.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
     return null; } */
 }
-mixin(OOPEntityCalls!("PortalWebSiteEntity"));
+mixin(EntityCalls!("PortalWebSiteEntity"));
 
 version(test_model_portals) {
   unittest {

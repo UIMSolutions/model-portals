@@ -5,7 +5,7 @@ import models.portals;
 
 // An idea belonging to a portal Idea Forum.
 class DPortalIdeaEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalIdeaEntity"));
+  mixin(EntityThis!("PortalIdeaEntity"));
 
   override void initialize() {
     super.initialize;
@@ -58,7 +58,7 @@ class DPortalIdeaEntity : DOOPEntity {
       .registerPath("portal_ideas");   
   }
 }
-mixin(OOPEntityCalls!("PortalIdeaEntity"));
+mixin(EntityCalls!("PortalIdeaEntity"));
 
 version(test_model_portals) {
   unittest {

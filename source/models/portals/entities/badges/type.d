@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalBadgeType : DOOPEntity {
-  mixin(OOPEntityThis!("PortalBadgeType"));
+  mixin(EntityThis!("PortalBadgeType"));
 
   override void initialize() {
     super.initialize;
@@ -30,7 +30,7 @@ class DPortalBadgeType : DOOPEntity {
       .registerPath("portal_badgetypes");
   }
 }
-mixin(OOPEntityCalls!("PortalBadgeType"));
+mixin(EntityCalls!("PortalBadgeType"));
 
 version(test_model_portals) {
   unittest {

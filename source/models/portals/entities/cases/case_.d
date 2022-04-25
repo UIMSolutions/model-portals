@@ -5,7 +5,7 @@ import models.portals;
 
 // Service request case associated with a contract.
 class DPortalCaseEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalCaseEntity"));
+  mixin(EntityThis!("PortalCaseEntity"));
 
   override void initialize() {
     super.initialize;
@@ -118,7 +118,7 @@ class DPortalCaseEntity : DOOPEntity {
       .registerPath("portal_cases");    
   }
 }
-mixin(OOPEntityCalls!("PortalCaseEntity"));
+mixin(EntityCalls!("PortalCaseEntity"));
 
 version(test_model_portals) {
   unittest {

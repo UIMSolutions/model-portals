@@ -5,7 +5,7 @@ import models.portals;
 
 // A record of the download of a web file
 class DPortalWebFileLogEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebFileLogEntity"));
+  mixin(EntityThis!("PortalWebFileLogEntity"));
 
   override void initialize() {
     super.initialize;
@@ -35,7 +35,7 @@ class DPortalWebFileLogEntity : DOOPEntity {
       .registerPath("portal_webfilelogs");
   }
 }
-mixin(OOPEntityCalls!("PortalWebFileLogEntity"));
+mixin(EntityCalls!("PortalWebFileLogEntity"));
 
 version(test_model_portals) {
   unittest {

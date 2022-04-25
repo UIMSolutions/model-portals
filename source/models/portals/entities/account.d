@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalAccountEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalAccountEntity"));
+  mixin(EntityThis!("PortalAccountEntity"));
 
   override void initialize() {
     super.initialize;
@@ -51,4 +51,4 @@ class DPortalAccountEntity : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PortalAccountEntity"));
+mixin(EntityCalls!("PortalAccountEntity"));

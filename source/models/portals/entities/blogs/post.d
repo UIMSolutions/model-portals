@@ -5,7 +5,7 @@ import models.portals;
 
 // A post belonging to a portal blog.
 class DPortalBlogPostEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalBlogPostEntity"));
+  mixin(EntityThis!("PortalBlogPostEntity"));
 
   override void initialize() {
     super.initialize;
@@ -46,7 +46,7 @@ class DPortalBlogPostEntity : DOOPEntity {
       .registerPath("portal_blogposts");    
   }
 }
-mixin(OOPEntityCalls!("PortalBlogPostEntity"));
+mixin(EntityCalls!("PortalBlogPostEntity"));
 
 version(test_model_portals) {
   unittest {

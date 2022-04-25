@@ -5,7 +5,7 @@ import models.portals;
 
 // Languages supported and publishing status for the portal
 class DPortalWebSiteLanguageEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebSiteLanguageEntity"));
+  mixin(EntityThis!("PortalWebSiteLanguageEntity"));
 
   override void initialize() {
     super.initialize;
@@ -49,7 +49,7 @@ class DPortalWebSiteLanguageEntity : DOOPEntity {
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PortalWebSiteLanguageEntity"));
+mixin(EntityCalls!("PortalWebSiteLanguageEntity"));
 
 version(test_model_portals) {
   unittest {

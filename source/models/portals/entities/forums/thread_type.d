@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalForumThreadTypeEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalForumThreadTypeEntity"));
+  mixin(EntityThis!("PortalForumThreadTypeEntity"));
 
   override void initialize() {
     super.initialize;
@@ -37,7 +37,7 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
       .registerPath("portal_forumthreadtypes"); 
   }
 }
-mixin(OOPEntityCalls!("PortalForumThreadTypeEntity"));
+mixin(EntityCalls!("PortalForumThreadTypeEntity"));
 
 version(test_model_portals) {
   unittest {

@@ -5,7 +5,7 @@ import models.portals;
 
 // Ad that is attached to one or more objects, including other notes.
 class DPortalAdEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalAdEntity"));
+  mixin(EntityThis!("PortalAdEntity"));
 
   override void initialize() {
     super.initialize;
@@ -82,7 +82,7 @@ class DPortalAdEntity : DOOPEntity {
     return null;
   } */
 }
-mixin(OOPEntityCalls!("PortalAdEntity"));
+mixin(EntityCalls!("PortalAdEntity"));
 
 version(test_model_portals) {
   unittest {

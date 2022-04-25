@@ -5,7 +5,7 @@ import models.portals;
 
 // A record of a user viewing a Web Page
 class DPortalWebPageLogEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebPageLogEntity"));
+  mixin(EntityThis!("PortalWebPageLogEntity"));
 
   override void initialize() {
     super.initialize;
@@ -36,7 +36,7 @@ class DPortalWebPageLogEntity : DOOPEntity {
       .registerPath("portal_webpagelogs");
   }
 }
-mixin(OOPEntityCalls!("PortalWebPageLogEntity"));
+mixin(EntityCalls!("PortalWebPageLogEntity"));
 
 version(test_model_portals) {
   unittest {

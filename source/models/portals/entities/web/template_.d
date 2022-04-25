@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalWebTemplateEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalWebTemplateEntity"));
+  mixin(EntityThis!("PortalWebTemplateEntity"));
 
   override void initialize() {
     super.initialize;
@@ -30,7 +30,7 @@ class DPortalWebTemplateEntity : DOOPEntity {
       .registerPath("portal_webtemplates");   
   }
 }
-mixin(OOPEntityCalls!("PortalWebTemplateEntity"));
+mixin(EntityCalls!("PortalWebTemplateEntity"));
 
 version(test_model_portals) {
   unittest {

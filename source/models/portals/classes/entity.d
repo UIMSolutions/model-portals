@@ -4,7 +4,7 @@ module models.portals.classes.entity;
 import models.portals;
 
 class DPTLEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PTLEntity"));
+  mixin(EntityThis!("PTLEntity"));
 
   override void initialize() {
     super.initialize;
@@ -46,7 +46,7 @@ class DPTLEntity : DOOPEntity {
       ]);
   }
 }
-mixin(OOPEntityCalls!("PTLEntity"));
+mixin(EntityCalls!("PTLEntity"));
 
 version(test_model_portals) {
   unittest {

@@ -5,7 +5,7 @@ import models.portals;
 
 // 
 class DPortalAdPlacementEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalAdPlacementEntity"));
+  mixin(EntityThis!("PortalAdPlacementEntity"));
 
   override void initialize() {
     super.initialize;
@@ -55,7 +55,7 @@ class DPortalAdPlacementEntity : DOOPEntity {
     }} */
 
 }
-mixin(OOPEntityCalls!("PortalAdPlacementEntity"));
+mixin(EntityCalls!("PortalAdPlacementEntity"));
 
 version(test_model_portals) {
   unittest {

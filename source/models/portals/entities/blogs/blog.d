@@ -5,7 +5,7 @@ import models.portals;
 
 // The root entity for a portal blog.
 class DPortalBlogEntity : DOOPEntity {
-  mixin(OOPEntityThis!("PortalBlogEntity"));
+  mixin(EntityThis!("PortalBlogEntity"));
 
   override void initialize() {
     super.initialize;
@@ -54,7 +54,7 @@ class DPortalBlogEntity : DOOPEntity {
     }}
  */
 }
-mixin(OOPEntityCalls!("PortalBlogEntity"));
+mixin(EntityCalls!("PortalBlogEntity"));
 
 version(test_model_portals) {
   unittest {
