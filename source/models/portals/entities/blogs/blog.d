@@ -26,8 +26,6 @@ class DPortalBlogEntity : DOOPEntity {
         "blogId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the blog is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the blog's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "archiveTemplateId": OOPUUIDAttribute.descriptions(["en":"Shows the page template to be used to render the archive page (for example, posts by date, tags, and so on) of the blog."]),
         "homeTemplateId": OOPUUIDAttribute.descriptions(["en":"Shows the page template to be used to render the home/main page of the Blog."]),
         "postTemplateId": OOPUUIDAttribute.descriptions(["en":"Shows the page template to be used to render an individual Blog Post belonging to the Blog."]),
@@ -39,6 +37,9 @@ class DPortalBlogEntity : DOOPEntity {
         "summary": OOPStringAttribute.descriptions(["en":"A descriptive summary of the Blog."]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Shows the website associated with the blog."]),
         "blogPostLanguageId": OOPUUIDAttribute.descriptions(["en":"Option to make blog posts language specific"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the blog's status.
       ])
       .registerPath("portal_blogs");    
   }

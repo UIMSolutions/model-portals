@@ -24,12 +24,12 @@ class DPortalPollPlacementEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
         "pollPlacementId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Poll Placement"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the poll placement's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "websiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Poll Placement."]),
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Poll Placement."]),
+      ])
+      .addValues([
+        "stateCode": StatusCodeAttributeClass, // Status of the Poll Placement
+        "statusCode": StatusCodeAttributeClass, // Select the poll placement's status.
       ])
       .registerPath("portal_pollplacements");
   }

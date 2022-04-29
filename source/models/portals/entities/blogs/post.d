@@ -26,22 +26,23 @@ class DPortalBlogPostEntity : DOOPEntity {
         "blogPostId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the blog post is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the blog post's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "authorId": OOPUUIDAttribute.descriptions(["en":"Shows the author of the blog post."]),
         "blogId": OOPUUIDAttribute.descriptions(["en":"The Blog to which the Blog Post belongs."]),
         "commentPolicy": OOPStringAttribute.descriptions(["en":"Specifies the comment policy to be used by this Blog Post."]),
         "commentPolicy_display": OOPStringAttribute.descriptions(["en":""]),
         "copy": OOPStringAttribute.descriptions(["en":"Shows the content of the blog post."]),
-        "adxCreatedByIPAddress": OOPStringAttribute.descriptions(["en":""]),
-        "adxCreatedByUsername": OOPStringAttribute.descriptions(["en":""]),
-        "date": OOPStringAttribute.descriptions(["en":"Shows the published date of the blog post, to be displayed to users."]),
-        "enableRatings": OOPStringAttribute.descriptions(["en":""]),
-        "adxModifiedByIPAddress": OOPStringAttribute.descriptions(["en":""]),
-        "adxModifiedByUsername": OOPStringAttribute.descriptions(["en":""]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":"Shows the URL path fragment to be used to build a URL for this blog post."]),
         "published": OOPStringAttribute.descriptions(["en":"Specifies whether the Blog Post is published, or a draft."]),
         "summary": OOPStringAttribute.descriptions(["en":"A descriptive summary of the Blog Post."]),
+      ])
+      .addValues([
+        "adxCreatedByIPAddress": StringAttributeClass, // 
+        "adxCreatedByUsername": StringAttributeClass, // 
+        "date": StringAttributeClass, // Shows the published date of the blog post, to be displayed to users.
+        "enableRatings": StringAttributeClass, // 
+        "adxModifiedByIPAddress": StringAttributeClass, // 
+        "adxModifiedByUsername": StringAttributeClass, // 
+        "statusCode": StatusCodeAttributeClass, // Select the blog post's status.
       ])
       .registerPath("portal_blogposts");    
   }

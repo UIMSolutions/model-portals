@@ -24,10 +24,6 @@ class DPortalForumThreadEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
         "communityForumThreadId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Forum Thread"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the forum thread's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "firstPostId": OOPUUIDAttribute.descriptions(["en":"Shows the forum post associated with the forum thread."]),
         "forumId": OOPUUIDAttribute.descriptions(["en":"Shows the forum associated with the forum thread."]),
         "isAnswered": OOPBooleanAttribute.descriptions(["en":""]),
@@ -39,6 +35,10 @@ class DPortalForumThreadEntity : DOOPEntity {
         "sticky": OOPStringAttribute.descriptions(["en":""]),
         "typeId": OOPUUIDAttribute.descriptions(["en":"Shows the forum Thread Type associated with the forum thread."]),
         "viewCount": OOPStringAttribute.descriptions(["en":""]),
+      ])
+      .addValues([
+        "stateCode": StatusCodeAttributeClass, // Status of the Forum Thread
+        "statusCode": StatusCodeAttributeClass, // Select the forum thread's status.
       ])
       .registerPath("portal_forumthreads");   
   }

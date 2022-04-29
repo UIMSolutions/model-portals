@@ -26,10 +26,11 @@ class DPortalAdPlacementEntity : DOOPEntity {
         "adPlacementId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the AdPlacement Placement"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the ad placement's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with AdPlacementPlacement."]),
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with AdPlacement."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the ad placement's status.
       ])
       .registerPath("portal_adplacements");    
   }

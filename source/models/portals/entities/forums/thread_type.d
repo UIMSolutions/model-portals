@@ -24,15 +24,15 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
         "forumThreadTypeId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Forum Thread Type"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the forum thread type's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "allowsVoting": OOPStringAttribute.descriptions(["en":""]),
         "displayOrder": OOPStringAttribute.descriptions(["en":""]),
         "isDefault": OOPBooleanAttribute.descriptions(["en":""]),
         "requiresAnswer": OOPStringAttribute.descriptions(["en":""]),
         "websiteId": OOPUUIDAttribute.descriptions(["en":"Shows the Website associated with the forum thread type."]),
+      ])
+      .addValues([
+        "stateCode": StatusCodeAttributeClass, // Status of the Forum Thread Type
+        "statusCode": StatusCodeAttributeClass, // Select the forum thread type's status.
       ])
       .registerPath("portal_forumthreadtypes"); 
   }

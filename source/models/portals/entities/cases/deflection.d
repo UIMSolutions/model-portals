@@ -26,11 +26,12 @@ class DPortalCaseDeflectionEntity : DOOPEntity {
         "caseDeflectionId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Case Deflection"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Case Deflection"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "caseTitle": OOPStringAttribute.descriptions(["en":"Title entered when the ticket was created."]),
         "contact": OOPStringAttribute.descriptions(["en":"Contact who found the answer when the ticket was created."]),
         "knowledgeArticle": OOPStringAttribute.descriptions(["en":"Knowledge Articles"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Case Deflection
       ])
       .registerPath("portal_casedeflections");    
   }
