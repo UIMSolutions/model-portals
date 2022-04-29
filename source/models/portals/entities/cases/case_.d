@@ -80,11 +80,6 @@ class DPortalCaseEntity : DOOPEntity {
         "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "subjectId": OOPUUIDAttribute.descriptions(["en":"Choose the subject for the case, such as catalog request or product complaint, so customer service managers can identify frequent requests or problem areas. Administrators can configure subjects under Business Management in the Settings area. "]),
         "ticketNumber": OOPNumberAttribute.descriptions(["en":"Shows the case number for customer reference and searching capabilities. This cannot be modified. "]),
-        "masterId": OOPUUIDAttribute.descriptions(["en":"Choose the primary case the current case was merged into. "]),
-        "parentCaseId": OOPUUIDAttribute.descriptions(["en":"Choose the parent case for a case. "]),
-        "numberOfChildIncidents": OOPStringAttribute.descriptions(["en":"Number of child incidents associated with the incident. "]),
-        "merged": OOPStringAttribute.descriptions(["en":"Tells whether the incident has been merged with another incident. "]),
-        "routeCase": OOPStringAttribute.descriptions(["en":"Tells whether the incident has been routed to queue or not. "]),
         "resolveBy": OOPLinkAttribute("aplUser").descriptions(["en":"Enter the date by when the case must be resolved. "]),
         "responseBy": OOPLinkAttribute("aplUser").descriptions(["en":"For internal use only. "]),
         "customerContacted": OOPStringAttribute.descriptions(["en":"Tells whether customer service representative has contacted the customer or not. "]),
@@ -92,8 +87,6 @@ class DPortalCaseEntity : DOOPEntity {
         "isEscalated": OOPBooleanAttribute.descriptions(["en":"Indicates if the case has been escalated. "]),
         "escalatedOn": OOPTimestampAttribute.descriptions(["en":"Indicates the date and time when the case was escalated. "]),
         "primaryContactId": OOPLinkAttribute("aplContact").descriptions(["en":"Select a primary contact for this case. "]),
-        "onHoldTime": OOPAttributeTime.descriptions(["en":"Shows the duration in minutes for which the case was on hold. "]),
-        "lastOnHoldTime": OOPAttributeTime.descriptions(["en":"Contains the date time stamp of the last on hold time. "]),
         "resolveByKPIId": OOPUUIDAttribute.descriptions(["en":"For internal use only. "]),
         "firstResponseByKPIId": OOPUUIDAttribute.descriptions(["en":"For internal use only. "]),
         "decrementEntitlementTerm": OOPStringAttribute.descriptions(["en":"Shows whether terms of the associated entitlement should be decremented or not. "]),
@@ -102,18 +95,27 @@ class DPortalCaseEntity : DOOPEntity {
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier of the contact associated with the case. "]),
         "exchangeRate": OOPStringAttribute.descriptions(["en":"Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency. "]),
         "transactionCurrencyId": OOPLinkAttribute("aplCurrency").descriptions(["en":"Choose the local currency for the record to make sure budgets are reported in the correct currency. "]),
-        "createdByExternalParty": OOPStringAttribute.descriptions(["en":"Shows the external party who created the record. "]),
-        "modifiedByExternalParty": OOPStringAttribute.descriptions(["en":"Shows the external party who modified the record. "]),
-        "adxCreatedByIPAddress": OOPStringAttribute.descriptions(["en":""]),
-        "adxCreatedByUsername": OOPStringAttribute.descriptions(["en":""]),
-        "adxModifiedByIPAddress": OOPStringAttribute.descriptions(["en":""]),
-        "adxModifiedByUsername": OOPStringAttribute.descriptions(["en":""]),
-        "partnerContact": OOPStringAttribute.descriptions(["en":"Allows a partner contact to be assigned to a specific case. "]),
-        "partnerId": OOPUUIDAttribute.descriptions(["en":"Creates a Relationship between a Partner (account) and a case for indirect service arrangements. "]),
-        "publishToWeb": OOPStringAttribute.descriptions(["en":"If set to Yes, the case will be visible and searchable on portals connected to this organization. "]),
-        "resolution": OOPStringAttribute.descriptions(["en":""]),
         "resolutionDate": OOPAttributeDate.descriptions(["en":""]),
         "stepsToReproduce": OOPStringAttribute.descriptions(["en":""]),
+      ])
+      .addValues([
+        "adxCreatedByIPAddress": StringAttributeClass, // 
+        "adxCreatedByUsername": StringAttributeClass, // 
+        "adxModifiedByIPAddress": StringAttributeClass, // 
+        "adxModifiedByUsername": StringAttributeClass, // 
+        "createdByExternalParty": StringAttributeClass, // Shows the external party who created the record. 
+        "modifiedByExternalParty": StringAttributeClass, // Shows the external party who modified the record. 
+        "masterId": UUIDAttributeClass, // Choose the primary case the current case was merged into.
+        "merged": StringAttributeClass, // Tells whether the incident has been merged with another incident.
+        "numberOfChildIncidents": StringAttributeClass, // Number of child incidents associated with the incident.
+        "resolution": StringAttributeClass, // 
+        "routeCase": StringAttributeClass, // Tells whether the incident has been routed to queue or not.
+        "parentCaseId": UUIDAttributeClass, // Choose the parent case for a case.
+        "partnerContact": StringAttributeClass, // Allows a partner contact to be assigned to a specific case. 
+        "partnerId": UUIDAttributeClass, // Creates a Relationship between a Partner (account) and a case for indirect service arrangements.
+        "publishToWeb": StringAttributeClass, // If set to Yes, the case will be visible and searchable on portals connected to this organization. 
+        "onHoldTime": TimeAttributeClass, // Shows the duration in minutes for which the case was on hold. "]),
+        "lastOnHoldTime": DatetimeAttributeClass, // Contains the date time stamp of the last on hold time. "]),
       ])
       .registerPath("portal_cases");    
   }

@@ -17,8 +17,6 @@ class DPortalExternalIdentityEntity : DOOPEntity {
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the external identity's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time that the record was migrated."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
@@ -26,6 +24,9 @@ class DPortalExternalIdentityEntity : DOOPEntity {
         "userName": OOPStringAttribute.descriptions(["en":"Shows the name of the custom entity."]),
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier for Contact associated with External Identity."]),
         "identityProviderName": OOPStringAttribute.descriptions(["en":""]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the external identity's status.
       ])
       .registerPath("portal_externalidentities");   
   }
