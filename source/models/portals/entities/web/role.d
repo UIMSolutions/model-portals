@@ -11,25 +11,25 @@ class DPortalWebRoleEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
         "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
-        "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]),
+        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
         "owningUserId": OOPLinkAttribute("aplUser").descriptions(["en":"Unique identifier of the user that owns the activity."]),
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webRoleId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web Role"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "authenticatedUsersRole": OOPStringAttribute.descriptions(["en":""]),
+        "stateCode": StringAttributeClass, // Status of the Web Role"]),
+        "stateCode_display": StringAttributeClass, // "]),
+        "authenticatedUsersRole": StringAttributeClass, // "]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Web Role."]),
-        "anonymousUsersRole": OOPStringAttribute.descriptions(["en":""]),
-        "key": OOPStringAttribute.descriptions(["en":"An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code."]),
+        "anonymousUsersRole": StringAttributeClass, // "]),
+        "key": StringAttributeClass, // An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code."]),
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web Role

@@ -11,19 +11,19 @@ class DPortalExternalIdentityEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows the delegate user who created the record."]),
         "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows the delegate user who modified the record."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
+        "stateCode": StringAttributeClass, // Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
+        "stateCode_display": StringAttributeClass, // "]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time that the record was migrated."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Shows the time zone code that was in use when the record was created."]),
-        "userName": OOPStringAttribute.descriptions(["en":"Shows the name of the custom entity."]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
+        "userName": StringAttributeClass, // Shows the name of the custom entity."]),
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier for Contact associated with External Identity."]),
-        "identityProviderName": OOPStringAttribute.descriptions(["en":""]),
+        "identityProviderName": StringAttributeClass, // "]),
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Select the external identity's status.

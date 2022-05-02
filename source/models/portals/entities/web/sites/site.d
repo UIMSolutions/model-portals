@@ -11,28 +11,28 @@ class DPortalWebSiteEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addAttributes([
+      .addValues([
         "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
         "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
-        "ownerIdType": OOPStringAttribute.descriptions(["en":"The type of owner, either User or Team."]),
+        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
         "owningUserId": OOPLinkAttribute("aplUser").descriptions(["en":"Unique identifier of the user that owns the activity."]),
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
+        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
-        "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Website"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "defaultLanguage": OOPStringAttribute.descriptions(["en":"Lookup to Website Language - the current default language of the website"]),
+        "stateCode": StringAttributeClass, // Status of the Website"]),
+        "stateCode_display": StringAttributeClass, // "]),
+        "defaultLanguage": StringAttributeClass, // Lookup to Website Language - the current default language of the website"]),
         "footerTemplateId": OOPUUIDAttribute.descriptions(["en":"Web Template to use as Website footer content."]),
         "headerTemplateId": OOPUUIDAttribute.descriptions(["en":"Web Template to use as Website header content."]),
         "parentWebSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Website."]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
-        "primaryDomainName": OOPStringAttribute.descriptions(["en":"Tracks the primary domain name of the Portal"]),
-        "websiteLanguage": OOPStringAttribute.descriptions(["en":""]),
+        "primaryDomainName": StringAttributeClass, // Tracks the primary domain name of the Portal"]),
+        "websiteLanguage": StringAttributeClass, // "]),
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Reason for the status of the Website
