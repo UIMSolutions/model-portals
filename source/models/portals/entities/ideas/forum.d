@@ -12,20 +12,22 @@ class DPortalIdeaForumEntity : DOOPEntity {
 
     this
       .addValues([
+        OwnerIdAttributeClass, // Owner Id
+        StateCodeAttributeClass, // Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
+        StatusCodeAttributeClass, // Select the idea forum's status.
+      ])
+      .addValues([
         "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
         "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
+        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
+        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
+        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "ideaForumId": UUIDAttributeClass, // Shows the entity instances."]),
-        "stateCode": StringAttributeClass, // Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
-        "stateCode_display": StringAttributeClass, // "]),
         "commentPolicy": StringAttributeClass, // Shows the default comment policy to be used on ideas in this idea forum."]),
         "commentPolicy_display": StringAttributeClass, // "]),
         "ideaSubmissionPolicy": StringAttributeClass, // Indicates the policy to be enforced for user submitted ideas in this idea forum."]),
@@ -40,9 +42,6 @@ class DPortalIdeaForumEntity : DOOPEntity {
         "votingType_display": StringAttributeClass, // "]),
         "websiteId": UUIDAttributeClass, // Shows the website associated with the idea forum."]),
         "websiteLanguageId": UUIDAttributeClass, // Option to make idea forums language specific"]),
-      ])
-      .addValues([
-        "statusCode": StatusCodeAttributeClass, // Select the idea forum's status.
       ])
       .registerPath("portal_ideaforums");   
   }

@@ -18,7 +18,7 @@ class DPortalWebTemplateEntity : DOOPEntity {
         "stateCode": StringAttributeClass, // Status of the Web Template"]),
         "stateCode_display": StringAttributeClass, // "]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
-        "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time that the record was migrated."]),
+        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time that the record was migrated."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
         "MIMEType": StringAttributeClass, // Shows the MIME type of the web template content."]),

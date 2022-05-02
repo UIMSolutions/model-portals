@@ -18,7 +18,7 @@ class DPortalBadgeType : DOOPEntity {
         "stateCode": StringAttributeClass, // Status of the Badge Type"]),
         "stateCode_display": StringAttributeClass, // "]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
-        "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time when the record was migrated. The date and time are displayed in the time zone selected in the solution options."]),
+        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time when the record was migrated. The date and time are displayed in the time zone selected in the solution options."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
         "backgroundColor": StringAttributeClass, // Enter a hex value or RGB or RGBAex: #FFFFFFrgb(255,255,255)rgba(255,255,255,0.5)"]),
