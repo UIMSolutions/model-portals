@@ -28,7 +28,7 @@ class DPortalPollPlacementEntity : DOOPEntity {
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Poll Placement."]),
       ])
       .addValues([
-        "stateCode": StatusCodeAttributeClass, // Status of the Poll Placement
+        "stateCode": StateCodeAttributeClass, // Status of the Poll Placement
         "statusCode": StatusCodeAttributeClass, // Select the poll placement's status.
       ])
       .registerPath("portal_pollplacements");

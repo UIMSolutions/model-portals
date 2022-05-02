@@ -30,7 +30,7 @@ class DPortalPollOptionEntity : DOOPEntity {
         "votes": OOPStringAttribute.descriptions(["en":""]),
       ])
       .addValues([
-        "stateCode": StatusCodeAttributeClass, // Status of the Poll Option
+        "stateCode": StateCodeAttributeClass, // Status of the Poll Option
         "statusCode": StatusCodeAttributeClass, // Select the poll option's status.
       ])
       .registerPath("portal_polloptions");   

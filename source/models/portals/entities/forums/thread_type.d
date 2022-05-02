@@ -31,7 +31,7 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         "websiteId": OOPUUIDAttribute.descriptions(["en":"Shows the Website associated with the forum thread type."]),
       ])
       .addValues([
-        "stateCode": StatusCodeAttributeClass, // Status of the Forum Thread Type
+        "stateCode": StateCodeAttributeClass, // Status of the Forum Thread Type
         "statusCode": StatusCodeAttributeClass, // Select the forum thread type's status.
       ])
       .registerPath("portal_forumthreadtypes"); 

@@ -37,7 +37,7 @@ class DPortalForumThreadEntity : DOOPEntity {
         "viewCount": OOPStringAttribute.descriptions(["en":""]),
       ])
       .addValues([
-        "stateCode": StatusCodeAttributeClass, // Status of the Forum Thread
+        "stateCode": StateCodeAttributeClass, // Status of the Forum Thread
         "statusCode": StatusCodeAttributeClass, // Select the forum thread's status.
       ])
       .registerPath("portal_forumthreads");   

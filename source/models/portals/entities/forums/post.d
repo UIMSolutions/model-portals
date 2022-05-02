@@ -28,7 +28,7 @@ class DPortalForumPostEntity : DOOPEntity {
         "isAnswer": OOPBooleanAttribute.descriptions(["en":""]),
       ])
       .addValues([
-        "stateCode": StatusCodeAttributeClass, // Status of the Forum Post
+        "stateCode": StateCodeAttributeClass, // Status of the Forum Post
         "statusCode": StatusCodeAttributeClass, // Select the forum post's status.
         "content": StringAttributeClass, // 
         "date": StringAttributeClass, // 
