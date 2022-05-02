@@ -11,20 +11,18 @@ class DPTLEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
+        "ownerId": UUIDAttributeClass, // Owner Id"]),
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
-        "owningUserId": OOPLinkAttribute("aplUser").descriptions(["en":"Unique identifier of the user that owns the activity."]),
+        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "adId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
-        "stateCode": StringAttributeClass, // Status of the Ad"]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "adId": UUIDAttributeClass, // "]),
         "copy": StringAttributeClass, // "]),
         "expirationDate": OOPAttributeDate.descriptions(["en":""]),
         "image": StringAttributeClass, // location of image file"]),
@@ -32,18 +30,19 @@ class DPTLEntity : DOOPEntity {
         "imageHeight": StringAttributeClass, // "]),
         "imageWidth": StringAttributeClass, // "]),
         "openInNewWindow": StringAttributeClass, // "]),
-        "publishingStateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Publishing State associated with Ad."]),
+        "publishingStateId": UUIDAttributeClass, // Unique identifier for Publishing State associated with Ad."]),
         "redirectWebFile": StringAttributeClass, // Unique identifier for Web File associated with Ad."]),
         "releaseDate": OOPAttributeDate.descriptions(["en":""]),
         "title": StringAttributeClass, // "]),
         "Url": OOPUrlAttribute.descriptions(["en":""]),
-        "webFileId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web File associated with Ad."]),
-        "webPageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Page associated with Ad."]),
-        "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Ad."]),
-        "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Ad."]),
+        "webFileId": UUIDAttributeClass, // Unique identifier for Web File associated with Ad."]),
+        "webPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Ad."]),
+        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Ad."]),
+        "webTemplateId": UUIDAttributeClass, // Unique identifier for Web Template associated with Ad."]),
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // 
+        StateCodeAttributeClass, // Shows the entity instance.
+        StatusCodeAttributeClass, // 
       ]);
   }
 }

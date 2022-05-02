@@ -12,25 +12,24 @@ class DPortalAdPlacementEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Date and time that the record was migrated."]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
-        "ownerId": OOPUUIDAttribute.descriptions(["en":"Owner Id"]),
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": OOPLinkAttribute("aplBusinessUnit").descriptions(["en":"Unique identifier for the business unit that owns the record"]),
-        "owningUserId": OOPLinkAttribute("aplUser").descriptions(["en":"Unique identifier of the user that owns the activity."]),
+        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": OOPLinkAttribute("aplTeam").descriptions(["en":"Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "adPlacementId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
-        "stateCode": StringAttributeClass, // Status of the AdPlacement Placement"]),
-        "stateCode_display": StringAttributeClass, // "]),
-        "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with AdPlacementPlacement."]),
-        "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with AdPlacement."]),
+        "adPlacementId": UUIDAttributeClass, // Shows the entity instance."]),
+        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with AdPlacementPlacement."]),
+        "webTemplateId": UUIDAttributeClass, // Unique identifier for Web Template associated with AdPlacement."]),
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // Select the ad placement's status.
+        OwnerIdAttributeClass, // Status of the AdPlacement Placement
+        StateCodeAttributeClass, // Status of the AdPlacement Placement
+        StatusCodeAttributeClass, // Select the ad placement's status.
       ])
       .registerPath("portal_adplacements");    
   }

@@ -12,8 +12,8 @@ class DPortalWebTemplateEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who last updated the record on behalf of another user."]),
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": StringAttributeClass, // Status of the Web Template"]),
         "stateCode_display": StringAttributeClass, // "]),
@@ -23,7 +23,7 @@ class DPortalWebTemplateEntity : DOOPEntity {
         "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
         "MIMEType": StringAttributeClass, // Shows the MIME type of the web template content."]),
         "source": StringAttributeClass, // "]),
-        "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Web Template"]),
+        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Template"]),
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Select the web template's status.

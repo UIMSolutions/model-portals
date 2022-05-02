@@ -12,8 +12,8 @@ class DPortalExternalIdentityEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows the delegate user who created the record."]),
-        "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows the delegate user who modified the record."]),
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows the delegate user who created the record."]),
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows the delegate user who modified the record."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": StringAttributeClass, // Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         "stateCode_display": StringAttributeClass, // "]),

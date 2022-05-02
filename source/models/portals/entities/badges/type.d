@@ -12,8 +12,8 @@ class DPortalBadgeType : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": OOPLinkAttribute("aplUser").descriptions(["en":"Shows who updated the record on behalf of another user."]),
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who updated the record on behalf of another user."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": StringAttributeClass, // Status of the Badge Type"]),
         "stateCode_display": StringAttributeClass, // "]),
