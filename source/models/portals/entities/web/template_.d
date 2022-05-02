@@ -17,8 +17,6 @@ class DPortalWebTemplateEntity : DOOPEntity {
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web Template"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the web template's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time that the record was migrated."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
@@ -26,6 +24,9 @@ class DPortalWebTemplateEntity : DOOPEntity {
         "MIMEType": OOPStringAttribute.descriptions(["en":"Shows the MIME type of the web template content."]),
         "source": OOPStringAttribute.descriptions(["en":""]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Web Template"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the web template's status.
       ])
       .registerPath("portal_webtemplates");   
   }

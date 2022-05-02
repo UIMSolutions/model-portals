@@ -26,11 +26,12 @@ class DPortalWebSiteLanguageEntity : DOOPEntity {
         "webSiteLanguageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Website Language"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Website Language"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "portalLanguageId": OOPUUIDAttribute.descriptions(["en":"lookup to Portal Language - one of the 43 supported Dynamics 365 languages that this website/language instance will use"]),
         "publishingState": OOPStringAttribute.descriptions(["en":"Lookup to Publishing State - publishing state of this website/language instance (draft/published)"]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Lookup to Website"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Website Language
       ])
       .registerPath("portal_websitelanguages");   
   }

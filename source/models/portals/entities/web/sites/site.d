@@ -26,8 +26,6 @@ class DPortalWebSiteEntity : DOOPEntity {
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Website"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Website"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "defaultLanguage": OOPStringAttribute.descriptions(["en":"Lookup to Website Language - the current default language of the website"]),
         "footerTemplateId": OOPUUIDAttribute.descriptions(["en":"Web Template to use as Website footer content."]),
         "headerTemplateId": OOPUUIDAttribute.descriptions(["en":"Web Template to use as Website header content."]),
@@ -35,6 +33,9 @@ class DPortalWebSiteEntity : DOOPEntity {
         "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
         "primaryDomainName": OOPStringAttribute.descriptions(["en":"Tracks the primary domain name of the Portal"]),
         "websiteLanguage": OOPStringAttribute.descriptions(["en":""]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Website
       ])
       .registerPath("portal_websites");   
   }

@@ -25,8 +25,6 @@ class DPTLEntity : DOOPEntity {
         "adId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Ad"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the ad's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "copy": OOPStringAttribute.descriptions(["en":""]),
         "expirationDate": OOPAttributeDate.descriptions(["en":""]),
         "image": OOPStringAttribute.descriptions(["en":"location of image file"]),
@@ -43,6 +41,9 @@ class DPTLEntity : DOOPEntity {
         "webPageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Page associated with Ad."]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Ad."]),
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Ad."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // 
       ]);
   }
 }

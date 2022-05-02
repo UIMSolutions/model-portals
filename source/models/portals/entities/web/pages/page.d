@@ -26,8 +26,6 @@ class DPortalWebPageEntity : DOOPEntity {
         "webPageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web Page"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Web Page"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "authorId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Contact associated with Web Page."]),
         "category": OOPStringAttribute.descriptions(["en":""]),
         "category_display": OOPStringAttribute.descriptions(["en":""]),
@@ -70,6 +68,9 @@ class DPortalWebPageEntity : DOOPEntity {
         "commentPolicy": OOPStringAttribute.descriptions(["en":""]),
         "commentPolicy_display": OOPStringAttribute.descriptions(["en":""]),
         "enableRatings": OOPStringAttribute.descriptions(["en":"Setting this value to 'Yes' will allow users to rate the web page."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web Page
       ])
       .registerPath("portal_webpages");   
   }

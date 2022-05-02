@@ -25,12 +25,13 @@ class DPortalWebFileLogEntity : DOOPEntity {
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web File Log"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the web file log's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier of the Contact associated with the Web File Log"]),
         "date": OOPStringAttribute.descriptions(["en":"Shows the date and time that the request was made to download the file."]),
         "IpAddress": OOPStringAttribute.descriptions(["en":"Shows the IP address of the computer of the user who requested the file download."]),
         "webFileId": OOPUUIDAttribute.descriptions(["en":"Unique identifier of the Web File associated with the Web File Log"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the web file log's status.
       ])
       .registerPath("portal_webfilelogs");
   }

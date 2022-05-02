@@ -25,13 +25,14 @@ class DPortalWebRoleEntity : DOOPEntity {
         "utcConversionTimeZoneCode": OOPStringAttribute.descriptions(["en":"Time zone code that was in use when the record was created."]),
         "webRoleId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web Role"]),
-        "stateCode_display": OOPStringAttribute.descriptions(["en":"portals/"]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Web Role"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":"portals/"]),
-        "authenticatedUsersRole": OOPStringAttribute.descriptions(["en":"portals/"]),
+        "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
+        "authenticatedUsersRole": OOPStringAttribute.descriptions(["en":""]),
         "webSiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Web Role."]),
-        "anonymousUsersRole": OOPStringAttribute.descriptions(["en":"portals/"]),
+        "anonymousUsersRole": OOPStringAttribute.descriptions(["en":""]),
         "key": OOPStringAttribute.descriptions(["en":"An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web Role
       ])
       .registerPath("portal_webroles");
   } 

@@ -26,12 +26,13 @@ class DPortalWebPageLogEntity : DOOPEntity {
         "webpagelogId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web Page Log"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the webpage log's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier of the Contact associated with the Web Page Log"]),
         "date": OOPStringAttribute.descriptions(["en":"Shows the date and time that the request was made to download the page."]),
         "IpAddress": OOPStringAttribute.descriptions(["en":"Shows the IP address of the computer of the user who requested the file download."]),
         "webPageId": OOPUUIDAttribute.descriptions(["en":"Unique identifier of the Web Page associated with the Web Page Log"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the webpage log's status.
       ])
       .registerPath("portal_webpagelogs");
   }

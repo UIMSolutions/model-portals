@@ -26,8 +26,6 @@ class DPortalPollEntity : DOOPEntity {
         "pollId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Poll"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the poll's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "active": OOPStringAttribute.descriptions(["en":""]),
         "closeVotingDate": OOPAttributeDate.descriptions(["en":""]),
         "expirationDate": OOPAttributeDate.descriptions(["en":""]),
@@ -36,6 +34,9 @@ class DPortalPollEntity : DOOPEntity {
         "submitButtonLabel": OOPStringAttribute.descriptions(["en":""]),
         "websiteId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Website associated with Poll."]),
         "webTemplateId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Web Template associated with Poll."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // elect the poll's status.
       ])
       .registerPath("portal_polls");   
   }

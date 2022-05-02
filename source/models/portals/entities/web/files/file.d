@@ -26,8 +26,6 @@ class DPortalWebFileEntity : DOOPEntity {
         "webFileId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for entity instances"]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Web File"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Reason for the status of the Web File"]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "adxCreatedByIPAddress": OOPStringAttribute.descriptions(["en":""]),
         "adxCreatedByUsername": OOPStringAttribute.descriptions(["en":""]),
         "displayDate": OOPAttributeDate.descriptions(["en":""]),
@@ -53,6 +51,9 @@ class DPortalWebFileEntity : DOOPEntity {
         "title": OOPStringAttribute.descriptions(["en":""]),
         "blogPostId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Blog Post associated with Web File."]),
         "ideaId": OOPUUIDAttribute.descriptions(["en":"Shows the Idea associated with the Web File."]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web File
       ])
       .registerPath("portal_webfiles");
   }

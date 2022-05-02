@@ -17,8 +17,6 @@ class DPortalBadgeEntity : DOOPEntity {
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Badge Type"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Shows the reason for the status of the badge type."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
         "overriddenCreatedOn": OOPTimestampAttribute.descriptions(["en":"Shows the date and time when the record was migrated. The date and time are displayed in the time zone selected in the solution options."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
@@ -26,6 +24,9 @@ class DPortalBadgeEntity : DOOPEntity {
         "backgroundColor": OOPStringAttribute.descriptions(["en":"Enter a hex value or RGB or RGBAex: #FFFFFFrgb(255,255,255)rgba(255,255,255,0.5)"]),
         "displayText": OOPStringAttribute.descriptions(["en":"Actual shown label for the badge"]),
         "iconName": OOPStringAttribute.descriptions(["en":"Add font awesome name such as fa-user"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Shows the reason for the status of the badge type.
       ])
       .registerPath("portal_badges");
   }

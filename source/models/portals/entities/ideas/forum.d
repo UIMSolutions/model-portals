@@ -26,8 +26,6 @@ class DPortalIdeaForumEntity : DOOPEntity {
         "ideaForumId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the idea forum's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "commentPolicy": OOPStringAttribute.descriptions(["en":"Shows the default comment policy to be used on ideas in this idea forum."]),
         "commentPolicy_display": OOPStringAttribute.descriptions(["en":""]),
         "ideaSubmissionPolicy": OOPStringAttribute.descriptions(["en":"Indicates the policy to be enforced for user submitted ideas in this idea forum."]),
@@ -42,6 +40,9 @@ class DPortalIdeaForumEntity : DOOPEntity {
         "votingType_display": OOPStringAttribute.descriptions(["en":""]),
         "websiteId": OOPUUIDAttribute.descriptions(["en":"Shows the website associated with the idea forum."]),
         "websiteLanguageId": OOPUUIDAttribute.descriptions(["en":"Option to make idea forums language specific"]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the idea forum's status.
       ])
       .registerPath("portal_ideaforums");   
   }

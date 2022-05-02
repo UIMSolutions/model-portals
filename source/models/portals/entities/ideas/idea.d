@@ -26,8 +26,6 @@ class DPortalIdeaEntity : DOOPEntity {
         "ideaId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instances."]), 
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the idea is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]), 
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]), 
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the idea's status."]), 
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]), 
         "approved": OOPStringAttribute.descriptions(["en":"Indicates whether or not this idea is approved for display."]), 
         "authorEmail": OOPStringAttribute.descriptions(["en":"Shows the email address for the author of this idea."]), 
         "authorId": OOPUUIDAttribute.descriptions(["en":"The author of the idea."]), 
@@ -54,6 +52,9 @@ class DPortalIdeaEntity : DOOPEntity {
         "votesSum": OOPStringAttribute.descriptions(["en":"Shows the sum of all votes casted on the idea."]), 
         "votesSumDate": OOPAttributeDate.descriptions(["en":"Last Updated time of rollup field Vote Sum."]), 
         "votesSumState": OOPStringAttribute.descriptions(["en":"State of rollup field Vote Sum."]), 
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the idea's status.
       ])
       .registerPath("portal_ideas");   
   }

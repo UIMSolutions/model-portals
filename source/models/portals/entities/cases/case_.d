@@ -76,8 +76,6 @@ class DPortalCaseEntity : DOOPEntity {
         "socialProfileId": OOPUUIDAttribute.descriptions(["en":"Unique identifier of the social profile with which the case is associated. "]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Shows whether the case is active, resolved, or canceled. Resolved and canceled cases are read-only and can't be edited unless they are reactivated. "]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the case's status. "]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "subjectId": OOPUUIDAttribute.descriptions(["en":"Choose the subject for the case, such as catalog request or product complaint, so customer service managers can identify frequent requests or problem areas. Administrators can configure subjects under Business Management in the Settings area. "]),
         "ticketNumber": OOPNumberAttribute.descriptions(["en":"Shows the case number for customer reference and searching capabilities. This cannot be modified. "]),
         "resolveBy": OOPLinkAttribute("aplUser").descriptions(["en":"Enter the date by when the case must be resolved. "]),
@@ -99,6 +97,7 @@ class DPortalCaseEntity : DOOPEntity {
         "stepsToReproduce": OOPStringAttribute.descriptions(["en":""]),
       ])
       .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the case's status.
         "adxCreatedByIPAddress": StringAttributeClass, // 
         "adxCreatedByUsername": StringAttributeClass, // 
         "adxModifiedByIPAddress": StringAttributeClass, // 

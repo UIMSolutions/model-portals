@@ -26,12 +26,13 @@ class DPortalPollSubmissionEntity : DOOPEntity {
         "pollSubmissionId": OOPUUIDAttribute.descriptions(["en":"Shows the entity instance."]),
         "stateCode": OOPStringAttribute.descriptions(["en":"Status of the Poll Submission"]),
         "stateCode_display": OOPStringAttribute.descriptions(["en":""]),
-        "statusCode": OOPStringAttribute.descriptions(["en":"Select the poll submission's status."]),
-        "statusCode_display": OOPStringAttribute.descriptions(["en":""]),
         "contactId": OOPLinkAttribute("aplContact").descriptions(["en":"Unique identifier for Contact associated with Poll Submission."]),
         "pollId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for Poll associated with Poll Submission."]),
         "pollOptionId": OOPUUIDAttribute.descriptions(["en":"Unique identifier for PollOption associated with Poll Submission."]),
         "visitorID": OOPStringAttribute.descriptions(["en":""]),
+      ])
+      .addValues([
+        "statusCode": StatusCodeAttributeClass, // Select the poll submission's status.
       ])
       .registerPath("portal_pollsubmissions");   
   }
