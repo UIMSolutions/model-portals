@@ -29,7 +29,7 @@ class DPortalForumPostEntity : DOOPEntity {
         "communityForumPostId": UUIDAttributeClass, // Shows the entity instances."]),
         "authorId": UUIDAttributeClass, // Shows the contact associated with the forum post."]),
         "forumThreadId": UUIDAttributeClass, // Shows the Forum Thread associated with the forum post."]),
-        "isAnswer": OOPBooleanAttribute.descriptions(["en":""]),
+        "isAnswer": BooleanAttributeClass, //
         "content": StringAttributeClass, // 
         "date": StringAttributeClass, // 
         "helpfulVoteCount": StringAttributeClass, // 

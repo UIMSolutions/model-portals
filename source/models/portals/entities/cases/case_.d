@@ -54,7 +54,7 @@ class DPortalCaseEntity : DOOPEntity {
         "followUpTaskCreated": StringAttributeClass, // This attribute is used for Sample Service Business Processes. "]),
         "incidentStageCode": StringAttributeClass, // Select the current stage of the service process for the case to assist service team members when they review or transfer a case. "]),
         "incidentStageCode_display": StringAttributeClass, // 
-        "isDecrementing": OOPBooleanAttribute.descriptions(["en":"For system use only. "]),
+        "isDecrementing": BooleanAttributeClass, // For system use only. "]),
         "kbArticleId": UUIDAttributeClass, // Choose the article that contains additional information or a resolution for the case, for reference during research or follow up with the customer. "]),
         "messageTypeCode": StringAttributeClass, // Shows whether the post originated as a public or private message. "]),
         "messageTypeCode_display": StringAttributeClass, // 
@@ -80,7 +80,7 @@ class DPortalCaseEntity : DOOPEntity {
         "responseBy": UUIDAttributeClass, // For internal use only. "]),
         "customerContacted": StringAttributeClass, // Tells whether customer service representative has contacted the customer or not. "]),
         "firstResponseSent": StringAttributeClass, // Indicates if the first response has been sent. "]),
-        "isEscalated": OOPBooleanAttribute.descriptions(["en":"Indicates if the case has been escalated. "]),
+        "isEscalated": BooleanAttributeClass, // Indicates if the case has been escalated. "]),
         "escalatedOn": TimestampAttributeClass, // Indicates the date and time when the case was escalated. "]),
         "primaryContactId": UUIDAttributeClass, // en":"Select a primary contact for this case. "]),
         "resolveByKPIId": UUIDAttributeClass, // For internal use only. "]),

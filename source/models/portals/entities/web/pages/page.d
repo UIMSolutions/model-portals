@@ -53,7 +53,7 @@ class DPortalWebPageEntity : DOOPEntity {
         "expirationDate": DateAttributeClass, // 
         "image": StringAttributeClass, // Unique identifier for Web File associated with Web Page."]),
         "imageUrl": OOPUrlAttribute.descriptions(["en":""]),
-        "isRoot": OOPBooleanAttribute.descriptions(["en":"Defines whether this is the 'root' record of this translated group of Web Pages."]),
+        "isRoot": BooleanAttributeClass, // Defines whether this is the 'root' record of this translated group of Web Pages."]),
         "masterWebPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web Page."]),
         "metaDescription": StringAttributeClass, // 
         "navigation": StringAttributeClass, // Unique identifier for Web Link Set associated with Web Page."]),

@@ -26,7 +26,7 @@ class DPortalForumThreadEntity : DOOPEntity {
         "communityForumThreadId": UUIDAttributeClass, // Shows the entity instances."]),
         "firstPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
         "forumId": UUIDAttributeClass, // Shows the forum associated with the forum thread."]),
-        "isAnswered": OOPBooleanAttribute.descriptions(["en":""]),
+        "isAnswered": BooleanAttributeClass, //
         "lastPostDate": DateAttributeClass, // 
         "lastPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
         "locked": StringAttributeClass, // 

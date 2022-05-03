@@ -31,7 +31,7 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         "forumThreadTypeId": UUIDAttributeClass, // Shows the entity instances."]),
         "allowsVoting": StringAttributeClass, // 
         "displayOrder": StringAttributeClass, // 
-        "isDefault": OOPBooleanAttribute.descriptions(["en":""]),
+        "isDefault": BooleanAttributeClass, //
         "requiresAnswer": StringAttributeClass, // 
         "websiteId": UUIDAttributeClass, // Shows the Website associated with the forum thread type."]),
       ])
