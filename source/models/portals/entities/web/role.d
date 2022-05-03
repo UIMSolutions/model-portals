@@ -20,15 +20,15 @@ class DPortalWebRoleEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webRoleId": UUIDAttributeClass, // Unique identifier for entity instances"]),
         "stateCode": StringAttributeClass, // Status of the Web Role"]),
-        "stateCode_display": StringAttributeClass, // "]),
-        "authenticatedUsersRole": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
+        "authenticatedUsersRole": StringAttributeClass, // 
         "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Role."]),
-        "anonymousUsersRole": StringAttributeClass, // "]),
+        "anonymousUsersRole": StringAttributeClass, // 
         "key": StringAttributeClass, // An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code."]),
       ])
       .addValues([

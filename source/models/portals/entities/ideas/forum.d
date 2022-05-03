@@ -24,22 +24,22 @@ class DPortalIdeaForumEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "ideaForumId": UUIDAttributeClass, // Shows the entity instances."]),
         "commentPolicy": StringAttributeClass, // Shows the default comment policy to be used on ideas in this idea forum."]),
-        "commentPolicy_display": StringAttributeClass, // "]),
+        "commentPolicy_display": StringAttributeClass, // 
         "ideaSubmissionPolicy": StringAttributeClass, // Indicates the policy to be enforced for user submitted ideas in this idea forum."]),
-        "ideaSubmissionPolicy_display": StringAttributeClass, // "]),
+        "ideaSubmissionPolicy_display": StringAttributeClass, // 
         "partialUrl": OOPUrlAttribute.descriptions(["en":"Shows the URL path fragment used to generate a URL for this idea forum."]),
         "summary": StringAttributeClass, // Type a description of this idea forum's purpose."]),
         "votesPerIdea": StringAttributeClass, // Shows the number of votes a user is allowed for a single idea belonging to this idea forum."]),
         "votesPerUser": StringAttributeClass, // Shows the number of votes a user is allowed to use in this idea forum."]),
         "votingPolicy": StringAttributeClass, // Indicates the voting policy to be used for this idea forum."]),
-        "votingPolicy_display": StringAttributeClass, // "]),
+        "votingPolicy_display": StringAttributeClass, // 
         "votingType": StringAttributeClass, // Shows the type of voting that this idea forum allows."]),
-        "votingType_display": StringAttributeClass, // "]),
+        "votingType_display": StringAttributeClass, // 
         "websiteId": UUIDAttributeClass, // Shows the website associated with the idea forum."]),
         "websiteLanguageId": UUIDAttributeClass, // Option to make idea forums language specific"]),
       ])

@@ -20,21 +20,21 @@ class DPortalForumThreadEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "communityForumThreadId": UUIDAttributeClass, // Shows the entity instances."]),
         "firstPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
         "forumId": UUIDAttributeClass, // Shows the forum associated with the forum thread."]),
         "isAnswered": OOPBooleanAttribute.descriptions(["en":""]),
-        "lastPostDate": OOPAttributeDate.descriptions(["en":""]),
+        "lastPostDate": DateAttributeClass, // 
         "lastPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
-        "locked": StringAttributeClass, // "]),
-        "postCount": StringAttributeClass, // "]),
+        "locked": StringAttributeClass, // 
+        "postCount": StringAttributeClass, // 
         "publishingStateId": UUIDAttributeClass, // Shows the publishing state associated with the forum thread."]),
-        "sticky": StringAttributeClass, // "]),
+        "sticky": StringAttributeClass, // 
         "typeId": UUIDAttributeClass, // Shows the forum Thread Type associated with the forum thread."]),
-        "viewCount": StringAttributeClass, // "]),
+        "viewCount": StringAttributeClass, // 
       ])
       .addValues([
         "stateCode": StateCodeAttributeClass, // Status of the Forum Thread

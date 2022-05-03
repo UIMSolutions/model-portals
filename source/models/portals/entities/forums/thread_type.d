@@ -25,14 +25,14 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "forumThreadTypeId": UUIDAttributeClass, // Shows the entity instances."]),
-        "allowsVoting": StringAttributeClass, // "]),
-        "displayOrder": StringAttributeClass, // "]),
+        "allowsVoting": StringAttributeClass, // 
+        "displayOrder": StringAttributeClass, // 
         "isDefault": OOPBooleanAttribute.descriptions(["en":""]),
-        "requiresAnswer": StringAttributeClass, // "]),
+        "requiresAnswer": StringAttributeClass, // 
         "websiteId": UUIDAttributeClass, // Shows the Website associated with the forum thread type."]),
       ])
       .registerPath("portal_forumthreadtypes"); 

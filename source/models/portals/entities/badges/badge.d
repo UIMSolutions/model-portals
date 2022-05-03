@@ -16,7 +16,7 @@ class DPortalBadgeEntity : DOOPEntity {
         "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who updated the record on behalf of another user."]),
         "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
         "stateCode": StringAttributeClass, // Status of the Badge Type"]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
         "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
         "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time when the record was migrated. The date and time are displayed in the time zone selected in the solution options."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),

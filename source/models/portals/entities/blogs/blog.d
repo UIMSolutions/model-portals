@@ -20,18 +20,18 @@ class DPortalBlogEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "blogId": UUIDAttributeClass, // Shows the entity instances."]),
         "stateCode": StringAttributeClass, // Shows whether the blog is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
         "archiveTemplateId": UUIDAttributeClass, // Shows the page template to be used to render the archive page (for example, posts by date, tags, and so on) of the blog."]),
         "homeTemplateId": UUIDAttributeClass, // Shows the page template to be used to render the home/main page of the Blog."]),
         "postTemplateId": UUIDAttributeClass, // Shows the page template to be used to render an individual Blog Post belonging to the Blog."]),
         "commentPolicy": StringAttributeClass, // Specifies the post comment policy to be used by this Blog."]),
-        "commentPolicy_display": StringAttributeClass, // "]),
-        "displayOrder": StringAttributeClass, // "]),
+        "commentPolicy_display": StringAttributeClass, // 
+        "displayOrder": StringAttributeClass, // 
         "parentPageId": UUIDAttributeClass, // Shows the parent webpage associated with this blog, denoting its place in the website site map."]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":"Shows the URL path fragment to be used to build a URL for this blog."]),
         "summary": StringAttributeClass, // A descriptive summary of the Blog."]),

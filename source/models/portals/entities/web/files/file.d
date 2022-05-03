@@ -20,35 +20,35 @@ class DPortalWebFileEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webFileId": UUIDAttributeClass, // Unique identifier for entity instances"]),
         "stateCode": StringAttributeClass, // Status of the Web File"]),
-        "stateCode_display": StringAttributeClass, // "]),
-        "adxCreatedByIPAddress": StringAttributeClass, // "]),
-        "adxCreatedByUsername": StringAttributeClass, // "]),
-        "displayDate": OOPAttributeDate.descriptions(["en":""]),
-        "displayOrder": StringAttributeClass, // "]),
-        "hiddenFromSitemap": StringAttributeClass, // "]),
-        "adxModifiedByIPAddress": StringAttributeClass, // "]),
-        "adxModifiedByUsername": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
+        "adxCreatedByIPAddress": StringAttributeClass, // 
+        "adxCreatedByUsername": StringAttributeClass, // 
+        "displayDate": DateAttributeClass, // 
+        "displayOrder": StringAttributeClass, // 
+        "hiddenFromSitemap": StringAttributeClass, // 
+        "adxModifiedByIPAddress": StringAttributeClass, // 
+        "adxModifiedByUsername": StringAttributeClass, // 
         "parentPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web File."]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
         "subjectId": UUIDAttributeClass, // Unique identifier for Subject associated with Web File."]),
-        "summary": StringAttributeClass, // "]),
+        "summary": StringAttributeClass, // 
         "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web File."]),
         "allowOrigin": StringAttributeClass, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
-        "cloudBlobAddress": StringAttributeClass, // "]),
+        "cloudBlobAddress": StringAttributeClass, // 
         "contentDisposition": StringAttributeClass, // Shows the value to be applied to the HTTP Response Headers Content-Disposition."]),
-        "contentDisposition_display": StringAttributeClass, // "]),
+        "contentDisposition_display": StringAttributeClass, // 
         "enableTracking": StringAttributeClass, // Select whether to enable logging of users' downloads of this web file."]),
         "excludeFromSearch": StringAttributeClass, // Shows whether the web file is excluded from the portal search."]),
-        "expirationDate": OOPAttributeDate.descriptions(["en":""]),
+        "expirationDate": DateAttributeClass, // 
         "masterWebFileId": UUIDAttributeClass, // Unique identifier for Web File associated with Web File."]),
         "publishingStateId": UUIDAttributeClass, // Unique identifier for Publishing State associated with Web File."]),
-        "releaseDate": OOPAttributeDate.descriptions(["en":""]),
-        "title": StringAttributeClass, // "]),
+        "releaseDate": DateAttributeClass, // 
+        "title": StringAttributeClass, // 
         "blogPostId": UUIDAttributeClass, // Unique identifier for Blog Post associated with Web File."]),
         "ideaId": UUIDAttributeClass, // Shows the Idea associated with the Web File."]),
       ])

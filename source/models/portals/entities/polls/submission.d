@@ -20,16 +20,16 @@ class DPortalPollSubmissionEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "pollSubmissionId": UUIDAttributeClass, // Shows the entity instance."]),
         "stateCode": StringAttributeClass, // Status of the Poll Submission"]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
         "contactId": UUIDAttributeClass, // en":"Unique identifier for Contact associated with Poll Submission."]),
         "pollId": UUIDAttributeClass, // Unique identifier for Poll associated with Poll Submission."]),
         "pollOptionId": UUIDAttributeClass, // Unique identifier for PollOption associated with Poll Submission."]),
-        "visitorID": StringAttributeClass, // "]),
+        "visitorID": StringAttributeClass, // 
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Select the poll submission's status.

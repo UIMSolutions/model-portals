@@ -19,7 +19,7 @@ class DPortalForumEntity : DOOPEntity {
         "ownerId": UUIDAttributeClass, // Owner Id"]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "communityForumId": UUIDAttributeClass, // Shows the entity instances."]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":""]),

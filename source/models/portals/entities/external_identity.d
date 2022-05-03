@@ -25,7 +25,7 @@ class DPortalExternalIdentityEntity : DOOPEntity {
         "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
         "userName": StringAttributeClass, // Shows the name of the custom entity."]),
         "contactId": UUIDAttributeClass, // en":"Unique identifier for Contact associated with External Identity."]),
-        "identityProviderName": StringAttributeClass, // "]),
+        "identityProviderName": StringAttributeClass, // 
       ])
       .registerPath("portal_externalidentities");   
   }

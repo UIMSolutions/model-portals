@@ -20,14 +20,14 @@ class DPortalPollOptionEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "pollOptionId": UUIDAttributeClass, // Shows the entity instance."]),
-        "answer": StringAttributeClass, // "]),
-        "displayOrder": StringAttributeClass, // "]),
+        "answer": StringAttributeClass, // 
+        "displayOrder": StringAttributeClass, // 
         "pollId": UUIDAttributeClass, // Unique identifier for Poll associated with PollOption."]),
-        "votes": StringAttributeClass, // "]),
+        "votes": StringAttributeClass, // 
       ])
       .addValues([
         "stateCode": StateCodeAttributeClass, // Status of the Poll Option

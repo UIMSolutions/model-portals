@@ -20,11 +20,11 @@ class DPortalWebFileLogEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "stateCode": StringAttributeClass, // Status of the Web File Log"]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
         "contactId": UUIDAttributeClass, // en":"Unique identifier of the Contact associated with the Web File Log"]),
         "date": StringAttributeClass, // Shows the date and time that the request was made to download the file."]),
         "IpAddress": StringAttributeClass, // Shows the IP address of the computer of the user who requested the file download."]),

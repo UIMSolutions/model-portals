@@ -19,21 +19,21 @@ class DPTLEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "adId": UUIDAttributeClass, // "]),
-        "copy": StringAttributeClass, // "]),
-        "expirationDate": OOPAttributeDate.descriptions(["en":""]),
+        "adId": UUIDAttributeClass, // 
+        "copy": StringAttributeClass, // 
+        "expirationDate": DateAttributeClass, // 
         "image": StringAttributeClass, // location of image file"]),
-        "imageAltText": StringAttributeClass, // "]),
-        "imageHeight": StringAttributeClass, // "]),
-        "imageWidth": StringAttributeClass, // "]),
-        "openInNewWindow": StringAttributeClass, // "]),
+        "imageAltText": StringAttributeClass, // 
+        "imageHeight": StringAttributeClass, // 
+        "imageWidth": StringAttributeClass, // 
+        "openInNewWindow": StringAttributeClass, // 
         "publishingStateId": UUIDAttributeClass, // Unique identifier for Publishing State associated with Ad."]),
         "redirectWebFile": StringAttributeClass, // Unique identifier for Web File associated with Ad."]),
-        "releaseDate": OOPAttributeDate.descriptions(["en":""]),
-        "title": StringAttributeClass, // "]),
+        "releaseDate": DateAttributeClass, // 
+        "title": StringAttributeClass, // 
         "Url": OOPUrlAttribute.descriptions(["en":""]),
         "webFileId": UUIDAttributeClass, // Unique identifier for Web File associated with Ad."]),
         "webPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Ad."]),

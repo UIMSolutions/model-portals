@@ -24,16 +24,16 @@ class DPortalPollEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "pollId": UUIDAttributeClass, // Shows the entity instance."]),
-        "active": StringAttributeClass, // "]),
-        "closeVotingDate": OOPAttributeDate.descriptions(["en":""]),
-        "expirationDate": OOPAttributeDate.descriptions(["en":""]),
-        "question": StringAttributeClass, // "]),
-        "releaseDate": OOPAttributeDate.descriptions(["en":""]),
-        "submitButtonLabel": StringAttributeClass, // "]),
+        "active": StringAttributeClass, // 
+        "closeVotingDate": DateAttributeClass, // 
+        "expirationDate": DateAttributeClass, // 
+        "question": StringAttributeClass, // 
+        "releaseDate": DateAttributeClass, // 
+        "submitButtonLabel": StringAttributeClass, // 
         "websiteId": UUIDAttributeClass, // Unique identifier for Website associated with Poll."]),
         "webTemplateId": UUIDAttributeClass, // Unique identifier for Web Template associated with Poll."]),
       ])

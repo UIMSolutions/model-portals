@@ -20,19 +20,19 @@ class DPortalWebSiteEntity : DOOPEntity {
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": UUIDAttributeClass, // Unique identifier for the team that owns the record."]),
+        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webSiteId": UUIDAttributeClass, // Unique identifier for entity instances"]),
         "stateCode": StringAttributeClass, // Status of the Website"]),
-        "stateCode_display": StringAttributeClass, // "]),
+        "stateCode_display": StringAttributeClass, // 
         "defaultLanguage": StringAttributeClass, // Lookup to Website Language - the current default language of the website"]),
         "footerTemplateId": UUIDAttributeClass, // Web Template to use as Website footer content."]),
         "headerTemplateId": UUIDAttributeClass, // Web Template to use as Website header content."]),
         "parentWebSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Website."]),
         "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
         "primaryDomainName": StringAttributeClass, // Tracks the primary domain name of the Portal"]),
-        "websiteLanguage": StringAttributeClass, // "]),
+        "websiteLanguage": StringAttributeClass, // 
       ])
       .addValues([
         "statusCode": StatusCodeAttributeClass, // Reason for the status of the Website
