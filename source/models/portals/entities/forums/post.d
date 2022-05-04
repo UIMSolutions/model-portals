@@ -11,20 +11,20 @@ class DPortalForumPostEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
-        OwnerIdAttributeClass, // 
+      .addValues([ // fix values
+        OwnerIdAttributeClass, // Owner Id
         StateCodeAttributeClass, // Status of the Forum Post
         StatusCodeAttributeClass, // Select the forum post's status.
       ])
-      .addValues([
+      .addValues([ // individual values
         "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
         "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
+        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
+        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "communityForumPostId": UUIDAttributeClass, // Shows the entity instances."]),
         "authorId": UUIDAttributeClass, // Shows the contact associated with the forum post."]),

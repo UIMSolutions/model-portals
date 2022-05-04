@@ -11,22 +11,21 @@ class DPortalWebTemplateEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "organizationId": OOPLinkAttribute("aplOrganization").descriptions(["en":"Shows the organization."]),
-        "stateCode": StringAttributeClass, // Status of the Web Template"]),
-        "stateCode_display": StringAttributeClass, // 
-        "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Shows the sequence number of the import that created this record."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time that the record was migrated."]),
-        "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created."]),
-        "MIMEType": StringAttributeClass, // Shows the MIME type of the web template content."]),
-        "source": StringAttributeClass, // 
-        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Template"]),
+      .addValues([ // fix values
+        StateCodeAttributeClass, // Status of the Web Template
+        StatusCodeAttributeClass, // Select the web template's status.
       ])
-      .addValues([
-        "statusCode": StatusCodeAttributeClass, // Select the web template's status.
+      .addValues([ // individual values
+        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user.
+        "organizationId": UUIDAttributeClass, // Shows the organization.
+        "importSequenceNumber": NumberAttributeClass, //Shows the sequence number of the import that created this record.
+        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time that the record was migrated.
+        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only.
+        "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created.
+        "MIMEType": StringAttributeClass, // Shows the MIME type of the web template content.
+        "source": StringAttributeClass, // 
+        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Template
       ])
       .registerPath("portal_webtemplates");   
   }

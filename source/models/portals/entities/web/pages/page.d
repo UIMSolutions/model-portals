@@ -15,13 +15,13 @@ class DPortalWebPageEntity : DOOPEntity {
         "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": OOPNumberAttribute.descriptions(["en":"Sequence number of the import that created this record."]),
+        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
         "ownerId": UUIDAttributeClass, // Owner Id"]),
         "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": OOPNumberAttribute.descriptions(["en":"For internal use only."]),
+        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
         "webPageId": UUIDAttributeClass, // Unique identifier for entity instances"]),
         "stateCode": StringAttributeClass, // Status of the Web Page"]),
@@ -39,7 +39,7 @@ class DPortalWebPageEntity : DOOPEntity {
         "adxModifiedByUsername": StringAttributeClass, // 
         "pageTemplateId": UUIDAttributeClass, // Unique identifier for Page Template associated with Web Page."]),
         "parentPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web Page."]),
-        "partialUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "partialUrl": UrlAttributeClass, // "]),
         "subjectId": UUIDAttributeClass, // Unique identifier for Subject associated with Web Page."]),
         "summary": StringAttributeClass, // 
         "title": StringAttributeClass, // 
@@ -52,7 +52,7 @@ class DPortalWebPageEntity : DOOPEntity {
         "excludeFromSearch": StringAttributeClass, // Shows whether the webpage is excluded from the portal search."]),
         "expirationDate": DateAttributeClass, // 
         "image": StringAttributeClass, // Unique identifier for Web File associated with Web Page."]),
-        "imageUrl": OOPUrlAttribute.descriptions(["en":""]),
+        "imageUrl": UrlAttributeClass, // "]),
         "isRoot": BooleanAttributeClass, // Defines whether this is the 'root' record of this translated group of Web Pages."]),
         "masterWebPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web Page."]),
         "metaDescription": StringAttributeClass, // 
