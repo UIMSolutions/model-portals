@@ -12,48 +12,48 @@ class DPortalWebFileEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "webFileId": UUIDAttributeClass, // Unique identifier for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the Web File"]),
-        "stateCode_display": StringAttributeClass, // 
-        "adxCreatedByIPAddress": StringAttributeClass, // 
-        "adxCreatedByUsername": StringAttributeClass, // 
-        "displayDate": DateAttributeClass, // 
-        "displayOrder": StringAttributeClass, // 
-        "hiddenFromSitemap": StringAttributeClass, // 
-        "adxModifiedByIPAddress": StringAttributeClass, // 
-        "adxModifiedByUsername": StringAttributeClass, // 
-        "parentPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web File."]),
-        "partialUrl": UrlAttributeClass, // "]),
-        "subjectId": UUIDAttributeClass, // Unique identifier for Subject associated with Web File."]),
-        "summary": StringAttributeClass, // 
-        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web File."]),
-        "allowOrigin": StringAttributeClass, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
-        "cloudBlobAddress": StringAttributeClass, // 
-        "contentDisposition": StringAttributeClass, // Shows the value to be applied to the HTTP Response Headers Content-Disposition."]),
-        "contentDisposition_display": StringAttributeClass, // 
-        "enableTracking": StringAttributeClass, // Select whether to enable logging of users' downloads of this web file."]),
-        "excludeFromSearch": StringAttributeClass, // Shows whether the web file is excluded from the portal search."]),
-        "expirationDate": DateAttributeClass, // 
-        "masterWebFileId": UUIDAttributeClass, // Unique identifier for Web File associated with Web File."]),
-        "publishingStateId": UUIDAttributeClass, // Unique identifier for Publishing State associated with Web File."]),
-        "releaseDate": DateAttributeClass, // 
-        "title": StringAttributeClass, // 
-        "blogPostId": UUIDAttributeClass, // Unique identifier for Blog Post associated with Web File."]),
-        "ideaId": UUIDAttributeClass, // Shows the Idea associated with the Web File."]),
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "webFileId": UUIDAttribute, // Unique identifier for entity instances"]),
+        "stateCode": StringAttribute, // Status of the Web File"]),
+        "stateCode_display": StringAttribute, // 
+        "adxCreatedByIPAddress": StringAttribute, // 
+        "adxCreatedByUsername": StringAttribute, // 
+        "displayDate": DateAttribute, // 
+        "displayOrder": StringAttribute, // 
+        "hiddenFromSitemap": StringAttribute, // 
+        "adxModifiedByIPAddress": StringAttribute, // 
+        "adxModifiedByUsername": StringAttribute, // 
+        "parentPageId": UUIDAttribute, // Unique identifier for Web Page associated with Web File."]),
+        "partialUrl": UrlAttribute, // "]),
+        "subjectId": UUIDAttribute, // Unique identifier for Subject associated with Web File."]),
+        "summary": StringAttribute, // 
+        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Web File."]),
+        "allowOrigin": StringAttribute, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
+        "cloudBlobAddress": StringAttribute, // 
+        "contentDisposition": StringAttribute, // Shows the value to be applied to the HTTP Response Headers Content-Disposition."]),
+        "contentDisposition_display": StringAttribute, // 
+        "enableTracking": StringAttribute, // Select whether to enable logging of users' downloads of this web file."]),
+        "excludeFromSearch": StringAttribute, // Shows whether the web file is excluded from the portal search."]),
+        "expirationDate": DateAttribute, // 
+        "masterWebFileId": UUIDAttribute, // Unique identifier for Web File associated with Web File."]),
+        "publishingStateId": UUIDAttribute, // Unique identifier for Publishing State associated with Web File."]),
+        "releaseDate": DateAttribute, // 
+        "title": StringAttribute, // 
+        "blogPostId": UUIDAttribute, // Unique identifier for Blog Post associated with Web File."]),
+        "ideaId": UUIDAttribute, // Shows the Idea associated with the Web File."]),
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web File
+        "statusCode": StatusCodeAttribute, // Reason for the status of the Web File
       ])
       .registerPath("portal_webfiles");
   }

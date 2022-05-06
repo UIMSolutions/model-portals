@@ -12,20 +12,20 @@ class DPortalWebTemplateEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
-        StateCodeAttributeClass, // Status of the Web Template
-        StatusCodeAttributeClass, // Select the web template's status.
+        StateCodeAttribute, // Status of the Web Template
+        StatusCodeAttribute, // Select the web template's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user.
-        "organizationId": UUIDAttributeClass, // Shows the organization.
-        "importSequenceNumber": NumberAttributeClass, //Shows the sequence number of the import that created this record.
-        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time that the record was migrated.
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only.
-        "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created.
-        "MIMEType": StringAttributeClass, // Shows the MIME type of the web template content.
-        "source": StringAttributeClass, // 
-        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Template
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user.
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user.
+        "organizationId": UUIDAttribute, // Shows the organization.
+        "importSequenceNumber": NumberAttribute, //Shows the sequence number of the import that created this record.
+        "overriddenCreatedOn": TimestampAttribute, // Shows the date and time that the record was migrated.
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only.
+        "utcConversionTimeZoneCode": StringAttribute, // Shows the time zone code that was in use when the record was created.
+        "MIMEType": StringAttribute, // Shows the MIME type of the web template content.
+        "source": StringAttribute, // 
+        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Web Template
       ])
       .registerPath("portal_webtemplates");   
   }

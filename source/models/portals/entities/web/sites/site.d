@@ -12,30 +12,30 @@ class DPortalWebSiteEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "webSiteId": UUIDAttributeClass, // Unique identifier for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the Website"]),
-        "stateCode_display": StringAttributeClass, // 
-        "defaultLanguage": StringAttributeClass, // Lookup to Website Language - the current default language of the website"]),
-        "footerTemplateId": UUIDAttributeClass, // Web Template to use as Website footer content."]),
-        "headerTemplateId": UUIDAttributeClass, // Web Template to use as Website header content."]),
-        "parentWebSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Website."]),
-        "partialUrl": UrlAttributeClass, // "]),
-        "primaryDomainName": StringAttributeClass, // Tracks the primary domain name of the Portal"]),
-        "websiteLanguage": StringAttributeClass, // 
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "webSiteId": UUIDAttribute, // Unique identifier for entity instances"]),
+        "stateCode": StringAttribute, // Status of the Website"]),
+        "stateCode_display": StringAttribute, // 
+        "defaultLanguage": StringAttribute, // Lookup to Website Language - the current default language of the website"]),
+        "footerTemplateId": UUIDAttribute, // Web Template to use as Website footer content."]),
+        "headerTemplateId": UUIDAttribute, // Web Template to use as Website header content."]),
+        "parentWebSiteId": UUIDAttribute, // Unique identifier for Website associated with Website."]),
+        "partialUrl": UrlAttribute, // "]),
+        "primaryDomainName": StringAttribute, // Tracks the primary domain name of the Portal"]),
+        "websiteLanguage": StringAttribute, // 
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Website
+        "statusCode": StatusCodeAttribute, // Reason for the status of the Website
       ])
       .registerPath("portal_websites");   
   }

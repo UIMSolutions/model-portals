@@ -12,37 +12,37 @@ class DPortalForumEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "communityForumId": UUIDAttributeClass, // Shows the entity instances."]),
-        "partialUrl": UrlAttributeClass, // "]),
-        "websiteId": UUIDAttributeClass, // Shows the Website associated with the forum."]),
-        "forumLanguageId": UUIDAttributeClass, // Option to make forums and forum posts language specific"]),
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "communityForumId": UUIDAttribute, // Shows the entity instances."]),
+        "partialUrl": UrlAttribute, // "]),
+        "websiteId": UUIDAttribute, // Shows the Website associated with the forum."]),
+        "forumLanguageId": UUIDAttribute, // Option to make forums and forum posts language specific"]),
       ])
       .addValues([
-        StateCodeAttributeClass, // Status of the Forum
-        StatusCodeAttributeClass, // Select the forum's status.
+        StateCodeAttribute, // Status of the Forum
+        StatusCodeAttribute, // Select the forum's status.
       ])
       .addValues([
-        "postCount": StringAttributeClass, // 
-        "publishingStateId": StringAttributeClass, // Shows the Publishing State associated with the forum.
-        "threadCount": StringAttributeClass, // 
-        "threadPageTemplateId": StringAttributeClass, // Shows the Page Template associated with the forum.
-        "displayOrder": StringAttributeClass, // 
-        "enableQueuedPosts": StringAttributeClass, // Automatically put posts in a queue awaiting a moderator to approve
-        "forumPageTemplateId": StringAttributeClass, // Shows the Page Template associated with the forum.
-        "hiddenFromSitemap": StringAttributeClass, // 
-        "lastPostId": UUIDAttributeClass, // Shows the forum post associated with the forum.
-        "parentPageId": UUIDAttributeClass, // Shows the webpage associated with the forum.
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team.
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created.
+        "postCount": StringAttribute, // 
+        "publishingStateId": StringAttribute, // Shows the Publishing State associated with the forum.
+        "threadCount": StringAttribute, // 
+        "threadPageTemplateId": StringAttribute, // Shows the Page Template associated with the forum.
+        "displayOrder": StringAttribute, // 
+        "enableQueuedPosts": StringAttribute, // Automatically put posts in a queue awaiting a moderator to approve
+        "forumPageTemplateId": StringAttribute, // Shows the Page Template associated with the forum.
+        "hiddenFromSitemap": StringAttribute, // 
+        "lastPostId": UUIDAttribute, // Shows the forum post associated with the forum.
+        "parentPageId": UUIDAttribute, // Shows the webpage associated with the forum.
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team.
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created.
       ])
       .registerPath("portal_forums");    
   }

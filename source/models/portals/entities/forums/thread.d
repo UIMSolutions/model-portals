@@ -12,33 +12,33 @@ class DPortalForumThreadEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "communityForumThreadId": UUIDAttributeClass, // Shows the entity instances."]),
-        "firstPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
-        "forumId": UUIDAttributeClass, // Shows the forum associated with the forum thread."]),
-        "isAnswered": BooleanAttributeClass, //
-        "lastPostDate": DateAttributeClass, // 
-        "lastPostId": UUIDAttributeClass, // Shows the forum post associated with the forum thread."]),
-        "locked": StringAttributeClass, // 
-        "postCount": StringAttributeClass, // 
-        "publishingStateId": UUIDAttributeClass, // Shows the publishing state associated with the forum thread."]),
-        "sticky": StringAttributeClass, // 
-        "typeId": UUIDAttributeClass, // Shows the forum Thread Type associated with the forum thread."]),
-        "viewCount": StringAttributeClass, // 
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "communityForumThreadId": UUIDAttribute, // Shows the entity instances."]),
+        "firstPostId": UUIDAttribute, // Shows the forum post associated with the forum thread."]),
+        "forumId": UUIDAttribute, // Shows the forum associated with the forum thread."]),
+        "isAnswered": BooleanAttribute, //
+        "lastPostDate": DateAttribute, // 
+        "lastPostId": UUIDAttribute, // Shows the forum post associated with the forum thread."]),
+        "locked": StringAttribute, // 
+        "postCount": StringAttribute, // 
+        "publishingStateId": UUIDAttribute, // Shows the publishing state associated with the forum thread."]),
+        "sticky": StringAttribute, // 
+        "typeId": UUIDAttribute, // Shows the forum Thread Type associated with the forum thread."]),
+        "viewCount": StringAttribute, // 
       ])
       .addValues([
-        "stateCode": StateCodeAttributeClass, // Status of the Forum Thread
-        "statusCode": StatusCodeAttributeClass, // Select the forum thread's status.
+        "stateCode": StateCodeAttribute, // Status of the Forum Thread
+        "statusCode": StatusCodeAttribute, // Select the forum thread's status.
       ])
       .registerPath("portal_forumthreads");   
   }

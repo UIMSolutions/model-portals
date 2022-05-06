@@ -12,20 +12,20 @@ class DPortalExternalIdentityEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
-        StateCodeAttributeClass, // Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated.
-        StatusCodeAttributeClass, // Select the external identity's status.
+        StateCodeAttribute, // Shows whether the external identity is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated.
+        StatusCodeAttribute, // Select the external identity's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows the delegate user who created the record.
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows the delegate user who modified the record.
-        "organizationId": UUIDAttributeClass, // Shows the organization.
-        "importSequenceNumber": NumberAttributeClass, //Shows the sequence number of the import that created this record.
-        "overriddenCreatedOn": TimestampAttributeClass, // Shows the date and time that the record was migrated.
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only.
-        "utcConversionTimeZoneCode": StringAttributeClass, // Shows the time zone code that was in use when the record was created.
-        "userName": StringAttributeClass, // Shows the name of the custom entity.
-        "contactId": UUIDAttributeClass, // en":"Unique identifier for Contact associated with External Identity.
-        "identityProviderName": StringAttributeClass, // 
+        "createdOnBehalfBy": UUIDAttribute, // Shows the delegate user who created the record.
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows the delegate user who modified the record.
+        "organizationId": UUIDAttribute, // Shows the organization.
+        "importSequenceNumber": NumberAttribute, //Shows the sequence number of the import that created this record.
+        "overriddenCreatedOn": TimestampAttribute, // Shows the date and time that the record was migrated.
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only.
+        "utcConversionTimeZoneCode": StringAttribute, // Shows the time zone code that was in use when the record was created.
+        "userName": StringAttribute, // Shows the name of the custom entity.
+        "contactId": UUIDAttribute, // en":"Unique identifier for Contact associated with External Identity.
+        "identityProviderName": StringAttribute, // 
       ])
       .registerPath("portal_externalidentities");   
   }

@@ -12,36 +12,36 @@ class DPortalIdeaForumEntity : DOOPEntity {
 
     this
       .addValues([
-        OwnerIdAttributeClass, // Owner Id
-        StateCodeAttributeClass, // Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
-        StatusCodeAttributeClass, // Select the idea forum's status.
+        OwnerIdAttribute, // Owner Id
+        StateCodeAttribute, // Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
+        StatusCodeAttribute, // Select the idea forum's status.
       ])
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "ideaForumId": UUIDAttributeClass, // Shows the entity instances."]),
-        "commentPolicy": StringAttributeClass, // Shows the default comment policy to be used on ideas in this idea forum."]),
-        "commentPolicy_display": StringAttributeClass, // 
-        "ideaSubmissionPolicy": StringAttributeClass, // Indicates the policy to be enforced for user submitted ideas in this idea forum."]),
-        "ideaSubmissionPolicy_display": StringAttributeClass, // 
-        "partialUrl": UrlAttributeClass, // Shows the URL path fragment used to generate a URL for this idea forum."]),
-        "summary": StringAttributeClass, // Type a description of this idea forum's purpose."]),
-        "votesPerIdea": StringAttributeClass, // Shows the number of votes a user is allowed for a single idea belonging to this idea forum."]),
-        "votesPerUser": StringAttributeClass, // Shows the number of votes a user is allowed to use in this idea forum."]),
-        "votingPolicy": StringAttributeClass, // Indicates the voting policy to be used for this idea forum."]),
-        "votingPolicy_display": StringAttributeClass, // 
-        "votingType": StringAttributeClass, // Shows the type of voting that this idea forum allows."]),
-        "votingType_display": StringAttributeClass, // 
-        "websiteId": UUIDAttributeClass, // Shows the website associated with the idea forum."]),
-        "websiteLanguageId": UUIDAttributeClass, // Option to make idea forums language specific"]),
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "ideaForumId": UUIDAttribute, // Shows the entity instances."]),
+        "commentPolicy": StringAttribute, // Shows the default comment policy to be used on ideas in this idea forum."]),
+        "commentPolicy_display": StringAttribute, // 
+        "ideaSubmissionPolicy": StringAttribute, // Indicates the policy to be enforced for user submitted ideas in this idea forum."]),
+        "ideaSubmissionPolicy_display": StringAttribute, // 
+        "partialUrl": UrlAttribute, // Shows the URL path fragment used to generate a URL for this idea forum."]),
+        "summary": StringAttribute, // Type a description of this idea forum's purpose."]),
+        "votesPerIdea": StringAttribute, // Shows the number of votes a user is allowed for a single idea belonging to this idea forum."]),
+        "votesPerUser": StringAttribute, // Shows the number of votes a user is allowed to use in this idea forum."]),
+        "votingPolicy": StringAttribute, // Indicates the voting policy to be used for this idea forum."]),
+        "votingPolicy_display": StringAttribute, // 
+        "votingType": StringAttribute, // Shows the type of voting that this idea forum allows."]),
+        "votingType_display": StringAttribute, // 
+        "websiteId": UUIDAttribute, // Shows the website associated with the idea forum."]),
+        "websiteLanguageId": UUIDAttribute, // Option to make idea forums language specific"]),
       ])
       .registerPath("portal_ideaforums");   
   }

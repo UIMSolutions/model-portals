@@ -12,65 +12,65 @@ class DPortalWebPageEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "webPageId": UUIDAttributeClass, // Unique identifier for entity instances"]),
-        "stateCode": StringAttributeClass, // Status of the Web Page"]),
-        "stateCode_display": StringAttributeClass, // 
-        "authorId": UUIDAttributeClass, // Unique identifier for Contact associated with Web Page."]),
-        "category": StringAttributeClass, // 
-        "category_display": StringAttributeClass, // 
-        "copy": StringAttributeClass, // 
-        "adxCreatedByIPAddress": StringAttributeClass, // 
-        "adxCreatedByUsername": StringAttributeClass, // 
-        "displayDate": DateAttributeClass, // 
-        "displayOrder": StringAttributeClass, // 
-        "hiddenFromSitemap": StringAttributeClass, // 
-        "adxModifiedByIPAddress": StringAttributeClass, // 
-        "adxModifiedByUsername": StringAttributeClass, // 
-        "pageTemplateId": UUIDAttributeClass, // Unique identifier for Page Template associated with Web Page."]),
-        "parentPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web Page."]),
-        "partialUrl": UrlAttributeClass, // "]),
-        "subjectId": UUIDAttributeClass, // Unique identifier for Subject associated with Web Page."]),
-        "summary": StringAttributeClass, // 
-        "title": StringAttributeClass, // 
-        "webSiteId": UUIDAttributeClass, // Unique identifier for Website associated with Web Page."]),
-        "allowOrigin": StringAttributeClass, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
-        "customCSS": StringAttributeClass, // 
-        "customJavaScript": StringAttributeClass, // 
-        "editorialComments": StringAttributeClass, // 
-        "enabletracking": StringAttributeClass, // Select whether to enable logging of users' downloads of this webpage."]),
-        "excludeFromSearch": StringAttributeClass, // Shows whether the webpage is excluded from the portal search."]),
-        "expirationDate": DateAttributeClass, // 
-        "image": StringAttributeClass, // Unique identifier for Web File associated with Web Page."]),
-        "imageUrl": UrlAttributeClass, // "]),
-        "isRoot": BooleanAttributeClass, // Defines whether this is the 'root' record of this translated group of Web Pages."]),
-        "masterWebPageId": UUIDAttributeClass, // Unique identifier for Web Page associated with Web Page."]),
-        "metaDescription": StringAttributeClass, // 
-        "navigation": StringAttributeClass, // Unique identifier for Web Link Set associated with Web Page."]),
-        "publishingStateId": UUIDAttributeClass, // Unique identifier for Publishing State associated with Web Page."]),
-        "releaseDate": DateAttributeClass, // 
-        "rootWebpageId": UUIDAttributeClass, // Lookup to root WebPage."]),
-        "sharedPageConfiguration": StringAttributeClass, // Determines if the content page uses the root page configuration"]),
-        "webpageLanguageId": UUIDAttributeClass, // Language of this web page."]),
-        "entityForm": StringAttributeClass, // Unique identifier for Entity Form associated with Web Page."]),
-        "entityList": StringAttributeClass, // Unique identifier for Entity List associated with Web Page."]),
-        "webForm": StringAttributeClass, // Unique identifier for Web Form associated with Web Page."]),
-        "commentPolicy": StringAttributeClass, // 
-        "commentPolicy_display": StringAttributeClass, // 
-        "enableRatings": StringAttributeClass, // Setting this value to 'Yes' will allow users to rate the web page."]),
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user."]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "webPageId": UUIDAttribute, // Unique identifier for entity instances"]),
+        "stateCode": StringAttribute, // Status of the Web Page"]),
+        "stateCode_display": StringAttribute, // 
+        "authorId": UUIDAttribute, // Unique identifier for Contact associated with Web Page."]),
+        "category": StringAttribute, // 
+        "category_display": StringAttribute, // 
+        "copy": StringAttribute, // 
+        "adxCreatedByIPAddress": StringAttribute, // 
+        "adxCreatedByUsername": StringAttribute, // 
+        "displayDate": DateAttribute, // 
+        "displayOrder": StringAttribute, // 
+        "hiddenFromSitemap": StringAttribute, // 
+        "adxModifiedByIPAddress": StringAttribute, // 
+        "adxModifiedByUsername": StringAttribute, // 
+        "pageTemplateId": UUIDAttribute, // Unique identifier for Page Template associated with Web Page."]),
+        "parentPageId": UUIDAttribute, // Unique identifier for Web Page associated with Web Page."]),
+        "partialUrl": UrlAttribute, // "]),
+        "subjectId": UUIDAttribute, // Unique identifier for Subject associated with Web Page."]),
+        "summary": StringAttribute, // 
+        "title": StringAttribute, // 
+        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Web Page."]),
+        "allowOrigin": StringAttribute, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
+        "customCSS": StringAttribute, // 
+        "customJavaScript": StringAttribute, // 
+        "editorialComments": StringAttribute, // 
+        "enabletracking": StringAttribute, // Select whether to enable logging of users' downloads of this webpage."]),
+        "excludeFromSearch": StringAttribute, // Shows whether the webpage is excluded from the portal search."]),
+        "expirationDate": DateAttribute, // 
+        "image": StringAttribute, // Unique identifier for Web File associated with Web Page."]),
+        "imageUrl": UrlAttribute, // "]),
+        "isRoot": BooleanAttribute, // Defines whether this is the 'root' record of this translated group of Web Pages."]),
+        "masterWebPageId": UUIDAttribute, // Unique identifier for Web Page associated with Web Page."]),
+        "metaDescription": StringAttribute, // 
+        "navigation": StringAttribute, // Unique identifier for Web Link Set associated with Web Page."]),
+        "publishingStateId": UUIDAttribute, // Unique identifier for Publishing State associated with Web Page."]),
+        "releaseDate": DateAttribute, // 
+        "rootWebpageId": UUIDAttribute, // Lookup to root WebPage."]),
+        "sharedPageConfiguration": StringAttribute, // Determines if the content page uses the root page configuration"]),
+        "webpageLanguageId": UUIDAttribute, // Language of this web page."]),
+        "entityForm": StringAttribute, // Unique identifier for Entity Form associated with Web Page."]),
+        "entityList": StringAttribute, // Unique identifier for Entity List associated with Web Page."]),
+        "webForm": StringAttribute, // Unique identifier for Web Form associated with Web Page."]),
+        "commentPolicy": StringAttribute, // 
+        "commentPolicy_display": StringAttribute, // 
+        "enableRatings": StringAttribute, // Setting this value to 'Yes' will allow users to rate the web page."]),
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // Reason for the status of the Web Page
+        "statusCode": StatusCodeAttribute, // Reason for the status of the Web Page
       ])
       .registerPath("portal_webpages");   
   }

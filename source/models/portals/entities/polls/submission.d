@@ -12,27 +12,27 @@ class DPortalPollSubmissionEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttributeClass, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttributeClass, // Shows who last updated the record on behalf of another user."]),
-        "overriddenCreatedOn": TimestampAttributeClass, // Date and time that the record was migrated."]),
-        "importSequenceNumber": NumberAttributeClass, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttributeClass, // Owner Id"]),
-        "ownerIdType": StringAttributeClass, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttributeClass, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttributeClass, // Unique identifier of the user that owns the activity."]),
-        "owningTeamId": TeamIdAttributeClass, // , // Unique identifier for the team that owns the record."]),
-        "timeZoneRuleVersionNumber": NumberAttributeClass, //For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttributeClass, // Time zone code that was in use when the record was created."]),
-        "pollSubmissionId": UUIDAttributeClass, // Shows the entity instance."]),
-        "stateCode": StringAttributeClass, // Status of the Poll Submission"]),
-        "stateCode_display": StringAttributeClass, // 
-        "contactId": UUIDAttributeClass, // en":"Unique identifier for Contact associated with Poll Submission."]),
-        "pollId": UUIDAttributeClass, // Unique identifier for Poll associated with Poll Submission."]),
-        "pollOptionId": UUIDAttributeClass, // Unique identifier for PollOption associated with Poll Submission."]),
-        "visitorID": StringAttributeClass, // 
+        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
+        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
+        "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
+        "ownerId": UUIDAttribute, // Owner Id"]),
+        "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
+        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
+        "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
+        "pollSubmissionId": UUIDAttribute, // Shows the entity instance."]),
+        "stateCode": StringAttribute, // Status of the Poll Submission"]),
+        "stateCode_display": StringAttribute, // 
+        "contactId": UUIDAttribute, // en":"Unique identifier for Contact associated with Poll Submission."]),
+        "pollId": UUIDAttribute, // Unique identifier for Poll associated with Poll Submission."]),
+        "pollOptionId": UUIDAttribute, // Unique identifier for PollOption associated with Poll Submission."]),
+        "visitorID": StringAttribute, // 
       ])
       .addValues([
-        "statusCode": StatusCodeAttributeClass, // Select the poll submission's status.
+        "statusCode": StatusCodeAttribute, // Select the poll submission's status.
       ])
       .registerPath("portal_pollsubmissions");   
   }
