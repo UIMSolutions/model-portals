@@ -12,13 +12,13 @@ class DPortalBadgeType : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who updated the record on behalf of another user.
+        OrganizationIdAttribute, // Shows the organization.
         StateCodeAttribute, //  Status of the Badge Type
         StatusCodeAttribute, // Shows the reason for the status of the badge type.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who updated the record on behalf of another user.
-        "organizationId": UUIDAttribute, // Shows the organization.
         "importSequenceNumber": NumberAttribute, //Shows the sequence number of the import that created this record.
         "overriddenCreatedOn": TimestampAttribute, // Shows the date and time when the record was migrated. The date and time are displayed in the time zone selected in the solution options.
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only.

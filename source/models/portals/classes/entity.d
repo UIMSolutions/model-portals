@@ -20,7 +20,6 @@ class DPTLEntity : DOOPEntity {
       .addValues([ // individual values
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
@@ -44,7 +43,7 @@ class DPTLEntity : DOOPEntity {
         "webPageId": UUIDAttribute, // Unique identifier for Web Page associated with Ad."]),
         "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Ad."]),
         "webTemplateId": UUIDAttribute, // Unique identifier for Web Template associated with Ad."]),
-      ])
+      ]);
   }
 }
 mixin(EntityCalls!("PTLEntity"));

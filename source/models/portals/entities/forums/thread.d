@@ -12,6 +12,10 @@ class DPortalForumThreadEntity : DOOPEntity {
 
     this
       .addValues([
+        "stateCode": StateCodeAttribute, // Status of the Forum Thread
+        "statusCode": StatusCodeAttribute, // Select the forum thread's status.
+      ])
+      .addValues([
         "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
         "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -35,10 +39,6 @@ class DPortalForumThreadEntity : DOOPEntity {
         "sticky": StringAttribute, // 
         "typeId": UUIDAttribute, // Shows the forum Thread Type associated with the forum thread."]),
         "viewCount": StringAttribute, // 
-      ])
-      .addValues([
-        "stateCode": StateCodeAttribute, // Status of the Forum Thread
-        "statusCode": StatusCodeAttribute, // Select the forum thread's status.
       ])
       .registerPath("portal_forumthreads");   
   }
