@@ -12,20 +12,22 @@ class DPortalWebPageEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user."]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
+        OwnerIdAttribute, // Owner Id"]),
+        StateCodeAttribute, // Status of the Web Page"]),
+        StatusCodeAttribute, // Reason for the status of the Web Page
+      ])
+      .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
-        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "webPageId": UUIDAttribute, // Unique identifier for entity instances"]),
-        "stateCode": StringAttribute, // Status of the Web Page"]),
-        "stateCode_display": StringAttribute, // 
         "authorId": UUIDAttribute, // Unique identifier for Contact associated with Web Page."]),
         "category": StringAttribute, // 
         "category_display": StringAttribute, // 
@@ -68,9 +70,6 @@ class DPortalWebPageEntity : DOOPEntity {
         "commentPolicy": StringAttribute, // 
         "commentPolicy_display": StringAttribute, // 
         "enableRatings": StringAttribute, // Setting this value to 'Yes' will allow users to rate the web page."]),
-      ])
-      .addValues([
-        "statusCode": StatusCodeAttribute, // Reason for the status of the Web Page
       ])
       .registerPath("portal_webpages");   
   }

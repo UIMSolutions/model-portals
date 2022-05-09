@@ -12,25 +12,23 @@ class DPortalForumEntity : DOOPEntity {
 
     this
       .addValues([
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
+        OwnerIdAttribute, // Owner Id"]),
+        StateCodeAttribute, // Status of the Forum
+        StatusCodeAttribute, // Select the forum's status.
+      ])
+      .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
-        "ownerId": UUIDAttribute, // Owner Id"]),
-        "owningBusinessUnitId": UUIDAttribute, // Unique identifier for the business unit that owns the record"]),
-        "owningUserId": UUIDAttribute, // Unique identifier of the user that owns the activity."]),
+        "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record"]),
+        "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity."]),
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "communityForumId": UUIDAttribute, // Shows the entity instances."]),
         "partialUrl": UrlAttribute, // "]),
         "websiteId": UUIDAttribute, // Shows the Website associated with the forum."]),
         "forumLanguageId": UUIDAttribute, // Option to make forums and forum posts language specific"]),
-      ])
-      .addValues([
-        StateCodeAttribute, // Status of the Forum
-        StatusCodeAttribute, // Select the forum's status.
-      ])
-      .addValues([
         "postCount": StringAttribute, // 
         "publishingStateId": StringAttribute, // Shows the Publishing State associated with the forum.
         "threadCount": StringAttribute, // 
