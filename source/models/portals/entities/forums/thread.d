@@ -12,6 +12,8 @@ class DPortalForumThreadEntity : DOOPEntity {
 
     this
       .addValues([
+        FirstPostIdAttribute, // Shows the forum post associated with the forum thread."]),
+        LastPostIdAttribute, // Shows the forum post associated with the forum thread."]),
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Forum Thread
         StatusCodeAttribute, // Select the forum thread's status.
@@ -28,11 +30,9 @@ class DPortalForumThreadEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "communityForumThreadId": UUIDAttribute, // Shows the entity instances."]),
-        "firstPostId": UUIDAttribute, // Shows the forum post associated with the forum thread."]),
         "forumId": UUIDAttribute, // Shows the forum associated with the forum thread."]),
         "isAnswered": BooleanAttribute, //
         "lastPostDate": DateAttribute, // 
-        "lastPostId": UUIDAttribute, // Shows the forum post associated with the forum thread."]),
         "locked": StringAttribute, // 
         "postCount": StringAttribute, // 
         "publishingStateId": UUIDAttribute, // Shows the publishing state associated with the forum thread."]),
