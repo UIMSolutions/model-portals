@@ -14,6 +14,7 @@ public import uim.core;
 public import uim.oop;
 public import uim.entities;
 
+public import models.portals.attributes;
 public import models.portals.classes;
 public import models.portals.entities;
 
