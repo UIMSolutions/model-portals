@@ -17,6 +17,7 @@ class DPortalWebSiteEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Website"]),
         StatusCodeAttribute, // Reason for the status of the Website
+        WebSiteIdAttribute, // Unique identifier for entity instances"]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -27,11 +28,10 @@ class DPortalWebSiteEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "webSiteId": UUIDAttribute, // Unique identifier for entity instances"]),
         "defaultLanguage": StringAttribute, // Lookup to Website Language - the current default language of the website"]),
         "footerTemplateId": UUIDAttribute, // Web Template to use as Website footer content."]),
         "headerTemplateId": UUIDAttribute, // Web Template to use as Website header content."]),
-        "parentWebSiteId": UUIDAttribute, // Unique identifier for Website associated with Website."]),
+        "parentWebSiteId": WebSiteIdAttribute, // Unique identifier for Website associated with Website."]),
         "partialUrl": UrlAttribute, // "]),
         "primaryDomainName": StringAttribute, // Tracks the primary domain name of the Portal"]),
         "websiteLanguage": StringAttribute, // 

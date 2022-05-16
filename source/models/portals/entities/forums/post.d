@@ -12,13 +12,13 @@ class DPortalForumPostEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Status of the Forum Post
         StatusCodeAttribute, // Select the forum post's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record"]),

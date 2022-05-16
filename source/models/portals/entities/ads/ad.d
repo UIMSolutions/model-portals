@@ -17,6 +17,10 @@ class DPortalAdEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Ad"]),
         StatusCodeAttribute, // Select the ad's status.
+        WebFileIdAttribute, // Unique identifier for Web File associated with Ad."]),
+        WebPageIdAttribute, // Unique identifier for Web Page associated with Ad."]),
+        WebSiteIdAttribute, // Unique identifier for Website associated with Ad."]),
+        WebTemplateIdAttribute, // Unique identifier for Web Template associated with Ad."]),
       ])
       .addValues([ // individual values
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -40,10 +44,6 @@ class DPortalAdEntity : DOOPEntity {
         "releaseDate": DateAttribute, // 
         "title": StringAttribute, // 
         "Url": UrlAttribute, // "]),
-        "webFileId": UUIDAttribute, // Unique identifier for Web File associated with Ad."]),
-        "webPageId": UUIDAttribute, // Unique identifier for Web Page associated with Ad."]),
-        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Ad."]),
-        "webTemplateId": UUIDAttribute, // Unique identifier for Web Template associated with Ad."]),
       ])
       .registerPath("portal_ads");
   }

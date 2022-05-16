@@ -17,6 +17,7 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Forum Thread Type
         StatusCodeAttribute, // Select the forum thread type's status.
+        WebSiteIdAttribute, // Shows the Website associated with the forum thread type."]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -32,7 +33,6 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
         "displayOrder": StringAttribute, // 
         "isDefault": BooleanAttribute, //
         "requiresAnswer": StringAttribute, // 
-        "websiteId": UUIDAttribute, // Shows the Website associated with the forum thread type."]),
       ])
       .registerPath("portal_forumthreadtypes"); 
   }

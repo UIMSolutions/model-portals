@@ -17,6 +17,8 @@ class DPortalWebFileEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Web File"]),
         StatusCodeAttribute, // Reason for the status of the Web File
+        WebFileIdAttribute, // Unique identifier for entity instances"]),
+        WebSiteIdAttribute, // Unique identifier for Website associated with Web File."]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -27,7 +29,6 @@ class DPortalWebFileEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "webFileId": UUIDAttribute, // Unique identifier for entity instances"]),
         "adxCreatedByIPAddress": StringAttribute, // 
         "adxCreatedByUsername": StringAttribute, // 
         "displayDate": DateAttribute, // 
@@ -39,7 +40,6 @@ class DPortalWebFileEntity : DOOPEntity {
         "partialUrl": UrlAttribute, // "]),
         "subjectId": UUIDAttribute, // Unique identifier for Subject associated with Web File."]),
         "summary": StringAttribute, // 
-        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Web File."]),
         "allowOrigin": StringAttribute, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
         "cloudBlobAddress": StringAttribute, // 
         "contentDisposition": StringAttribute, // Shows the value to be applied to the HTTP Response Headers Content-Disposition."]),
@@ -47,7 +47,7 @@ class DPortalWebFileEntity : DOOPEntity {
         "enableTracking": StringAttribute, // Select whether to enable logging of users' downloads of this web file."]),
         "excludeFromSearch": StringAttribute, // Shows whether the web file is excluded from the portal search."]),
         "expirationDate": DateAttribute, // 
-        "masterWebFileId": UUIDAttribute, // Unique identifier for Web File associated with Web File."]),
+        "masterWebFileId": WebFileIdAttribute, // Unique identifier for Web File associated with Web File."]),
         "publishingStateId": UUIDAttribute, // Unique identifier for Publishing State associated with Web File."]),
         "releaseDate": DateAttribute, // 
         "title": StringAttribute, // 

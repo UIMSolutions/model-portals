@@ -17,6 +17,7 @@ class DPortalForumEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Forum
         StatusCodeAttribute, // Select the forum's status.
+        WebSiteIdAttribute, // Shows the Website associated with the forum."]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -27,7 +28,6 @@ class DPortalForumEntity : DOOPEntity {
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "communityForumId": UUIDAttribute, // Shows the entity instances."]),
         "partialUrl": UrlAttribute, // "]),
-        "websiteId": UUIDAttribute, // Shows the Website associated with the forum."]),
         "forumLanguageId": UUIDAttribute, // Option to make forums and forum posts language specific"]),
         "postCount": StringAttribute, // 
         "publishingStateId": StringAttribute, // Shows the Publishing State associated with the forum.

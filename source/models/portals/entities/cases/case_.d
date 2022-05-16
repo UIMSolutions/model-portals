@@ -12,13 +12,14 @@ class DPortalCaseEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        ContactIdAttribute, // en":"Unique identifier of the contact associated with the case. 
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. 
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user. 
         OwnerIdAttribute, // Owner Id 
         StateCodeAttribute, // Shows whether the case is active, resolved, or canceled. Resolved and canceled cases are read-only and can't be edited unless they are reactivated. 
         StatusCodeAttribute, // Select the case's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. 
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user. 
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated. 
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record. 
         "ownerIdType": StringAttribute, // The type of owner, either User or Team. 
@@ -92,7 +93,6 @@ class DPortalCaseEntity : DOOPEntity {
         "decrementEntitlementTerm": StringAttribute, // Shows whether terms of the associated entitlement should be decremented or not. 
         "entityImageId": UUIDAttribute, // 
         "accountId": UUIDAttribute, // Unique identifier of the account with which the case is associated. 
-        "contactId": UUIDAttribute, // en":"Unique identifier of the contact associated with the case. 
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency. 
         "transactionCurrencyId": UUIDAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency. 
         "resolutionDate": DateAttribute, // 

@@ -17,6 +17,8 @@ class DPortalWebPageEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Web Page"]),
         StatusCodeAttribute, // Reason for the status of the Web Page
+        WebPageIdAttribute, // Unique identifier for entity instances"]),
+        WebSiteIdAttribute, // Unique identifier for Website associated with Web Page."]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -27,7 +29,6 @@ class DPortalWebPageEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "webPageId": UUIDAttribute, // Unique identifier for entity instances"]),
         "authorId": UUIDAttribute, // Unique identifier for Contact associated with Web Page."]),
         "category": StringAttribute, // 
         "category_display": StringAttribute, // 
@@ -45,7 +46,6 @@ class DPortalWebPageEntity : DOOPEntity {
         "subjectId": UUIDAttribute, // Unique identifier for Subject associated with Web Page."]),
         "summary": StringAttribute, // 
         "title": StringAttribute, // 
-        "webSiteId": UUIDAttribute, // Unique identifier for Website associated with Web Page."]),
         "allowOrigin": StringAttribute, // Defines CORS header Access-Control-Allow-Origin for cross origin requests."]),
         "customCSS": StringAttribute, // 
         "customJavaScript": StringAttribute, // 
@@ -56,12 +56,12 @@ class DPortalWebPageEntity : DOOPEntity {
         "image": StringAttribute, // Unique identifier for Web File associated with Web Page."]),
         "imageUrl": UrlAttribute, // "]),
         "isRoot": BooleanAttribute, // Defines whether this is the 'root' record of this translated group of Web Pages."]),
-        "masterWebPageId": UUIDAttribute, // Unique identifier for Web Page associated with Web Page."]),
+        "masterWebPageId": WebPageIdAttribute, // Unique identifier for Web Page associated with Web Page."]),
         "metaDescription": StringAttribute, // 
         "navigation": StringAttribute, // Unique identifier for Web Link Set associated with Web Page."]),
         "publishingStateId": UUIDAttribute, // Unique identifier for Publishing State associated with Web Page."]),
         "releaseDate": DateAttribute, // 
-        "rootWebpageId": UUIDAttribute, // Lookup to root WebPage."]),
+        "rootWebPageId": WebPageIdAttribute, // Lookup to root WebPage."]),
         "sharedPageConfiguration": StringAttribute, // Determines if the content page uses the root page configuration"]),
         "webpageLanguageId": UUIDAttribute, // Language of this web page."]),
         "entityForm": StringAttribute, // Unique identifier for Entity Form associated with Web Page."]),

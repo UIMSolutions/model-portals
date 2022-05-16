@@ -12,13 +12,15 @@ class DPortalIdeaForumEntity : DOOPEntity {
 
     this
       .addValues([
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Shows whether the idea forum is active or inactive. Inactive records are read-only and can't be edited unless they are reactivated."]),
         StatusCodeAttribute, // Select the idea forum's status.
+        WebSiteIdAttribute, // Shows the website associated with the idea forum."]),
+        WebSiteLanguageIdAttribute, // Option to make idea forums language specific"]),
       ])
       .addValues([
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
@@ -40,8 +42,6 @@ class DPortalIdeaForumEntity : DOOPEntity {
         "votingPolicy_display": StringAttribute, // 
         "votingType": StringAttribute, // Shows the type of voting that this idea forum allows."]),
         "votingType_display": StringAttribute, // 
-        "websiteId": UUIDAttribute, // Shows the website associated with the idea forum."]),
-        "websiteLanguageId": UUIDAttribute, // Option to make idea forums language specific"]),
       ])
       .registerPath("portal_ideaforums");   
   }

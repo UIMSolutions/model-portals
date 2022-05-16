@@ -12,6 +12,8 @@ class DPortalForumThreadEntity : DOOPEntity {
 
     this
       .addValues([
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         FirstPostIdAttribute, // Shows the forum post associated with the forum thread."]),
         LastPostIdAttribute, // Shows the forum post associated with the forum thread."]),
         OwnerIdAttribute, // Owner Id"]),
@@ -19,8 +21,6 @@ class DPortalForumThreadEntity : DOOPEntity {
         StatusCodeAttribute, // Select the forum thread's status.
       ])
       .addValues([
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),

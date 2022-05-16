@@ -17,6 +17,8 @@ class DPortalWebSiteLanguageEntity : DOOPEntity {
         OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Status of the Website Language"]),
         StatusCodeAttribute, // Reason for the status of the Website Language
+        WebSiteIdAttribute, // Lookup to Website"]),
+        WebSiteLanguageIdAttribute, // Unique identifier for entity instances"]),
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -27,10 +29,8 @@ class DPortalWebSiteLanguageEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "webSiteLanguageId": UUIDAttribute, // Unique identifier for entity instances"]),
         "portalLanguageId": UUIDAttribute, // lookup to Portal Language - one of the 43 supported Dynamics 365 languages that this website/language instance will use"]),
         "publishingState": StringAttribute, // Lookup to Publishing State - publishing state of this website/language instance (draft/published)"]),
-        "webSiteId": UUIDAttribute, // Lookup to Website"]),
       ])
       .registerPath("portal_websitelanguages");   
   }

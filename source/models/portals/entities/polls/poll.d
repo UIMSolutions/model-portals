@@ -12,13 +12,16 @@ class DPortalPollEntity : DOOPEntity {
 
     this
       .addValues([
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         OwnerIdAttribute, // 
+        PollIdAttribute, // Shows the entity instance."]),
         StateCodeAttribute, // Status of the Poll
         StatusCodeAttribute, // Select the poll's status.
+        WebSiteIdAttribute, // Unique identifier for Website associated with Poll."]),
+        WebTemplateIdAttribute, // Unique identifier for Web Template associated with Poll."]),
       ])
       .addValues([
-        "createdOnBehalfBy": UUIDAttribute, // Shows who created the record on behalf of another user. "]),
-        "modifiedOnBehalfBy": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, //Sequence number of the import that created this record."]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
@@ -27,15 +30,12 @@ class DPortalPollEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "pollId": UUIDAttribute, // Shows the entity instance."]),
         "active": StringAttribute, // 
         "closeVotingDate": DateAttribute, // 
         "expirationDate": DateAttribute, // 
         "question": StringAttribute, // 
         "releaseDate": DateAttribute, // 
         "submitButtonLabel": StringAttribute, // 
-        "websiteId": UUIDAttribute, // Unique identifier for Website associated with Poll."]),
-        "webTemplateId": UUIDAttribute, // Unique identifier for Web Template associated with Poll."]),
       ])
       .registerPath("portal_polls");   
   }

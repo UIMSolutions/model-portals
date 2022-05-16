@@ -15,6 +15,7 @@ class DPortalPollOptionEntity : DOOPEntity {
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]),
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         OwnerIdAttribute, // Owner Id"]),
+        PollIdAttribute, // Unique identifier for Poll associated with PollOption."]),
         StateCodeAttribute, // Status of the Poll Option
         StatusCodeAttribute, // Select the poll option's status.
       ])
@@ -30,7 +31,6 @@ class DPortalPollOptionEntity : DOOPEntity {
         "pollOptionId": UUIDAttribute, // Shows the entity instance."]),
         "answer": StringAttribute, // 
         "displayOrder": StringAttribute, // 
-        "pollId": UUIDAttribute, // Unique identifier for Poll associated with PollOption."]),
         "votes": StringAttribute, // 
       ])
       .registerPath("portal_polloptions");   

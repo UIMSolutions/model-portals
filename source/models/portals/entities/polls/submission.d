@@ -12,9 +12,13 @@ class DPortalPollSubmissionEntity : DOOPEntity {
 
     this
       .addValues([
+        ContactIdAttribute, // en":"Unique identifier for Contact associated with Poll Submission."]),
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user. "]),
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
         OwnerIdAttribute, // Owner Id"]),
+        PollIdAttribute, // Unique identifier for Poll associated with Poll Submission."]),
+        PollOptionIdAttribute, // Unique identifier for PollOption associated with Poll Submission."]),
+        PollSubmissionIdAttribute, // Shows the entity instance."]),
         StateCodeAttribute, // Status of the Poll Submission"]),
         StatusCodeAttribute, // Select the poll submission's status.
       ])
@@ -27,10 +31,6 @@ class DPortalPollSubmissionEntity : DOOPEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record."]),
         "timeZoneRuleVersionNumber": NumberAttribute, //For internal use only."]),
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "pollSubmissionId": UUIDAttribute, // Shows the entity instance."]),
-        "contactId": UUIDAttribute, // en":"Unique identifier for Contact associated with Poll Submission."]),
-        "pollId": UUIDAttribute, // Unique identifier for Poll associated with Poll Submission."]),
-        "pollOptionId": UUIDAttribute, // Unique identifier for PollOption associated with Poll Submission."]),
         "visitorID": StringAttribute, // 
       ])
       .registerPath("portal_pollsubmissions");   
