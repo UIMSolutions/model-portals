@@ -16,7 +16,7 @@ class DPollOptionIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("PollOptionIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DPollOptionIdAttribute);
     testAttribute(PollOptionIdAttribute);

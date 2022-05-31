@@ -16,7 +16,7 @@ class DLastPostIdAttribute : DPostIdAttribute {
 }
 mixin(AttributeCalls!("LastPostIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DLastPostIdAttribute);
     testAttribute(LastPostIdAttribute);

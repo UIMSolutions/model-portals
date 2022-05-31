@@ -1,4 +1,4 @@
-module models.portals.attributes.ads.ad;
+module models.portals.attributes.uuids.entityids.ads.ad;
 
 @safe:
 import models.portals;
@@ -16,7 +16,7 @@ class DAdIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("AdIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DAdIdAttribute);
     testAttribute(AdIdAttribute);

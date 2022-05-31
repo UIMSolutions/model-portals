@@ -16,7 +16,7 @@ class DWebTemplateIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("WebTemplateIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DWebTemplateIdAttribute);
     testAttribute(WebTemplateIdAttribute);

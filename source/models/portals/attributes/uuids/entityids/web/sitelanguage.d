@@ -16,7 +16,7 @@ class DWebSiteLanguageIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("WebSiteLanguageIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DWebSiteLanguageIdAttribute);
     testAttribute(WebSiteLanguageIdAttribute);

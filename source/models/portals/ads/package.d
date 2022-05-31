@@ -1,6 +1,3 @@
-module models.portals.attributes.ads;
+module models.portals.attributes.uuids.entityids.ads;
 
-public import models.portals.attributes.ads.ad;
-
-public import models.portals.attributes.polls.option;
-public import models.portals.attributes.polls.submission;
+public import models.portals.attributes.uuids.entityids.ads.ad;

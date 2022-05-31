@@ -16,7 +16,7 @@ class DWebRoleIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("WebRoleIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DWebRoleIdAttribute);
     testAttribute(WebRoleIdAttribute);

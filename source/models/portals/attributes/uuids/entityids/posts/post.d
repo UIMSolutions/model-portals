@@ -16,7 +16,7 @@ class DPostIdAttribute : DEntityIdAttribute {
 }
 mixin(AttributeCalls!("PostIdAttribute"));
 
-version(test_uim_entities) {
+version(test_model_portals) {
   unittest {
     testAttribute(new DPostIdAttribute);
     testAttribute(PostIdAttribute);
