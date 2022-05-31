@@ -1,4 +1,4 @@
-module models.portals.attributes.posts.last;
+module models.portals.attributes.uuids.entityids.posts.last;
 
 @safe:
 import models.portals;

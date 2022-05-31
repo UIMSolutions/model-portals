@@ -1,4 +1,4 @@
-module models.portals.attributes.polls.poll;
+module models.portals.attributes.uuids.entityids.polls.poll;
 
 @safe:
 import models.portals;

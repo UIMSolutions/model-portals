@@ -1,4 +1,4 @@
-module models.portals.attributes.web.sitelanguage;
+module models.portals.attributes.uuids.entityids.web.sitelanguage;
 
 @safe:
 import models.portals;
