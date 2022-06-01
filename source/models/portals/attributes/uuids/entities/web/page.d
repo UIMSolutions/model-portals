@@ -1,4 +1,4 @@
-module models.portals.attributes.uuids.entityids.web.page;
+module models.portals.attributes.uuids.entities.web.page;
 
 @safe:
 import models.portals;
