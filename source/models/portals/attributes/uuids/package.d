@@ -1,3 +1,3 @@
 module models.portals.attributes.uuids;
 
-public import models.portals.attributes.uuids.entityids;
+public import models.portals.attributes.uuids.entities;
