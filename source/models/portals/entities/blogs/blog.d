@@ -43,12 +43,12 @@ class DPortalBlogEntity : DOOPEntity {
       .registerPath("portal_blogs");    
   }
    
-  // Get website associated with the blog.,
+/*   // Get website associated with the blog.,
   auto webSite() {  
     if ("webSiteId" in this.attributes) 
       if (collection && collection.tenant) 
         return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
-    return null; }
+    return null; } */
 }
 mixin(EntityCalls!("PortalBlogEntity"));
 
