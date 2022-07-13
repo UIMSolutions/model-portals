@@ -46,6 +46,8 @@ class DPortalBlogPostEntity : DOOPEntity {
       ])
       .registerPath("portal_blogposts");    
   }
+
+  
 }
 mixin(EntityCalls!("PortalBlogPostEntity"));
 
