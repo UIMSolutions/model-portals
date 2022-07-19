@@ -16,7 +16,10 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entities",
 		"../../LIBS/uim-entitybase",
-		"./"
+
+		"../../LIBS/model-applications",
+
+    "./"
 	],
 	"importPaths": [
 		"../../LIBS/uim-core",
@@ -25,7 +28,10 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entities",
 		"../../LIBS/uim-entitybase",
-		"./"
+
+    "../../LIBS/model-applications",
+
+    "./"
 	],
 	"configurations": [
 		{
