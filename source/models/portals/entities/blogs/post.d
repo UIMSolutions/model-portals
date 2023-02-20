@@ -8,7 +8,7 @@ class DPortalBlogPostEntity : DOOPEntity {
   mixin(EntityThis!("PortalBlogPostEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

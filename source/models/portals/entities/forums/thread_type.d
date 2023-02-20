@@ -8,7 +8,7 @@ class DPortalForumThreadTypeEntity : DOOPEntity {
   mixin(EntityThis!("PortalForumThreadTypeEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

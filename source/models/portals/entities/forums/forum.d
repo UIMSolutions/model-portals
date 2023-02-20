@@ -8,7 +8,7 @@ class DPortalForumEntity : DOOPEntity {
   mixin(EntityThis!("PortalForumEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
@@ -30,12 +30,12 @@ class DPortalForumEntity : DOOPEntity {
         "partialUrl": UrlAttribute, // "]),
         "forumLanguageId": UUIDAttribute, // Option to make forums and forum posts language specific"]),
         "postCount": StringAttribute, // 
-        "publishingStateId": StringAttribute, // Shows the Publishing State associated with the forum.
+        "publishingStateId": UUIDAttribute, // Shows the Publishing State associated with the forum.
         "threadCount": StringAttribute, // 
-        "threadPageTemplateId": StringAttribute, // Shows the Page Template associated with the forum.
+        "threadPageTemplateId": UUIDAttribute, // Shows the Page Template associated with the forum.
         "displayOrder": StringAttribute, // 
         "enableQueuedPosts": StringAttribute, // Automatically put posts in a queue awaiting a moderator to approve
-        "forumPageTemplateId": StringAttribute, // Shows the Page Template associated with the forum.
+        "forumPageTemplateId": UUIDAttribute, // Shows the Page Template associated with the forum.
         "hiddenFromSitemap": StringAttribute, // 
         "lastPostId": UUIDAttribute, // Shows the forum post associated with the forum.
         "parentPageId": UUIDAttribute, // Shows the webpage associated with the forum.
