@@ -7,7 +7,7 @@ import models.portals;
 class DPortalBadgeType : DOOPEntity {
   mixin(EntityThis!("PortalBadgeType"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

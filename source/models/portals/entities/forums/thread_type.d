@@ -7,7 +7,7 @@ import models.portals;
 class DPortalForumThreadTypeEntity : DOOPEntity {
   mixin(EntityThis!("PortalForumThreadTypeEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
