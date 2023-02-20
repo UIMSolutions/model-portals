@@ -8,7 +8,7 @@ class DPortalPollOptionEntity : DOOPEntity {
   mixin(EntityThis!("PortalPollOptionEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

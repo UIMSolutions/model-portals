@@ -8,7 +8,7 @@ class DPortalWebRoleEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebRoleEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

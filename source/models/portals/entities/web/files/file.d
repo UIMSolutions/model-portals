@@ -8,7 +8,7 @@ class DPortalWebFileEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebFileEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

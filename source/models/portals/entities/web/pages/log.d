@@ -8,7 +8,7 @@ class DPortalWebPageLogEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebPageLogEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
