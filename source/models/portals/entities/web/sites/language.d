@@ -8,7 +8,7 @@ class DPortalWebSiteLanguageEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebSiteLanguageEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
