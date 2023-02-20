@@ -8,7 +8,7 @@ class DPortalAccountEntity : DOOPEntity {
   mixin(EntityThis!("PortalAccountEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fixed values

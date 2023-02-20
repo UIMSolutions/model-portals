@@ -8,7 +8,7 @@ class DPortalAdPlacementEntity : DOOPEntity {
   mixin(EntityThis!("PortalAdPlacementEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

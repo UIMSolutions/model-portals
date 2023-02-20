@@ -7,7 +7,7 @@ class DPTLEntity : DOOPEntity {
   mixin(EntityThis!("PTLEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values
