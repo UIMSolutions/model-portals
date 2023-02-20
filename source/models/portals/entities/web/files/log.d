@@ -7,7 +7,7 @@ import models.portals;
 class DPortalWebFileLogEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebFileLogEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
