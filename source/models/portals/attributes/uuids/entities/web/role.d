@@ -6,7 +6,7 @@ import models.portals;
 class DWebRoleIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("WebRoleIdAttribute"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
