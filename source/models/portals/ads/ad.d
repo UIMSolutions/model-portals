@@ -11,7 +11,7 @@ class DAdIdAttribute : DEntityIdAttribute {
 
     this
       .name("adId")
-      .registerPath("adId");
+      .registerPath("portals_ad.ids");
   }  
 }
 mixin(AttributeCalls!("AdIdAttribute"));
