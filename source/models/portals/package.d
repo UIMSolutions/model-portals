@@ -16,10 +16,14 @@ public import uim.entities;
 
 public import models.applications;
 
-public import models.portals.attributes;
-public import models.portals.classes;
-public import models.portals.entities;
-
+public {
+  import models.portals.attributes;
+  import models.portals.classes;
+  import models.portals.elements;
+  import models.portals.entities;
+  import models.portals.usecases;
+  import models.portals.values;
+}
 static this() {
   EntityRegistry
     .register(
