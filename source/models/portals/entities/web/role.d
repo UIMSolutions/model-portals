@@ -34,7 +34,7 @@ class DPortalWebRoleEntity : DOOPEntity {
         "anonymousUsersRole": StringAttribute, // 
         "key": StringAttribute, // An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code.,
       ])
-      .registerPath("portal_webroles");
+      .registerPath("portal_web.roles");
   } 
 /*   auto webSite() {  
     if ("webSiteId" in this.attributes) 

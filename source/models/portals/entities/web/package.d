@@ -1,8 +1,5 @@
 module models.portals.entities.web;
 
-@safe:
-import models.portals;
-
 // packages
 public import models.portals.entities.web.files;
 public import models.portals.entities.web.pages;

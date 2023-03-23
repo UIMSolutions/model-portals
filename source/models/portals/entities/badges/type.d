@@ -27,7 +27,7 @@ class DPortalBadgeType : DOOPEntity {
         "displayText": StringAttribute, // Actual shown label for the badge
         "iconName": StringAttribute, // Add font awesome name such as fa-user
       ])
-      .registerPath("portal_badgetypes");
+      .registerPath("portal_badges.types");
   }
 }
 mixin(EntityCalls!("PortalBadgeType"));
