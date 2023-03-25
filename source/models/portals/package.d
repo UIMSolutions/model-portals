@@ -10,9 +10,11 @@ public import std.uuid;
 public import vibe.d;
 
 // UIM libraries
-public import uim.core;
-public import uim.oop;
-public import uim.entities;
+public {
+  import uim.core;
+  import uim.oop;
+  import uim.entities;
+}
 
 public import models.applications;
 
@@ -24,6 +26,7 @@ public {
   import models.portals.usecases;
   import models.portals.values;
 }
+
 static this() {
   EntityRegistry
     .register(
