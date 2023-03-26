@@ -32,7 +32,7 @@ class DPortalCaseDeflectionEntity : DOOPEntity {
         "contact": StringAttribute, // Contact who found the answer when the ticket was created.
         "knowledgeArticle": StringAttribute, // Knowledge Articles
       ])
-      .registerPath("portal_casedeflections");    
+      .registerPath("portal_cases.deflections");    
   }
 }
 mixin(EntityCalls!("PortalCaseDeflectionEntity"));
