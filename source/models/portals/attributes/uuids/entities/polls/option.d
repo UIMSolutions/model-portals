@@ -11,7 +11,7 @@ class DPollOptionIdAttribute : DEntityIdAttribute {
 
     this
       .name("pollOptionId")
-      .registerPath("pollOptionId");
+      .registerPath("portals_uuids.entities.polls.options");
   }  
 }
 mixin(AttributeCalls!("PollOptionIdAttribute"));

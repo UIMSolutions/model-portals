@@ -11,7 +11,7 @@ class DPostIdAttribute : DEntityIdAttribute {
 
     this
       .name("postId")
-      .registerPath("postId");
+      .registerPath("portals_uuids.entities.posts");
   }  
 }
 mixin(AttributeCalls!("PostIdAttribute"));

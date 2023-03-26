@@ -11,7 +11,7 @@ class DFirstPostIdAttribute : DPostIdAttribute {
 
     this
       .name("firstPostId")
-      .registerPath("firstPostId");
+      .registerPath("portals_uuids.entities.posts.firsts");
   }  
 }
 mixin(AttributeCalls!("FirstPostIdAttribute"));

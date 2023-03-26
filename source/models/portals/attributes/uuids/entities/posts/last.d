@@ -11,7 +11,7 @@ class DLastPostIdAttribute : DPostIdAttribute {
 
     this
       .name("lastPostId")
-      .registerPath("lastPostId");
+      .registerPath("portals_uuids.entities.posts.last");
   }  
 }
 mixin(AttributeCalls!("LastPostIdAttribute"));

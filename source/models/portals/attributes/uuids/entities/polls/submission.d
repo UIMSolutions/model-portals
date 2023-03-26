@@ -11,7 +11,7 @@ class DPollSubmissionIdAttribute : DEntityIdAttribute {
 
     this
       .name("pollSubmissionId")
-      .registerPath("pollSubmissionId");
+      .registerPath("portals_uuids.entities.polls.submission");
   }  
 }
 mixin(AttributeCalls!("PollSubmissionIdAttribute"));
