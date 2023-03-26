@@ -4,7 +4,7 @@ module models.portals.entities.cases.case_;
 import models.portals;
 
 // Service request case associated with a contract.
-class DPortalCaseEntity : DOOPEntity {
+class DPortalCaseEntity : DEntity {
   mixin(EntityThis!("PortalCaseEntity"));
 
   override void initialize(Json configSettings = null) {

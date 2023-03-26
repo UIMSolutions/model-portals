@@ -4,7 +4,7 @@ module models.portals.entities.ads.ad;
 import models.portals;
 
 // Ad that is attached to one or more objects, including other notes.
-class DPortalAdEntity : DOOPEntity {
+class DPortalAdEntity : DEntity {
   mixin(EntityThis!("PortalAdEntity"));
 
   override void initialize(Json configSettings = null) {

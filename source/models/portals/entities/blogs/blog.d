@@ -4,7 +4,7 @@ module models.portals.entities.blogs.blog;
 import models.portals;
 
 // The root entity for a portal blog.
-class DPortalBlogEntity : DOOPEntity {
+class DPortalBlogEntity : DEntity {
   mixin(EntityThis!("PortalBlogEntity"));
 
   override void initialize(Json configSettings = null) {

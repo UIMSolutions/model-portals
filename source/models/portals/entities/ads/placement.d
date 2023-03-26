@@ -4,7 +4,7 @@ module models.portals.entities.ads.placement;
 import models.portals;
 
 // 
-class DPortalAdPlacementEntity : DOOPEntity {
+class DPortalAdPlacementEntity : DEntity {
   mixin(EntityThis!("PortalAdPlacementEntity"));
 
   override void initialize(Json configSettings = null) {

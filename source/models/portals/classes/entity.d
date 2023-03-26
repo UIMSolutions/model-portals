@@ -3,7 +3,7 @@ module models.portals.classes.entity;
 @safe:
 import models.portals;
 
-class DPTLEntity : DOOPEntity {
+class DPTLEntity : DEntity {
   mixin(EntityThis!("PTLEntity"));
 
   override void initialize(Json configSettings = null) {

@@ -4,7 +4,7 @@ module models.portals.entities.badges.type;
 import models.portals;
 
 // 
-class DPortalBadgeType : DOOPEntity {
+class DPortalBadgeType : DEntity {
   mixin(EntityThis!("PortalBadgeType"));
 
   override void initialize(Json configSettings = null) {

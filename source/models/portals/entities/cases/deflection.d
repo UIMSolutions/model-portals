@@ -4,7 +4,7 @@ module models.portals.entities.cases.deflection;
 import models.portals;
 
 // Captures the number of Found My Answer clicks in the portal.
-class DPortalCaseDeflectionEntity : DOOPEntity {
+class DPortalCaseDeflectionEntity : DEntity {
   mixin(EntityThis!("PortalCaseDeflectionEntity"));
 
   override void initialize(Json configSettings = null) {

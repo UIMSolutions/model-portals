@@ -4,7 +4,7 @@ module models.portals.entities.external_identity;
 import models.portals;
 
 // ExternalIdentity that is attached to one or more objects, including other notes.
-class DPortalExternalIdentityEntity : DOOPEntity {
+class DPortalExternalIdentityEntity : DEntity {
   mixin(EntityThis!("PortalExternalIdentityEntity"));
 
   override void initialize(Json configSettings = null) {
