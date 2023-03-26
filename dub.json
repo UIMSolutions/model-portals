@@ -8,9 +8,9 @@
 	"license": "Apache-2.0",
 	"name": "model-portals",
 	"dependencies": {
-		"colored": "~>0.0.23",
-		"unit-threaded": "1.0.15",
-		"vibe-d": "~>0.9.5"
+		"colored": "~>0.0.29",
+		"unit-threaded": "2.1.5",
+		"vibe-d": "~>0.9.6"
 	},
 	"sourcePaths": [
 		"../../LIBS/uim-core",
@@ -19,8 +19,8 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entitybase",
 
-    "../../LIBS/model-systems",
-		"../../LIBS/model-applications",
+    "../../MODELS/model-systems",
+		"../../MODELS/model-applications",
 
     "./"
 	],
@@ -31,8 +31,8 @@
 		"../../LIBS/uim-jsonbase",
 		"../../LIBS/uim-entitybase",
 
-    "../../LIBS/model-systems",
-    "../../LIBS/model-applications",
+    "../../MODELS/model-systems",
+    "../../MODELS/model-applications",
 
     "./"
 	],
