@@ -4,7 +4,7 @@ module models.portals.entities.web.role;
 import models.portals;
 
 // Sets the user's role for the Portal.
-class DPortalWebRoleEntity : DOOPEntity {
+class DPortalWebRoleEntity : DEntity {
   mixin(EntityThis!("PortalWebRoleEntity"));
 
   override void initialize(Json configSettings = null) {

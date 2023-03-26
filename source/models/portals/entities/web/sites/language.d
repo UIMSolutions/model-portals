@@ -4,7 +4,7 @@ module models.portals.entities.web.sites.language;
 import models.portals;
 
 // Languages supported and publishing status for the portal
-class DPortalWebSiteLanguageEntity : DOOPEntity {
+class DPortalWebSiteLanguageEntity : DEntity {
   mixin(EntityThis!("PortalWebSiteLanguageEntity"));
 
   override void initialize(Json configSettings = null) {

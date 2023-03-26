@@ -4,7 +4,7 @@ module models.portals.entities.web.files.file;
 import models.portals;
 
 // Storage of files used in the web Portals.
-class DPortalWebFileEntity : DOOPEntity {
+class DPortalWebFileEntity : DEntity {
   mixin(EntityThis!("PortalWebFileEntity"));
 
   override void initialize(Json configSettings = null) {

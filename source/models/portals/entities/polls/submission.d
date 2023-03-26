@@ -4,7 +4,7 @@ module models.portals.entities.polls.submission;
 import models.portals;
 
 // The root entity for portal Ideas.
-class DPortalPollSubmissionEntity : DOOPEntity {
+class DPortalPollSubmissionEntity : DEntity {
   mixin(EntityThis!("PortalPollSubmissionEntity"));
 
   override void initialize(Json configSettings = null) {

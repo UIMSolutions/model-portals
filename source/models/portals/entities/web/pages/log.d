@@ -4,7 +4,7 @@ module models.portals.entities.web.pages.log;
 import models.portals;
 
 // A record of a user viewing a Web Page
-class DPortalWebPageLogEntity : DOOPEntity {
+class DPortalWebPageLogEntity : DEntity {
   mixin(EntityThis!("PortalWebPageLogEntity"));
 
   override void initialize(Json configSettings = null) {

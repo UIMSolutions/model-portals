@@ -4,7 +4,7 @@ module models.portals.entities.web.template_;
 import models.portals;
 
 // 
-class DPortalWebTemplateEntity : DOOPEntity {
+class DPortalWebTemplateEntity : DEntity {
   mixin(EntityThis!("PortalWebTemplateEntity"));
 
   override void initialize(Json configSettings = null) {

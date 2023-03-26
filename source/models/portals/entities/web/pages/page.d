@@ -4,7 +4,7 @@ module models.portals.entities.web.pages.page;
 import models.portals;
 
 // WebPage 
-class DPortalWebPageEntity : DOOPEntity {
+class DPortalWebPageEntity : DEntity {
   mixin(EntityThis!("PortalWebPageEntity"));
 
   override void initialize(Json configSettings = null) {

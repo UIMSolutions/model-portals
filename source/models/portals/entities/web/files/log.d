@@ -4,7 +4,7 @@ module models.portals.entities.web.files.log;
 import models.portals;
 
 // A record of the download of a web file
-class DPortalWebFileLogEntity : DOOPEntity {
+class DPortalWebFileLogEntity : DEntity {
   mixin(EntityThis!("PortalWebFileLogEntity"));
 
   override void initialize(Json configSettings = null) {
