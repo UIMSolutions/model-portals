@@ -7,7 +7,7 @@ import models.portals;
 class DPortalExternalIdentityEntity : DOOPEntity {
   mixin(EntityThis!("PortalExternalIdentityEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

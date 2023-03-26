@@ -6,7 +6,7 @@ import models.portals;
 class DPostIdAttribute : DEntityIdAttribute {
   mixin(AttributeThis!("PostIdAttribute"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
