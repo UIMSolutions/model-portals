@@ -7,7 +7,7 @@ import models.portals;
 class DPortalWebTemplateEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebTemplateEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
