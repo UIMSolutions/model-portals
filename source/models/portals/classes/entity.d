@@ -42,7 +42,7 @@ class DPTLEntity : DOOPEntity {
         "redirectWebFile": StringAttribute, // Unique identifier for Web File associated with Ad."]),
         "releaseDate": DateAttribute, // 
         "title": StringAttribute, // 
-        "Url": UrlAttribute, // "]),
+        "url": UrlAttribute, // "]),
       ]);
   }
 }
