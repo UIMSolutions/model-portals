@@ -7,7 +7,7 @@ import models.portals;
 class DPortalForumEntity : DOOPEntity {
   mixin(EntityThis!("PortalForumEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
