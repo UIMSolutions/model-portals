@@ -33,7 +33,7 @@ class DPortalWebPageLogEntity : DOOPEntity {
         "date": StringAttribute, // Shows the date and time that the request was made to download the page.
         "IpAddress": StringAttribute, // Shows the IP address of the computer of the user who requested the file download.
       ])
-      .registerPath("portal_webpagelogs");
+      .registerPath("portal_web.pages.logs");
   }
 }
 mixin(EntityCalls!("PortalWebPageLogEntity"));

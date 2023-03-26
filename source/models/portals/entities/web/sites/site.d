@@ -36,7 +36,7 @@ class DPortalWebSiteEntity : DOOPEntity {
         "primaryDomainName": StringAttribute, // Tracks the primary domain name of the Portal"]),
         "websiteLanguage": StringAttribute, // 
       ])
-      .registerPath("portal_websites");   
+      .registerPath("portal_web.sites");   
   }
   
 /*   auto parentWebSite() {
