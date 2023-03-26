@@ -37,7 +37,7 @@ class DPortalForumPostEntity : DOOPEntity {
         "publishingStateId": UUIDAttribute, // Shows the Publishing State associated with the forum post.
         "regardingId": UUIDAttribute, // Shows the forum post associated with the forum post.
       ])      
-      .registerPath("portal_forumposts");    
+      .registerPath("portal_forums.posts");    
   }
 }
 mixin(EntityCalls!("PortalForumPostEntity"));

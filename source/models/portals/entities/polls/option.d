@@ -33,7 +33,7 @@ class DPortalPollOptionEntity : DOOPEntity {
         "displayOrder": StringAttribute, // 
         "votes": StringAttribute, // 
       ])
-      .registerPath("portal_polloptions");   
+      .registerPath("portal_polls.options");   
   }
 }
 mixin(EntityCalls!("PortalPollOptionEntity"));

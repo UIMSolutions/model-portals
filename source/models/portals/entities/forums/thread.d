@@ -40,7 +40,7 @@ class DPortalForumThreadEntity : DOOPEntity {
         "typeId": UUIDAttribute, // Shows the forum Thread Type associated with the forum thread."]),
         "viewCount": StringAttribute, // 
       ])
-      .registerPath("portal_forumthreads");   
+      .registerPath("portal_forums.threads");   
   }
 }
 mixin(EntityCalls!("PortalForumThreadEntity"));

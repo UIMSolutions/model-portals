@@ -31,7 +31,7 @@ class DPortalPollPlacementEntity : DOOPEntity {
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "pollPlacementId": UUIDAttribute, // Shows the entity instance."]),
       ])
-      .registerPath("portal_pollplacements");
+      .registerPath("portal_polls.placements");
   }
 }
 mixin(EntityCalls!("PortalPollPlacementEntity"));
