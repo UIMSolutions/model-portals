@@ -4,7 +4,7 @@ module models.portals.entities.polls.placement;
 import models.portals;
 
 // The root entity for portal Ideas.
-class DPortalPollPlacementEntity : DOOPEntity {
+class DPortalPollPlacementEntity : DEntity {
   mixin(EntityThis!("PortalPollPlacementEntity"));
 
   override void initialize(Json configSettings = null) {

@@ -4,7 +4,7 @@ module models.portals.entities.account;
 import models.portals;
 
 // 
-class DPortalAccountEntity : DOOPEntity {
+class DPortalAccountEntity : DEntity {
   mixin(EntityThis!("PortalAccountEntity"));
 
   override void initialize(Json configSettings = null) {

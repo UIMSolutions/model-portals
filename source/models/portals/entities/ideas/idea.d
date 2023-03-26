@@ -4,7 +4,7 @@ module models.portals.entities.ideas.idea;
 import models.portals;
 
 // An idea belonging to a portal Idea Forum.
-class DPortalIdeaEntity : DOOPEntity {
+class DPortalIdeaEntity : DEntity {
   mixin(EntityThis!("PortalIdeaEntity"));
 
   override void initialize(Json configSettings = null) {

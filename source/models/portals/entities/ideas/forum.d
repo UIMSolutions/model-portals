@@ -4,7 +4,7 @@ module models.portals.entities.ideas.forum;
 import models.portals;
 
 // The root entity for portal Ideas.
-class DPortalIdeaForumEntity : DOOPEntity {
+class DPortalIdeaForumEntity : DEntity {
   mixin(EntityThis!("PortalIdeaForumEntity"));
 
   override void initialize(Json configSettings = null) {

@@ -4,7 +4,7 @@ module models.portals.entities.forums.forum;
 import models.portals;
 
 // 
-class DPortalForumEntity : DOOPEntity {
+class DPortalForumEntity : DEntity {
   mixin(EntityThis!("PortalForumEntity"));
 
   override void initialize(Json configSettings = null) {

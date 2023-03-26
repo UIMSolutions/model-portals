@@ -4,7 +4,7 @@ module models.portals.entities.polls.option;
 import models.portals;
 
 // 
-class DPortalPollOptionEntity : DOOPEntity {
+class DPortalPollOptionEntity : DEntity {
   mixin(EntityThis!("PortalPollOptionEntity"));
 
   override void initialize(Json configSettings = null) {

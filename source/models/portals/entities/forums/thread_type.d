@@ -4,7 +4,7 @@ module models.portals.entities.forums.thread_type;
 import models.portals;
 
 // 
-class DPortalForumThreadTypeEntity : DOOPEntity {
+class DPortalForumThreadTypeEntity : DEntity {
   mixin(EntityThis!("PortalForumThreadTypeEntity"));
 
   override void initialize(Json configSettings = null) {
