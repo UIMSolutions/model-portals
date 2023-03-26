@@ -7,7 +7,7 @@ import models.portals;
 class DPortalWebSiteLanguageEntity : DOOPEntity {
   mixin(EntityThis!("PortalWebSiteLanguageEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
