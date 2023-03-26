@@ -11,7 +11,7 @@ class DWebFileIdAttribute : DEntityIdAttribute {
 
     this
       .name("webFileId")
-      .registerPath("webFileId");
+      .registerPath("portals_uuids.entities.web.files");
   }  
 }
 mixin(AttributeCalls!("WebFileIdAttribute"));

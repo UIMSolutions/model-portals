@@ -11,7 +11,7 @@ class DWebSiteLanguageIdAttribute : DEntityIdAttribute {
 
     this
       .name("webSiteLanguageId")
-      .registerPath("webSiteLanguageId");
+      .registerPath("portals_uuids.entities.web.sitelanguages");
   }  
 }
 mixin(AttributeCalls!("WebSiteLanguageIdAttribute"));

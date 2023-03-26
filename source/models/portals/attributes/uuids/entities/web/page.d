@@ -11,7 +11,7 @@ class DWebPageIdAttribute : DEntityIdAttribute {
 
     this
       .name("webPageId")
-      .registerPath("webPageId");
+      .registerPath("portals_uuids.entities.web.pages");
   }  
 }
 mixin(AttributeCalls!("WebPageIdAttribute"));

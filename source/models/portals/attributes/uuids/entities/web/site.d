@@ -11,7 +11,7 @@ class DWebSiteIdAttribute : DEntityIdAttribute {
 
     this
       .name("webSiteId")
-      .registerPath("webSiteId");
+      .registerPath("portals_uuids.entities.web.sites");
   }  
 
   

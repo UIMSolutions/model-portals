@@ -11,7 +11,7 @@ class DWebTemplateIdAttribute : DEntityIdAttribute {
 
     this
       .name("webTemplateId")
-      .registerPath("webTemplateId");
+      .registerPath("portals_uuids.entities.web.templates");
   }  
 }
 mixin(AttributeCalls!("WebTemplateIdAttribute"));

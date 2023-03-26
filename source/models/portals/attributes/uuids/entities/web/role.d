@@ -11,7 +11,7 @@ class DWebRoleIdAttribute : DEntityIdAttribute {
 
     this
       .name("webRoleId")
-      .registerPath("webRoleId");
+      .registerPath("portals_uuids.entities.web.roles");
   }  
 }
 mixin(AttributeCalls!("WebRoleIdAttribute"));
