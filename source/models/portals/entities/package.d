@@ -15,3 +15,38 @@ public { // Modules
     import models.portals.entities.account;
     import models.portals.entities.external_identity;
 }
+
+static this() {
+  import uim.models;
+   
+  EntityRegistry
+    .register(
+      PortalAccountEntity,
+      PortalAdEntity,
+      PortalAdPlacementEntity,
+      PortalBadgeEntity,
+      PortalBadgeType,
+      PortalBlogEntity,
+      PortalBlogPostEntity,
+      PortalCaseEntity,
+      PortalCaseDeflectionEntity,
+      PortalForumEntity,
+      PortalForumPostEntity,
+      PortalForumThreadTypeEntity,
+      PortalForumThreadEntity,
+      PortalIdeaForumEntity,
+      PortalIdeaEntity,
+      PortalPollOptionEntity,
+      PortalPollEntity,
+      PortalPollSubmissionEntity,
+      PortalWebFileEntity,
+      PortalWebFileLogEntity,
+      PortalWebPageLogEntity,
+      PortalWebPageEntity,
+      PortalWebSiteLanguageEntity,
+      PortalWebSiteEntity,
+      PortalWebRoleEntity,
+      PortalWebTemplateEntity,
+      PortalExternalIdentityEntity
+    );
+}

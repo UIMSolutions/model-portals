@@ -28,35 +28,6 @@ public {
   import models.portals.values;
 }
 
-static this() {
-  EntityRegistry
-    .register(
-      PortalAccountEntity,
-      PortalAdEntity,
-      PortalAdPlacementEntity,
-      PortalBadgeEntity,
-      PortalBadgeType,
-      PortalBlogEntity,
-      PortalBlogPostEntity,
-      PortalCaseEntity,
-      PortalCaseDeflectionEntity,
-      PortalForumEntity,
-      PortalForumPostEntity,
-      PortalForumThreadTypeEntity,
-      PortalForumThreadEntity,
-      PortalIdeaForumEntity,
-      PortalIdeaEntity,
-      PortalPollOptionEntity,
-      PortalPollEntity,
-      PortalPollSubmissionEntity,
-      PortalWebFileEntity,
-      PortalWebFileLogEntity,
-      PortalWebPageLogEntity,
-      PortalWebPageEntity,
-      PortalWebSiteLanguageEntity,
-      PortalWebSiteEntity,
-      PortalWebRoleEntity,
-      PortalWebTemplateEntity,
-      PortalExternalIdentityEntity
-    );
+unittest {
+  assert(EntityRegistry.contains(PortalAdEntity.registerPath));
 }
