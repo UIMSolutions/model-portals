@@ -36,7 +36,8 @@ class DPortalWebSiteEntity : DEntity {
         "primaryDomainName": StringAttribute, // Tracks the primary domain name of the Portal"]),
         "websiteLanguage": StringAttribute, // 
       ])
-      .registerPath("portal_web.sites");   
+      .registerPath("portal_web.sites")      
+      .routingPath("/portals/websites");       
   }
   
 /*   auto parentWebSite() {

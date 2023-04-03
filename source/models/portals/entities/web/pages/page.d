@@ -72,7 +72,7 @@ class DPortalWebPageEntity : DEntity {
         "enableRatings": StringAttribute, // Setting this value to 'Yes' will allow users to rate the web page.
       ])
       .registerPath("portal_web.pages")      
-      .routingPath("");      
+      .routingPath("/portals/webpages");      
   }
 /*   auto webPage() {  
     if (collection && collection.tenant) 

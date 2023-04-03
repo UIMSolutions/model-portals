@@ -33,7 +33,7 @@ class DPortalWebSiteLanguageEntity : DEntity {
         "publishingState": StringAttribute, // Lookup to Publishing State - publishing state of this website/language instance (draft/published)"]),
       ])
       .registerPath("portal_web.sites.languages")      
-      .routingPath("");       
+      .routingPath("/portals/websitelanguages");       
   }
 
 /*   auto webSiteLanguage() {  

@@ -1,4 +1,4 @@
-module models.portals.entities.external_identity;
+module models.portals.entities.externalidentity;
 
 @safe:
 import models.portals;

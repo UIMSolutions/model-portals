@@ -34,7 +34,7 @@ class DPortalWebPageLogEntity : DEntity {
         "IpAddress": StringAttribute, // Shows the IP address of the computer of the user who requested the file download.
       ])
       .registerPath("portal_web.pages.logs")      
-      .routingPath("");    
+      .routingPath("/portals/webpagelogs");    
   }
 }
 mixin(EntityCalls!("PortalWebPageLogEntity"));
