@@ -27,7 +27,8 @@ class DPortalBadgeType : DEntity {
         "displayText": StringAttribute, // Actual shown label for the badge
         "iconName": StringAttribute, // Add font awesome name such as fa-user
       ])
-      .registerPath("portal_badges.types");
+      .registerPath("portal_badges.types")      
+      .routingPath("/portals/badgetypes");
   }
 }
 mixin(EntityCalls!("PortalBadgeType"));

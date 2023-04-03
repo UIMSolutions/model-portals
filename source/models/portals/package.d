@@ -17,9 +17,11 @@ public {
 }
 
 // public import models.applications;
-public import models.systems;
+public { // Required model packages
+  import models.systems;
+}
 
-public {
+public { // model.portals packages
   import models.portals.attributes;
   import models.portals.classes;
   import models.portals.elements;

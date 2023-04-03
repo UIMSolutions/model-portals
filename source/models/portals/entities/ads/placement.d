@@ -31,7 +31,8 @@ class DPortalAdPlacementEntity : DEntity {
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "adPlacementId": UUIDAttribute, // Shows the entity instance."]),
       ])
-      .registerPath("portal_ads.placements");    
+      .registerPath("portal_ads.placements")      
+      .routingPath("/portals/adplacements");  
   }
  
 /*   auto webSite() {  

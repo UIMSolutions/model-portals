@@ -45,7 +45,8 @@ class DPortalAdEntity : DEntity {
         "title": StringAttribute, // 
         "Url": UrlAttribute, // "]),
       ])
-      .registerPath("portal_ads");
+      .registerPath("portal_ads")      
+      .routingPath("/portals/ads");
   }
 
   /* auto webFile() {  

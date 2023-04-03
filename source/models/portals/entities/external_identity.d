@@ -27,7 +27,8 @@ class DPortalExternalIdentityEntity : DEntity {
         "userName": StringAttribute, // Shows the name of the custom entity.
         "identityProviderName": StringAttribute, // 
       ])
-      .registerPath("portal_externalidentities");   
+      .registerPath("portal_externalidentities")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalExternalIdentityEntity"));

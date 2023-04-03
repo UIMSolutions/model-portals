@@ -29,7 +29,8 @@ class DPortalAccountEntity : DEntity {
         "accountCategoryCode_display": StringAttribute, // 
         // Missing
       ])
-      .registerPath("portal_accounts");    
+      .registerPath("portal_accounts")      
+      .routingPath("/portals/accounts");
   }
  
 /*   auto webSite() {  

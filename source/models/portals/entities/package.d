@@ -13,6 +13,7 @@ public { // Packages
 
 public { // Modules
     import models.portals.entities.account;
+    import models.portals.entities.article;
     import models.portals.entities.external_identity;
 }
 
@@ -24,6 +25,7 @@ static this() {
       PortalAccountEntity,
       PortalAdEntity,
       PortalAdPlacementEntity,
+      PortalArticleEntity,
       PortalBadgeEntity,
       PortalBadgeType,
       PortalBlogEntity,

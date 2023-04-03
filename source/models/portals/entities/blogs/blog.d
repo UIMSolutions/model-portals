@@ -40,7 +40,8 @@ class DPortalBlogEntity : DEntity {
         "summary": StringAttribute, // A descriptive summary of the Blog.
         "blogPostLanguageId": UUIDAttribute, // Option to make blog posts language specific
       ])
-      .registerPath("portal_blogs");    
+      .registerPath("portal_blogs")      
+      .routingPath("/portals/badges");    
   }
    
 /*   // Get website associated with the blog.,
