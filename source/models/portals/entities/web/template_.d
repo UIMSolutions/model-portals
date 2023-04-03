@@ -27,7 +27,8 @@ class DPortalWebTemplateEntity : DEntity {
         "MIMEType": StringAttribute, // Shows the MIME type of the web template content.
         "source": StringAttribute, // 
       ])
-      .registerPath("portal_web.templates");   
+      .registerPath("portal_web.templates")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalWebTemplateEntity"));

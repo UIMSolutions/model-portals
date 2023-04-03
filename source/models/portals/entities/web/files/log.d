@@ -32,7 +32,8 @@ class DPortalWebFileLogEntity : DEntity {
         "date": StringAttribute, // Shows the date and time that the request was made to download the file.
         "IpAddress": StringAttribute, // Shows the IP address of the computer of the user who requested the file download.
       ])
-      .registerPath("portal_web.filelogs");
+      .registerPath("portal_web.filelogs")      
+      .routingPath("");    
   }
 }
 mixin(EntityCalls!("PortalWebFileLogEntity"));

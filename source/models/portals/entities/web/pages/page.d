@@ -71,7 +71,8 @@ class DPortalWebPageEntity : DEntity {
         "commentPolicy_display": StringAttribute, // 
         "enableRatings": StringAttribute, // Setting this value to 'Yes' will allow users to rate the web page.
       ])
-      .registerPath("portal_web.pages");   
+      .registerPath("portal_web.pages")      
+      .routingPath("");      
   }
 /*   auto webPage() {  
     if (collection && collection.tenant) 

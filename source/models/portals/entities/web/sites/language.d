@@ -32,7 +32,8 @@ class DPortalWebSiteLanguageEntity : DEntity {
         "portalLanguageId": UUIDAttribute, // lookup to Portal Language - one of the 43 supported Dynamics 365 languages that this website/language instance will use"]),
         "publishingState": StringAttribute, // Lookup to Publishing State - publishing state of this website/language instance (draft/published)"]),
       ])
-      .registerPath("portal_web.sites.languages");   
+      .registerPath("portal_web.sites.languages")      
+      .routingPath("");       
   }
 
 /*   auto webSiteLanguage() {  

@@ -54,7 +54,8 @@ class DPortalWebFileEntity : DEntity {
         "blogPostId": UUIDAttribute, // Unique identifier for Blog Post associated with Web File.
         "ideaId": UUIDAttribute, // Shows the Idea associated with the Web File.
       ])
-      .registerPath("portal_web.files");
+      .registerPath("portal_web.files")      
+      .routingPath("");    
   }
 
   /* auto webFile() {  

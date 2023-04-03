@@ -33,7 +33,8 @@ class DPortalPollSubmissionEntity : DEntity {
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
         "visitorID": StringAttribute, // 
       ])
-      .registerPath("portal_polls.submissions");   
+      .registerPath("portal_polls.submissions")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalPollSubmissionEntity"));
