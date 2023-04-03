@@ -35,7 +35,7 @@ class DPortalForumThreadTypeEntity : DEntity {
         "requiresAnswer": StringAttribute, // 
       ])
       .registerPath("portal_forums.threads.types")      
-      .routingPath("");     
+      .routingPath("/portals/forumthreadtypes");     
   }
 }
 mixin(EntityCalls!("PortalForumThreadTypeEntity"));

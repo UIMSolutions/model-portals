@@ -33,7 +33,7 @@ class DPortalCaseDeflectionEntity : DEntity {
         "knowledgeArticle": StringAttribute, // Knowledge Articles
       ])
       .registerPath("portal_cases.deflections")      
-      .routingPath("");        
+      .routingPath("/portals/casedeflections");        
   }
 }
 mixin(EntityCalls!("PortalCaseDeflectionEntity"));

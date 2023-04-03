@@ -45,7 +45,7 @@ class DPortalBlogPostEntity : DEntity {
         "statusCode": StatusCodeAttribute, // Select the blog post's status.
       ])
       .registerPath("portal_blogs.posts")      
-      .routingPath("");    
+      .routingPath("/portals/blogposts");    
   }
 
   

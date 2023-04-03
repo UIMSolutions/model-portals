@@ -41,7 +41,7 @@ class DPortalBlogEntity : DEntity {
         "blogPostLanguageId": UUIDAttribute, // Option to make blog posts language specific
       ])
       .registerPath("portal_blogs")      
-      .routingPath("/portals/badges");    
+      .routingPath("/portals/blogs");    
   }
    
 /*   // Get website associated with the blog.,

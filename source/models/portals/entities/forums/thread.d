@@ -41,7 +41,7 @@ class DPortalForumThreadEntity : DEntity {
         "viewCount": StringAttribute, // 
       ])
       .registerPath("portal_forums.threads")      
-      .routingPath("");       
+      .routingPath("/portals/forumthreads");       
   }
 }
 mixin(EntityCalls!("PortalForumThreadEntity"));

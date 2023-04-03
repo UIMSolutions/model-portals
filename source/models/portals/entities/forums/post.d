@@ -38,7 +38,7 @@ class DPortalForumPostEntity : DEntity {
         "regardingId": UUIDAttribute, // Shows the forum post associated with the forum post.
       ])      
       .registerPath("portal_forums.posts")      
-      .routingPath("");        
+      .routingPath("/portals/forumposts");        
   }
 }
 mixin(EntityCalls!("PortalForumPostEntity"));

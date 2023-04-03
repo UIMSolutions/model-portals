@@ -43,7 +43,7 @@ class DPortalForumEntity : DEntity {
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created.
       ])
       .registerPath("portal_forums")      
-      .routingPath("");        
+      .routingPath("/portals/forums");        
   }
 }
 mixin(EntityCalls!("PortalForumEntity"));
