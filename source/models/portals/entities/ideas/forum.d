@@ -43,7 +43,8 @@ class DPortalIdeaForumEntity : DEntity {
         "votingType": StringAttribute, // Shows the type of voting that this idea forum allows.
         "votingType_display": StringAttribute, // 
       ])
-      .registerPath("portal_ideaforums");   
+      .registerPath("portal_ideaforums")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalIdeaForumEntity"));

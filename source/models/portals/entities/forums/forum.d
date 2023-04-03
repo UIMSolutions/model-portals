@@ -42,7 +42,8 @@ class DPortalForumEntity : DEntity {
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created.
       ])
-      .registerPath("portal_forums");    
+      .registerPath("portal_forums")      
+      .routingPath("");        
   }
 }
 mixin(EntityCalls!("PortalForumEntity"));

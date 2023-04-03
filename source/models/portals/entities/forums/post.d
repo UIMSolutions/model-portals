@@ -37,7 +37,8 @@ class DPortalForumPostEntity : DEntity {
         "publishingStateId": UUIDAttribute, // Shows the Publishing State associated with the forum post.
         "regardingId": UUIDAttribute, // Shows the forum post associated with the forum post.
       ])      
-      .registerPath("portal_forums.posts");    
+      .registerPath("portal_forums.posts")      
+      .routingPath("");        
   }
 }
 mixin(EntityCalls!("PortalForumPostEntity"));

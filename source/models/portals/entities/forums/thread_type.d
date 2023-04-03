@@ -34,7 +34,8 @@ class DPortalForumThreadTypeEntity : DEntity {
         "isDefault": BooleanAttribute, //
         "requiresAnswer": StringAttribute, // 
       ])
-      .registerPath("portal_forums.threads.types"); 
+      .registerPath("portal_forums.threads.types")      
+      .routingPath("");     
   }
 }
 mixin(EntityCalls!("PortalForumThreadTypeEntity"));

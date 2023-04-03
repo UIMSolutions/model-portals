@@ -56,7 +56,8 @@ class DPortalIdeaEntity : DEntity {
         "votesSumDate": DateAttribute, // Last Updated time of rollup field Vote Sum. 
         "votesSumState": StringAttribute, // State of rollup field Vote Sum. 
       ])
-      .registerPath("portal_ideas");   
+      .registerPath("portal_ideas")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalIdeaEntity"));

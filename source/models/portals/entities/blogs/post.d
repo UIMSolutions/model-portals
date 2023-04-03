@@ -44,7 +44,8 @@ class DPortalBlogPostEntity : DEntity {
         "adxModifiedByUsername": StringAttribute, // 
         "statusCode": StatusCodeAttribute, // Select the blog post's status.
       ])
-      .registerPath("portal_blogs.posts");    
+      .registerPath("portal_blogs.posts")      
+      .routingPath("");    
   }
 
   

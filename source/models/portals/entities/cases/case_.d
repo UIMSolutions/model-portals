@@ -115,7 +115,8 @@ class DPortalCaseEntity : DEntity {
         "onHoldTime": TimeAttribute, // Shows the duration in minutes for which the case was on hold. 
         "lastOnHoldTime": DatetimeAttribute, // Contains the date time stamp of the last on hold time. 
       ])
-      .registerPath("portal_cases");    
+      .registerPath("portal_cases")      
+      .routingPath("");        
   }
 }
 mixin(EntityCalls!("PortalCaseEntity"));

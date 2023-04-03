@@ -32,7 +32,8 @@ class DPortalCaseDeflectionEntity : DEntity {
         "contact": StringAttribute, // Contact who found the answer when the ticket was created.
         "knowledgeArticle": StringAttribute, // Knowledge Articles
       ])
-      .registerPath("portal_cases.deflections");    
+      .registerPath("portal_cases.deflections")      
+      .routingPath("");        
   }
 }
 mixin(EntityCalls!("PortalCaseDeflectionEntity"));

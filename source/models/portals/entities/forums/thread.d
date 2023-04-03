@@ -40,7 +40,8 @@ class DPortalForumThreadEntity : DEntity {
         "typeId": UUIDAttribute, // Shows the forum Thread Type associated with the forum thread."]),
         "viewCount": StringAttribute, // 
       ])
-      .registerPath("portal_forums.threads");   
+      .registerPath("portal_forums.threads")      
+      .routingPath("");       
   }
 }
 mixin(EntityCalls!("PortalForumThreadEntity"));
