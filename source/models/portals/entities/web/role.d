@@ -35,18 +35,8 @@ class DPortalWebRoleEntity : DEntity {
         "key": StringAttribute, // An alternate key that is not intended to be localized to allow retrieval of a specific Web Role in workflows or code.,
       ])
       .registerPath("portal_web.roles")      
-      .routingPath("");    
+      .routingPath("/portals/webroles");    
   } 
-/*   auto webSite() {  
-    if ("webSiteId" in this.attributes) 
-      if (collection && collection.tenant) 
-        return collection.tenant[PortalWebSite.entityClasses].findOne(["id": this.attributes["webSiteId"].toString]);
-    return null; }
-  unittest {
-    version(test_model_portals) {
-      // TODO
-    }} */
-
 }
 mixin(EntityCalls!("PortalWebRoleEntity"));
 

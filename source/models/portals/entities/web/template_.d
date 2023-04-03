@@ -28,7 +28,7 @@ class DPortalWebTemplateEntity : DEntity {
         "source": StringAttribute, // 
       ])
       .registerPath("portal_web.templates")      
-      .routingPath("");       
+      .routingPath("/portals/webtemplates");       
   }
 }
 mixin(EntityCalls!("PortalWebTemplateEntity"));

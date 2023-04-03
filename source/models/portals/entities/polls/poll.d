@@ -38,7 +38,7 @@ class DPortalPollEntity : DEntity {
         "submitButtonLabel": StringAttribute, // 
       ])
       .registerPath("portal_polls")      
-      .routingPath("");       
+      .routingPath("/portals/polls");       
   }
 }
 mixin(EntityCalls!("PortalPollEntity"));

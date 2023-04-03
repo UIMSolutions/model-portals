@@ -44,7 +44,7 @@ class DPortalIdeaForumEntity : DEntity {
         "votingType_display": StringAttribute, // 
       ])
       .registerPath("portal_ideaforums")      
-      .routingPath("");       
+      .routingPath("/portals/ideaforums");       
   }
 }
 mixin(EntityCalls!("PortalIdeaForumEntity"));

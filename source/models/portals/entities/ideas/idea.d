@@ -57,7 +57,7 @@ class DPortalIdeaEntity : DEntity {
         "votesSumState": StringAttribute, // State of rollup field Vote Sum. 
       ])
       .registerPath("portal_ideas")      
-      .routingPath("");       
+      .routingPath("/portals/ideas");       
   }
 }
 mixin(EntityCalls!("PortalIdeaEntity"));

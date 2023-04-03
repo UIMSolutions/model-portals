@@ -55,7 +55,7 @@ class DPortalWebFileEntity : DEntity {
         "ideaId": UUIDAttribute, // Shows the Idea associated with the Web File.
       ])
       .registerPath("portal_web.files")      
-      .routingPath("");    
+      .routingPath("/portals/webfiles");    
   }
 
   /* auto webFile() {  

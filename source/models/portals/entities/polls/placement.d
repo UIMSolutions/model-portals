@@ -32,8 +32,8 @@ class DPortalPollPlacementEntity : DEntity {
         "pollPlacementId": UUIDAttribute, // Shows the entity instance."]),
       ])
       .registerPath("portal_polls.placements")      
-      .routingPath("");    
-      
+      .routingPath("/portals/pollplacements");    
+
   }
 }
 mixin(EntityCalls!("PortalPollPlacementEntity"));
