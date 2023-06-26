@@ -1,0 +1,5 @@
+UseCaseDiagram {
+    usecase "Create a job card" as u1
+    usecase "Create tasks for a job" as u2
+    usecase "Create planning lines for a job" as u3
+}
