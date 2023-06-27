@@ -1,1 +1,1 @@
-# Package 📦 models.portals.enzities
+# Package 📦 models.portals.entities
